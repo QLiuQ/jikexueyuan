@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*设置整个container的样式*/
+.container {
+    height: 324px;
+    width: 324px;
+    position: absolute;
+    margin: 100px 300px;
+
+    /*开启3d效果*/
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    /*设置或检索对象以中心点为原点进行转换*/
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    /*指定元素背面不看见*/
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /*设置动画效果*/
+    -webkit-animation: animations 4s ease infinite;
+    -moz-animation: animations 4s ease infinite;
+    animation: animations 4s ease infinite;
+}
+
+@-webkit-keyframes animations {
+    0%{-webkit-transform:rotateZ(0deg); }
+    17%{-webkit-transform:rotateX(90deg); }
+    34%{-webkit-transform:rotateY(-90deg); }
+    51%{-webkit-transform:rotateY(-180deg);}
+    68%{-webkit-transform:rotateY(-270deg); }
+    85%{-webkit-transform:rotateX(-90deg);}
+}
+
+@-moz-keyframes animations{
+    0%{-moz-transform:rotateZ(0deg); }
+    17%{-moz-transform:rotateX(90deg); }
+    34%{-moz-transform:rotateY(-90deg); }
+    51%{-moz-transform:rotateY(-180deg);}
+    68%{-moz-transform:rotateY(-270deg); }
+    85%{-moz-transform:rotateX(-90deg);}
+}
+@-ms-keyframes animations {
+    0%{-ms-transform:rotateZ(0deg); }
+    17%{-ms-transform:rotateX(90deg); }
+    34%{-ms-transform:rotateY(-90deg); }
+    51%{-ms-transform:rotateY(-180deg);}
+    68%{-ms-transform:rotateY(-270deg); }
+    85%{-ms-transform:rotateX(-90deg);}
+}
+
+@keyframes animations {
+    0%{transform:rotateZ(0deg); }
+    17%{transform:rotateX(90deg); }
+    34%{transform:rotateY(-90deg); }
+    51%{transform:rotateY(-180deg);}
+    68%{transform:rotateY(-270deg); }
+    85%{transform:rotateX(-90deg);}
+}
+/*设置box下面的div*/
+.box > div{
+    width: 324px;
+    height: 324px;
+    background-color: #000000;
+    position: absolute;
+    float: left;
+    border: 4px solid #000000;
+    border-radius: 10px;
+}
+/*设置第一面的变换样式*/
+.box .one {
+    -webkit-transform: translateZ(162px);
+    -moz-transform: translateZ(162px);
+    -ms-transform: translateZ(162px);
+    transform: translateZ(162px);
+
+}
+/*设置第一面小格子的背景颜色*/
+.box .one .mini-box{
+    background-color: #FF0000;
+}
+/*设置第二面的变换样式*/
+.box .two{
+    -webkit-transform: rotateX(90deg) translateZ(162px);
+    -moz-transform: rotateX(90deg) translateZ(162px);
+    -ms-transform: rotateX(90deg) translateZ(162px);
+    transform: rotateX(90deg) translateZ(162px);
+}
+/*设置第二面小格子的背景颜色*/
+.box .two .mini-box{
+    background-color: #0000FF;
+}
+/*设置第三面的变换样式*/
+.box .three{
+    -webkit-transform: rotateX(90deg) translateZ(-162px);
+    -moz-transform: rotateX(90deg) translateZ(-162px);
+    -ms-transform: rotateX(90deg) translateZ(-162px);
+    transform: rotateX(90deg) translateZ(-162px);
+}
+/*设置第三面小格子的背景颜色*/
+.box .three .mini-box{
+    background-color: #FFFF00;
+}
+/*设置第四面的变换样式*/
+.box .four{
+    -webkit-transform: rotateY(90deg) translateZ(-162px);
+    -moz-transform: rotateY(90deg) translateZ(-162px);
+    -ms-transform: rotateY(90deg) translateZ(-162px);
+    transform: rotateY(90deg) translateZ(-162px);
+}
+/*设置第四面小格子的背景颜色*/
+.box .four .mini-box{
+    background-color: #ffffff;
+}
+/*设置第五面的变换样式*/
+.box .five{
+    -webkit-transform: rotateY(90deg) translateZ(162px);
+    -moz-transform: rotateY(90deg) translateZ(162px);
+    -ms-transform: rotateY(90deg) translateZ(162px);
+    transform: rotateY(90deg) translateZ(162px);
+}
+/*设置第五面小格子的背景颜色*/
+.box .five .mini-box{
+    background-color: #00ff00;
+}
+/*设置第六面的变换样式*/
+.box .six{
+    -webkit-transform: translateZ(-162px);
+    -moz-transform: translateZ(-162px);
+    -ms-transform: translateZ(-162px);
+    transform: translateZ(-162px);
+}
+/*设置第六面小格子的背景颜色*/
+.box .six .mini-box{
+    background-color: #FFA500;
+}
+/*设置所有小格子的属性*/
+.box .mini-box{
+    width: 100px;
+    height: 100px;
+    border: 4px solid #000000;
+    border-radius: 8px;
+    float: left;
+}
+

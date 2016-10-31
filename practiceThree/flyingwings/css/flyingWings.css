@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*整个容器样式设置*/
+.container{
+    background-color: #F5F5DC;
+    height: 300px;
+    overflow: hidden;
+    font-weight: bold;
+}
+/*如果直接用height:inherit;有什么区别*/
+.container > div{
+    padding-bottom: 99999px;
+    margin-bottom: -99999px;
+}
+/*中间区域样式设置*/
+.middle{
+    width: 100%;
+    float: left;
+    background-color: #CCFF66;
+
+}
+.middle .inner{
+    margin: 0 30% 0 20%;
+}
+/*左边区域样式设置*/
+.left{
+    width: 20%;
+    float: left;
+    margin-left: -100%;
+    background-color: #66CCCC;
+
+}
+/*右边区域样式设置*/
+.right{
+    width: 30%;
+    float: left;
+    margin-left: -30%;
+    background-color: #FF99CC;
+
+}
