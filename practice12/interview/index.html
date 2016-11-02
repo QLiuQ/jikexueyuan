@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>面试题目总结</title>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!--正文内容-->
+    <article class="content container">
+        <!--导航栏-->
+        <nav class="side-bar">
+            <ul>
+                <li><a href="#head-html"><h4 class="html">HTML篇</h4></a></li>
+                <li><a href="#browser-kernel"><h4>主流浏览器及其内核</h4></a></li>
+                <li><a href="#src-href-different"><h4>src与href的区别</h4></a></li>
+                <li><a href="#storage"><h4>本地存储</h4></a></li>
+                <li><a href="#pic-load"><h4>图片加载</h4></a></li>
+                <li><a href="#head-css"><h4 class="css">CSS篇</h4></a></li>
+                <li><a href="#link-error"><h4>超链接访问过后hover样式出错</h4></a></li>
+                <li><a href="#overlap"><h4>css文字重叠</h4></a></li>
+                <li><a href="#img-setting"><h4>垂直居中img</h4></a></li>
+                <li><a href="#px-em"><h4>px和em的区别</h4></a></li>
+                <li><a href="#float"><h4>浮动元素引起的问题和解决办法</h4></a></li>
+                <li><a href="#head-js"><h4 class="html">JavaScript篇</h4></a></li>
+                <li><a href="#documents"><h4>添加、移动、复制、创建、查找节点</h4></a></li>
+                <li><a href="#callee"><h4>callee和caller</h4></a></li>
+                <li><a href="#quick-sort"><h4>快速排序</h4></a></li>
+                <li><a href="#binary-search"><h4>二分法查找</h4></a></li>
+                <li><a href="#reg"><h4>正则匹配</h4></a></li>
+                <li><a href="#memory-leak"><h4>内存泄漏</h4></a></li>
+                <li><a href="#ajax"><h4>AJAX过程</h4></a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <h1 class="text-center">HTML/CSS面试题</h1>
+            <!------------------HTML篇------------------->
+            <h2 id="head-html">HTML</h2><hr/>
+            <!--第一个问题-->
+            <div>
+                <h3 id="browser-kernel">主流浏览器及其内核</h3>
+                <ul>
+                    <li>IE: trident内核</li>
+                    <li>Firefox: gecko内核</li>
+                    <li>Safari: webkit内核</li>
+                    <li>Opera: 以前是presto内核, Opera现已改用Google Chrome的Blink内核</li>
+                    <li>Chrome: Blink(基于webkit, Google与Opera SoftWare共同开发)</li>
+                </ul>
+            </div>
+            <div>
+                <h3 id="src-href-different">src与href的区别</h3>
+                <ul>
+                    <li>
+                        src是source的缩写，指向外部资源的位置，指向的内容将会嵌入下载到文档中当前的标签位置，如js，img，frame等元素<br/>
+                        &lt;script src="*.js"&gt;&lt;/script&gt;<br/>
+                        当浏览器解析到该元素时，会暂停其他资源的下载和处理，知道将该资源加载、编译、执行完毕，图片和框架等元素也如此。这也是js脚本要放在底部而不是头部的原因
+                    </li>
+                    <li>
+                        href是Hypertext Reference的缩写，指向网络资源所在的位置，建立和当前元素（锚点）或当前文档（链接）之间的链接<br/>
+                        &lt;link href="*.css" rel="stylesheet/&gt;<br/>
+                        当浏览器解析到该元素时，就会并行下载资源并且不对停止对当前文档的处理。这也是建议用link方式加载css，而不是使用@import方式
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 id="storage">cookies, sessionStorage, localStorage的区别</h3>
+                <ul>
+                    <li>cookie: 在浏览器和服务器之间来回传递，大小受限，每次请求一个新的页面都会被发送过去，不能跨域调用</li>
+                    <li>sessionStorage: 会话级别的存储，用于本地存储session中的数据，存储的数据只有在同一回合的页面才能访问，会话结束后数据也随之销毁</li>
+                    <li>localStorage: 持久化的本地存储，存储本地数据，存储容量大</li>
+                </ul>
+            </div>
+            <div>
+                <h3 id="pic-load">一个页面有大量图片，如何提高图片加载速度</h3>
+                <ul>
+                    <li>图片懒加载，在页面上的未可是区域添加滚动条时间，判断图片位置与浏览器顶端的距离与页面的距离，如果前者小于后者，优先加载</li>
+                    <li>如果为幻灯片、相册等。可以使用图片预加载技术，将当前展示图片的前一张和后一张优先下载</li>
+                    <li>如果为css图片，可以使用CSSsprite, SVGsprite, Iconfont, Base64等技术</li>
+                    <li>如果图片过大，可以使用特殊编码的图片，加载时会先加载一张压缩的缩略图</li>
+                    <li>如果图片展示区域小于真实图片大小，则应在服务器端根据业务需要先进行图片压缩，图片压缩后与展示一致</li>
+                </ul>
+            </div>
+
+            <!------------------CSS篇------------------->
+            <h2 id="head-css">CSS</h2><hr/>
+            <div>
+                <h3 id="link-error">超链接访问过后hover样式就不出现，原因是什么，怎么解决</h3>
+                <ul>
+                    <li>原因: 被点击访问过的超链接样式不再具有hover和active样式了</li>
+                    <li>解决: 改变CSS属性的排列顺序: L-V-H-A(link, visited, hover, active)</li>
+                </ul>
+            </div>
+            <div>
+                <h3 id="overlap">CSS中让文字在垂直和水平方向上的重叠的两个属性是什么</h3>
+                <ul>
+                    <li>垂直方向: line-height</li>
+                    <li>水平方向: letter-spacing，可用于消除inline-block元素间的换行符空格间隙问题</li>
+                </ul>
+            </div>
+            <div>
+                <h3 id="img-setting">如何垂直居中一个img（简便方法）</h3>
+                <ul>
+                    <li>display: table-cell;</li>
+                    <li>text-align: center;</li>
+                    <li>vertical-align: middle;</li>
+                </ul>
+            </div>
+            <div>
+                <h3 id="px-em">px和em的区别</h3>
+                <ul>
+                    <li>px: 固定长度单位，指定多少即为多少，易于计算</li>
+                    <li>em: 不固定长度单位，继承父级元素的字体大小</li>
+                    <li>浏览器默认的字体高度为16px，所以未经调整的浏览器都符合1em=16px</li>
+                </ul>
+            </div>
+            <div>
+                <h3 id="float">浮动元素引起的问题和解决办法</h3>
+                <ul>
+                    <p>浮动引起的问题：</p>
+                    <li>父元素的高度无法被撑开，影响与父元素同级的元素</li>
+                    <li>与浮动元素同级的非浮动元素会跟随其后</li>
+                    <li>若非第一个元素浮动，则该元素之前的元素也需要浮动，否则会影响页面显示的结构</li>
+                    <p>解决方法：</p>
+                    <li>使用CSS中的clear:both属性来清楚元素的浮动</li>
+                    <li>给父元素添加如下样式：</li>
+                    <code>.clearfix:after{content: "."; display:block;height:0;clear:both;visibility:hidden;}</code>
+                    <br/><code>.clearfix{display:inline-block;} /* for IE/Mac */</code>
+                </ul>
+            </div>
+            <!------------------JavaScript------------------->
+            <h2 id="head-js">JavaScript</h2><hr/>
+            <div>
+                <h3 id="documents">添加、移动、复制、创建、查找节点</h3>
+                <ul>
+                    <li>创建DOM片段--createDocumentFragment()</li>
+                    <li>创建一个元素--createElement()</li>
+                    <li>创建一个文本节点--createTextNode()</li>
+                    <li>添加appendChild()、移除removeChild()、替换replaceChild()、插入insertChild()</li>
+                    <li>查找-通过标签名称 getElementsByTagName()</li>
+                    <li>查找-通过元素name属性值 getElementByName()</li>
+                    <li>查找-通过id getElementById()</li>
+                </ul>
+            </div>
+            <div>
+                <h3 id="callee">Javascript中callee和caller的作用</h3>
+                <ul>
+                    <li>caller是返回一个对函数的引用，该函数调用了当前函数；</li>
+                    <li>callee是返回正在被执行的function函数，也就是所指定的function对象的正文</li>
+                </ul>
+            </div>
+            <div>
+                <h3 id="quick-sort">快速排序</h3>
+                <ul>
+                    <li>在数据集之中，选择一个元素作为”基准”（pivot）</li>
+                    <li>所有小于”基准”的元素，都移到”基准”的左边；所有大于”基准”的元素，都移到”基准”的右边</li>
+                    <li>对”基准”左边和右边的两个子集，不断重复第一步和第二步，直到所有子集只剩下一个元素为止</li>
+                </ul>
+                <pre>
+                    <code>
+var quickSort = function(arr) {
+    if (arr.length <= 1) { return arr; }
+    var pivotIndex = Math.floor(arr.length /2);
+    var pivot = arr.splice(pivotIndex, 1)[0];
+    var left = [];
+    var right = [];
+    for(var i = 0; i < arr.length; i++) {
+        if(arr[i] < pivot) {
+            left.push(arr[i]);
+        } else {
+            right.push(arr[i]);
+        }
+    }
+    return quickSort(left).concat([pivot], quickSort(right));
+}
+                    </code>
+                </pre>
+            </div>
+            <div>
+                <h3 id="binary-search">JavaScript实现二分法查找</h3>
+                <ul>
+                    <li>二分法查找，也称折半查找，是一种在有序数组中查找特定元素的搜索算法。</li>
+                    <li>首先，从有序数组的中间的元素开始搜索，如果该元素正好是目标元素（即要查找的元素），则搜索过程结束，否则进行下一步</li>
+                    <li>如果目标元素大于或者小于中间元素，则在数组大于或小于中间元素的那一半区域查找，然后重复第一步的操作</li>
+                    <li>如果某一步数组为空，则表示找不到目标元素</li>
+                </ul>
+                <pre>
+                    <code>
+// 非递归算法
+function binary_search(arr, key) {
+    var low = 0;
+    var high = arr.length -1;
+    while(low <= high) {
+        var mid = parseInt((high + low) /2);
+        if (key == arr[mid]) {
+            return mid;
+        } else if (key < arr[mid]) {
+            high = mid -1;
+        } else if (key > arr[mid]) {
+            low = mid + 1;
+        } else {
+            return -1;
+        }
+    }
+}
+
+// 递归算法
+function binary_search(arr, low, high, key) {
+    if(low > high) {
+        return -1;
+    }
+    var mid = parseInt((high + low) /2);
+    if(arr[mid] == key) {
+        return mid;
+    } else if(arr[mid] < key) {
+        low = mid + 1;
+        return binary_search(arr, low, high, key);
+    } else if(arr[mid] > key) {
+        high = mid - 1;
+        return binary_search(arr, low, high, key);
+    }
+};
+                    </code>
+                </pre>
+            </div>
+            <div>
+                <h3 id="reg">写一个function，清除字符串前后的空格，兼容所有浏览器</h3>
+                <pre>
+                    <code>
+function trim(str) {
+    if (str && typeof str === "string") {
+        return str.replace(/(^\s*)|(\s*)$/g, ""); // 去除前后空白符
+    }
+}
+                    </code>
+                </pre>
+            </div>
+            <div>
+                <h3 id="memory-leak">哪些操作会造成内存泄漏</h3>
+                <ul>
+                    <li>内存泄露是只任何对象在您不再拥有或需要它之后仍然存在</li>
+                    <li>垃圾回收期定期扫描对象，并计算引用了每个对象的其他对象的数量，如果一个对象的引用数量为0，或对该对象的唯一引用是循环的，那么该对象的内存即可回收</li>
+                    <li>setTimeout的第一个参数使用字符串而非函数的话，会引发内存泄漏</li>
+                    <li>闭包、控制台日志、循环（在两个对象彼此引用且彼此保留时，就会产生一个循环）</li>
+                </ul>
+            </div>
+            <div>
+                <h3 id="ajax">AJAX过程</h3>
+                <ul>
+                    <li>创建XMLHttpRequest对象，也就是创建一个异步调用对象</li>
+                    <li>创建一个新的HTTP请求，并指定该HTTP请求方法、URL及验证信息</li>
+                    <li>设置响应HTTP请求状态变化的函数</li>
+                    <li>发送HTTP请求</li>
+                    <li>获取异步调用返回的数据</li>
+                    <li>使用JavaScript和DOM实现布局刷新</li>
+                </ul>
+            </div>
+        </div>
+    </article>
+</body>
+</html>

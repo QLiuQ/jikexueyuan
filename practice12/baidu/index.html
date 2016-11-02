@@ -1,0 +1,2212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下，你就知道</title>
+    <link href="img/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link href="css/base.css" type="text/css" rel="stylesheet">
+    <link href="css/index.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!--<script type="text/javascript">-->
+        <!--seajs.use("./js/app/main.js");-->
+    <!--</script>-->
+</head>
+<body>
+<div class="wrapper">
+    <div class="skin-container"></div>
+    <!--头部导航-->
+    <div id="s_top_wrap" class="header">
+        <!--左边-->
+        <div id="s_upfunc_menus">
+            <!--天气-->
+            <div class="s-weather-wrapper">
+                <a class="city-weather"
+                   href="//www.baidu.com/s?tn=baidutop10&rsv_idx=2&wd=%E5%8C%97%E4%BA%AC%E5%A4%A9%E6%B0%94%E9%A2%84%E6%8A%A5"
+                   target="_blank">
+                    <div class="show-weather">
+                                <span class="show-city">
+                                    <em class="show-city-name"> 北京： </em>
+                                </span>
+                                <span class="show-icon">
+                                    <span class="weather-icon"></span>
+                                    <em class="show-icon-temp">25℃</em>
+                                </span>
+                    </div>
+                    <div class="show-pollution">
+                                <span class="show-airParm">
+                                    <em class="show-pollutuin-name">良</em>
+                                    <em class="show-pollutuin-num">76</em>
+                                </span>
+                        <span class="show-vertical">|</span>
+                    </div>
+                </a>
+                <div class="s-mode-weather hide">
+                    <div class="set-weather-content">
+                        <div class="lunar-mode">
+                            <span class="lunar-calendar">6月15日</span>
+                            <span class="lunar-festival">农历 五月十一（父亲节）</span>
+                                    <span class="lunar-seven-day">
+                                        <a class="lunar-seven-day-link" target="_blank"
+                                           href="http://www.weather.com.cn/weather/101010100.shtml#7d">未来七天天气</a>
+                                    </span>
+                            <span class="lunar-setting-btn">设置</span>
+                        </div>
+                        <!--hover天气区域显示天气-->
+                        <div class="everyday-mode">
+                            <div class="everyday-item today">
+                                <a class="everyday-link" target="_blank" href="#">
+                                    <p class="everyday-title" title="今天(周三)">今天(周三)</p>
+                                    <img src="img/a0.jpg" class="everyday-icon">
+                                    <p class="everyday-temp" title="22℃">22℃</p>
+                                    <p class="everyday-condition" title="晴">晴</p>
+                                    <p class="everyday-wind" title="微风">微风</p>
+                                </a>
+                            </div>
+                            <div class="everyday-item tomorrow">
+                                <a class="everyday-link" target="_blank" href="#">
+                                    <p class="everyday-title" title="明天(周四)">明天(周四)</p>
+                                    <img class="everyday-icon" src="img/a1.jpg">
+                                    <p class="everyday-temp" title="33 ~ 20℃">33 ~ 20℃</p>
+                                    <p class="everyday-condition" title="多云">多云</p>
+                                    <p class="everyday-wind" title="微风">微风</p>
+                                </a>
+                            </div>
+                            <div class="everyday-item thirdday">
+                                <a class="everyday-link" target="_blank" href="#">
+                                    <p class="everyday-title" title="后天(周五)">后天(周五)</p>
+                                    <img class="everyday-icon" src="img/a1.jpg">
+                                    <p class="everyday-temp" title="33 ~ 19℃">33 ~ 19℃</p>
+                                    <p class="everyday-condition" title="多云">多云</p>
+                                    <p class="everyday-wind" title="微风">微风</p>
+                                </a>
+                            </div>
+                            <div class="everyday-item fourthday">
+                                <a class="everyday-link" target="_blank" href="#">
+                                    <p class="everyday-title" title="周六">周六</p>
+                                    <img class="everyday-icon" src="img/a1.jpg">
+                                    <p class="everyday-temp" title="31 ~ 21℃">31 ~ 21℃</p>
+                                    <p class="everyday-condition" title="多云转阴">多云转阴</p>
+                                    <p class="everyday-wind" title="微风">微风</p>
+                                </a>
+                            </div>
+                            <div class="everyday-item fifthday">
+                                <a class="everyday-link" target="_blank" href="#">
+                                    <p class="everyday-title" title="周日">周日</p>
+                                    <img class="everyday-icon" src="img/a1.jpg">
+                                    <p class="everyday-temp" title="31 ~ 22℃">31 ~ 22℃</p>
+                                    <p class="everyday-condition" title="多云">多云</p>
+                                    <p class="everyday-wind" title="微风">微风</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weather-setting-arrow"></div>
+                </div>
+            </div>
+            <!--宝箱 换肤 消息-->
+            <div class="s-icons">
+                <a class="s-treasure" href="#">宝箱</a>
+                <a class="s-skin" href="#">换肤</a>
+                <a class="s-meg" href="#">消息</a>
+            </div>
+        </div>
+        <!--右边-->
+        <div id="u-sp" class="nav">
+            <a href="http://www.nuomi.com/?cid=002540" name="tj_trnuomi" class="mnav">糯米</a>
+            <a href="http://news.baidu.com" name="tj_trnews" class="mnav">新闻</a>
+            <a href="http://www.hao123.com" name="tj_trhao123" class="mnav">hao123</a>
+            <a href="http://map.baidu.com" name="tj_trmap" class="mnav">地图</a>
+            <a href="http://v.baidu.com" name="tj_trvideo" class="mnav">视频</a>
+            <a href="http://tieba.baidu.com" name="tj_trtieba" class="mnav">贴吧</a>
+            <a href="https://passport.baidu.com" name="tj_login" class="lb">子曰_子在</a>
+            <div id="s_user_name_menu" class="s-user-set-menu">
+                <i class="setting-icon"></i>
+                <a href="http://vip.baidu.com/pcui/show/ucenterindex?vip_frm=super_account" target="_blank">我的VIP </a>
+                <a href="http://i.baidu.com/center" target="_blank"> 个人中心 </a>
+                <a href="http://passport.baidu.com/" target="_blank"> 帐号设置 </a>
+                <a class="s-feedback" href="#">意见反馈</a>
+                <a class="quit" href="#"> 退出 </a>
+            </div>
+            <div class="setting-menu" id="setting-menu">
+                <a href="http://www.baidu.com/gaoji/preferences.html" name="tj_settingicon" class="pf">设置</a>
+                <!--设置下拉菜单-->
+                <div class="baidu-setting" id="baidu-setting">
+                    <i class="setting-icon"></i>
+                    <a href="">搜索设置</a>
+                    <a href="https://www.baidu.com/gaoji/advanced.html">高级搜索</a>
+                    <a href="">关闭预测</a>
+                    <a href="">搜索历史</a>
+                </div>
+            </div>
+            <a href="http://www.baidu.com/more/" name="tj_briicon" class="bri" id="nav-more">更多产品</a>
+
+        </div>
+    </div>
+    <!--更多产品下拉菜单栏设置-->
+    <div class="more-product" id="more-product">
+        <ul>
+            <li><a href="http://www.baidu.com/more/">更多产品</a></li>
+            <li><a href="http://music.baidu.com"><span class="more-sub-one"></span>音乐</a></li>
+            <li><a href="http://image.baidu.com"><span class="more-sub-two"></span>图片</a></li>
+            <li><a href="http://zhidao.baidu.com"><span class="more-sub-three"></span>知道</a></li>
+            <li><a href="http://wenku.baidu.com"><span class="more-sub-four"></span>文库</a></li>
+            <li><a href="http://top.baidu.com"><span class="more-sub-five"></span>风云榜</a></li>
+            <li><a href="http://e.baidu.com/?refer=888"><span class="more-sub-six"></span>百度推广</a></li>
+            <li><a href="http://www.baidu.com/more/">全部产品>></a></li>
+        </ul>
+    </div>
+
+    <!--中间搜索内容-->
+    <div class="content">
+        <!--百度logo-->
+        <a href="https://www.baidu.com">
+            <img src="img/logo_white.png" class="baidu-logo" width="270" alt="百度一下">
+        </a>
+        <!--form表单-->
+        <form action="https://www.baidu.com/s" method="get" target="_blank" class="form">
+            <!--搜图logo-->
+            <span class="ipt_photo"></span>
+            <!--搜索输入框-->
+            <input type="text" class="search-input" id="search-input" name="wd">
+            <!--搜索提交按钮-->
+            <button type="submit" class="search-submit">百度一下</button>
+        </form>
+    </div>
+    <div id="s-main">
+        <!--tab导航-->
+        <div class="s-menu-container">
+            <div id="s_ctner_menus">
+                        <span id="s_menu_mine" class="s-menu-item s-menu-mine s-opacity-white-background" data-id="100">
+                            <span class="mine-icon"></span>
+                            <span class="mine-text">我的关注</span>
+                        </span>
+                <span class="s-menu-item s-opacity-white-background current">推荐</span>
+                <span class="s-menu-item s-opacity-white-background">导航</span>
+                <span class="s-menu-item s-opacity-white-background">视频</span>
+                <span class="s-menu-item s-opacity-white-background">购物</span>
+                <div class="s-bg-space s-opacity-white-background"></div>
+                        <span class="s_menu_set s-opacity-white-background">
+                            <span class="menu-icon"></span>
+                        </span>
+            </div>
+        </div>
+        <!--tab内容-->
+        <div class="s-ctner-contents s-opacity-white-background">
+            <!--我的关注-->
+            <div id="s_content_100" class="s-content">
+                <div class="s-block-container">
+                    <div class="s-mblock-title s-opacity-border4-bottom">
+                        <!--我的导航-->
+                        <div class="title-content">
+                            <div class="mine-title-icon">
+                                <em></em>
+                            </div>
+                            <span class="mine-title-text"> 我的导航 </span>
+                            <span class="mine-title-num">(42) </span>
+                        </div>
+                        <!--设置-->
+                        <div class="s-setbar">
+                            <div class="set-menu">
+                                <div class="set-btn set-add" title="添加"> 添加</div>
+                                <div class="set-btn set-edit" title="编辑"> 编辑</div>
+                                <div class="set-btn edit-class classed">
+                                    <span class="class-icon"></span>
+                                    <span> 分类显示 </span>
+                                </div>
+                                <div class="set-btn fanli-class classed">
+                                    <span class="class-icon"></span>
+                                    <span>返利模式</span>
+                                </div>
+                                <div class="set-btn set-totop" title="置顶"> 置顶</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--导航内容-->
+                    <div class="s-mblock-content s-opacity-blank3 block-nav-fanli">
+                        <!--综合-->
+                        <div class="dir-item s-opacity-blank3">
+                            <div class="dir-border s-opacity-blank3"></div>
+                            <!--综合-->
+                            <div class="dir-name s-opacity-blank3">
+                                <span class="name-text">综合</span>
+                            </div>
+                            <!--综合右边内容-->
+                            <div class="dir-content s-opacity-blank3">
+                                <div class="d-nav-item s-opacity-blank3">
+                                    <a class="border-for-item" href="#" target="_blank">
+                                        <img src="img/95572.png" width="16" class="nav-icon">
+                                        <span class="nav-text-content">VeryCD</span>
+                                    </a>
+                                </div>
+                                <div class="d-nav-item s-opacity-blank3">
+                                    <a class="border-for-item" href="#" target="_blank">
+                                        <img src="img/6000.png" width="16" class="nav-icon">
+                                        <span class="nav-text-content">cvt校园招聘</span>
+                                    </a>
+                                </div>
+                                <div class="d-nav-item s-opacity-blank3">
+                                    <a class="border-for-item" href="#" target="_blank">
+                                        <img src="img/7656.png" width="16" class="nav-icon">
+                                        <span class="nav-text-content">百度校园招聘</span>
+                                    </a>
+                                </div>
+                                <div class="d-nav-item s-opacity-blank3">
+                                    <a class="border-for-item" href="#" target="_blank">
+                                        <img src="img/7082.png" width="16" class="nav-icon">
+                                        <span class="nav-text-content">腾讯校园招聘</span>
+                                    </a>
+                                </div>
+                                <div class="d-nav-item s-opacity-blank3">
+                                    <a class="border-for-item" href="#" target="_blank">
+                                        <img src="img/7183.png" width="16" class="nav-icon">
+                                        <span class="nav-text-content">网易校园招聘</span>
+                                    </a>
+                                </div>
+                                <div class="d-nav-item s-opacity-blank3">
+                                    <a class="border-for-item" href="#" target="_blank">
+                                        <img src="img/95496.png" width="16" class="nav-icon">
+                                        <span class="nav-text-content">新浪</span>
+                                    </a>
+                                </div>
+                                <div class="d-nav-item s-opacity-blank3">
+                                    <a class="border-for-item" href="#" target="_blank">
+                                        <img src="img/95490.png" width="16" class="nav-icon">
+                                        <span class="nav-text-content">Hao123</span>
+                                    </a>
+                                </div>
+                                <div class="d-nav-item s-opacity-blank3">
+                                    <a class="border-for-item" href="#" target="_blank">
+                                        <img src="img/8510.png" width="16" class="nav-icon">
+                                        <span class="nav-text-content">Google香港</span>
+                                    </a>
+                                </div>
+                                <div class="d-nav-item s-opacity-blank3">
+                                    <a class="border-for-item" href="#" target="_blank">
+                                        <img src="img/7183.png" width="16" class="nav-icon">
+                                        <span class="nav-text-content">网易邮箱</span>
+                                    </a>
+                                </div>
+                                <div class="d-nav-item s-opacity-blank3">
+                                    <a class="border-for-item" href="#" target="_blank">
+                                        <img src="img/7349.png" width="16" class="nav-icon">
+                                        <span class="nav-text-content">周公解梦</span>
+                                    </a>
+                                </div>
+                                <div class="d-nav-item s-opacity-blank3">
+                                    <a class="border-for-item" href="#" target="_blank">
+                                        <img src="img/95496.png" width="16" class="nav-icon">
+                                        <span class="nav-text-content">爱问共享</span>
+                                    </a>
+                                </div>
+                                <div class="d-nav-item s-opacity-blank3">
+                                    <a class="border-for-item" href="#" target="_blank">
+                                        <img src="img/8835.png" width="16" class="nav-icon">
+                                        <span class="nav-text-content">www.icours...</span>
+                                    </a>
+                                </div>
+                                <div class="d-nav-item s-opacity-blank3">
+                                    <a class="border-for-item" href="#" target="_blank">
+                                        <img src="img/7183.png" width="16" class="nav-icon">
+                                        <span class="nav-text-content">网易</span>
+                                    </a>
+                                </div>
+                                <div class="d-nav-item s-opacity-blank3">
+                                    <a class="border-for-item" href="#" target="_blank">
+                                        <img src="img/6000.png" width="16" class="nav-icon">
+                                        <span class="nav-text-content">湖北财政厅</span>
+                                    </a>
+                                </div>
+                                <div class="d-nav-item s-opacity-blank3">
+                                    <a class="border-for-item" href="#" target="_blank">
+                                        <img src="img/81341.png" width="16" class="nav-icon">
+                                        <span class="nav-text-content">鬼吹灯</span>
+                                    </a>
+                                </div>
+                                <div class="d-nav-item s-opacity-blank3">
+                                    <a class="border-for-item" href="#" target="_blank">
+                                        <img src="img/6000.png" width="16" class="nav-icon">
+                                        <span class="nav-text-content">大漠苍狼</span>
+                                    </a>
+                                </div>
+                                <div class="d-nav-item s-opacity-blank3">
+                                    <a class="border-for-item" href="#" target="_blank">
+                                        <img src="img/94566.png" width="16" class="nav-icon">
+                                        <span class="nav-text-content">藏地密码</span>
+                                    </a>
+                                </div>
+                                <div class="d-nav-item s-opacity-blank3">
+                                    <a class="border-for-item" href="#" target="_blank">
+                                        <img src="img/6000.png" width="16" class="nav-icon">
+                                        <span class="nav-text-content">w3cschool在...</span>
+                                    </a>
+                                </div>
+                                <div class="d-nav-item s-opacity-blank3">
+                                    <a class="border-for-item" href="#" target="_blank">
+                                        <img src="img/6000.png" width="16" class="nav-icon">
+                                        <span class="nav-text-content">django book</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--贴吧-->
+                        <div class="dir-item s-opacity-blank3">
+                            <div class="dir-border s-opacity-blank3"></div>
+                            <!--贴吧标题-->
+                            <div class="dir-name s-opacity-blank3">
+                                <span class="name-text">贴吧</span>
+                            </div>
+                            <!--贴吧内容-->
+                            <div class="dir-content s-opacity-blank3">
+                                <div class="d-nav-item s-opacity-blank3">
+                                    <a class="border-for-item" href="#" target="_blank">
+                                        <img src="img/2556.png" width="16" class="nav-icon">
+                                        <span class="nav-text-content">黑客吧</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--社区-->
+                        <div class="dir-item s-opacity-blank3">
+                            <div class="dir-border s-opacity-blank3"></div>
+                            <!--社区标题-->
+                            <div class="dir-name s-opacity-blank3">
+                                <span class="name-text">社区</span>
+                            </div>
+                            <!--社区内容-->
+                            <div class="dir-content s-opacity-blank3">
+                                <div class="d-nav-item s-opacity-blank3">
+                                    <a class="border-for-item" href="#" target="_blank">
+                                        <img src="img/95495.png" width="16" class="nav-icon">
+                                        <span class="nav-text-content">人人网</span>
+                                    </a>
+                                </div>
+                                <div class="d-nav-item s-opacity-blank3">
+                                    <a class="border-for-item" href="#" target="_blank">
+                                        <img src="img/95488.png" width="16" class="nav-icon">
+                                        <span class="nav-text-content">新浪微博</span>
+                                    </a>
+                                </div>
+                                <div class="d-nav-item s-opacity-blank3">
+                                    <a class="border-for-item" href="#" target="_blank">
+                                        <img src="img/7679.png" width="16" class="nav-icon">
+                                        <span class="nav-text-content">爆米花网</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--游戏-->
+                        <div class="dir-item s-opacity-blank3">
+                            <div class="dir-border s-opacity-blank3"></div>
+                            <!--游戏标题-->
+                            <div class="dir-name s-opacity-blank3">
+                                <span class="name-text">游戏</span>
+                            </div>
+                            <!--游戏内容-->
+                            <div class="dir-content s-opacity-blank3">
+                                <div class="d-nav-item s-opacity-blank3">
+                                    <a class="border-for-item" href="#" target="_blank">
+                                        <img src="img/26642.jpg" width="16" class="nav-icon">
+                                        <span class="nav-text-content">地牢围攻3</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--推荐-->
+            <div id="s_content_2" class="s-content on">
+                <!--右边部分-->
+                <div class="s-news-rank-wrapper">
+                    <!--实时热点 换一换-->
+                    <div class="s-rank-title s-opacity-border1-bottom">
+                        <div class="title-text">
+                            <a href="http://top.baidu.com/?fr=mhd_card" target="_blank">实时热点</a>
+                        </div>
+                        <a class="hot-refresh">
+                            <span class="hot-refresh-icon"></span>
+                            <span class="hot-refresh-text">换一换</span>
+                        </a>
+                    </div>
+                    <!--热点内容-->
+                    <ul class="s-news-rank-content">
+                        <li class="news-meta-item news-artist">
+                            <em class="news-icon"></em>
+                                    <span class="news-title">
+                                        <span class="title-link">
+                                            <a class="title-content" href="https://www.baidu.com"
+                                               target="_blank">火烧LV包闹离婚</a>
+                                            <span class="new-identity"></span>
+                                        </span>
+                                    </span>
+                        </li>
+                        <li class="news-meta-item news-artist">
+                            <em class="news-icon"></em>
+                                    <span class="news-title">
+                                        <span class="title-link">
+                                            <a class="title-content" href="https://www.baidu.com"
+                                               target="_blank">男排落选赛连胜</a>
+                                            <span class="new-identity"></span>
+                                        </span>
+                                    </span>
+
+                        </li>
+                        <li class="news-meta-item news-artist">
+                            <em class="news-icon"></em>
+                                    <span class="news-title">
+                                        <span class="title-link">
+                                            <a class="title-content" href="https://www.baidu.com"
+                                               target="_blank">7省上调最低工资</a>
+                                            <span class="new-identity"></span>
+                                        </span>
+                                    </span>
+
+                        </li>
+                        <li class="news-meta-item news-artist">
+                            <em class="news-icon"></em>
+                                    <span class="news-title">
+                                        <span class="title-link">
+                                            <a class="title-content" href="https://www.baidu.com"
+                                               target="_blank">偷渡迪拜当乞丐</a>
+                                            <span class="new-identity"></span>
+                                        </span>
+                                    </span>
+
+                        </li>
+                        <li class="news-meta-item news-artist">
+                            <em class="news-icon"></em>
+                                    <span class="news-title">
+                                        <span class="title-link">
+                                            <a class="title-content" href="https://www.baidu.com"
+                                               target="_blank">勇士3-4进总决赛</a>
+                                            <span class="new-identity"></span>
+                                        </span>
+                                    </span>
+
+                        </li>
+                        <li class="news-meta-item">
+                            <em class="news-icon"></em>
+                                    <span class="news-title">
+                                        <span class="title-link">
+                                            <a class="title-content" href="https://www.baidu.com"
+                                               target="_blank">嘴喂弃婴15年</a>
+                                            <span class="new-identity"></span>
+                                        </span>
+                                    </span>
+
+                        </li>
+                        <li class="news-meta-item">
+                            <em class="news-icon"></em>
+                                    <span class="news-title">
+                                        <span class="title-link">
+                                            <a class="title-content" href="https://www.baidu.com"
+                                               target="_blank">雇主将孩子送保姆</a>
+                                            <span class="new-identity"></span>
+                                        </span>
+                                    </span>
+                        </li>
+                        <li class="news-meta-item">
+                            <em class="news-icon"></em>
+                                    <span class="news-title">
+                                        <span class="title-link">
+                                            <a class="title-content" href="https://www.baidu.com"
+                                               target="_blank">不文明将入黑名单</a>
+                                            <span class="new-identity"></span>
+                                        </span>
+                                    </span>
+                        </li>
+                        <li class="news-meta-item">
+                            <em class="news-icon"></em>
+                                    <span class="news-title">
+                                        <span class="title-link">
+                                            <a class="title-content" href="https://www.baidu.com"
+                                               target="_blank">31省武警演习</a>
+                                            <span class="new-identity"></span>
+                                        </span>
+                                    </span>
+                        </li>
+                        <li class="news-meta-item">
+                            <em class="news-icon"></em>
+                                    <span class="news-title">
+                                        <span class="title-link">
+                                            <a class="title-content" href="https://www.baidu.com"
+                                               target="_blank">黄山拟复名徽州</a>
+                                            <span class="new-identity"></span>
+                                        </span>
+                                    </span>
+                        </li>
+                        <li class="news-meta-item">
+                            <em class="news-icon"></em>
+                                    <span class="news-title">
+                                        <span class="title-link">
+                                            <a class="title-content" href="https://www.baidu.com"
+                                               target="_blank">女老师扇学生遭打</a>
+                                            <span class="new-identity"></span>
+                                        </span>
+                                    </span>
+                        </li>
+                        <li class="news-meta-item">
+                            <em class="news-icon"></em>
+                                    <span class="news-title">
+                                        <span class="title-link">
+                                            <a class="title-content" href="https://www.baidu.com"
+                                               target="_blank">西安大量出租聚集</a>
+                                            <span class="new-identity"></span>
+                                        </span>
+                                    </span>
+                        </li>
+                        <li class="news-meta-item">
+                            <em class="news-icon"></em>
+                                    <span class="news-title">
+                                        <span class="title-link">
+                                            <a class="title-content" href="https://www.baidu.com"
+                                               target="_blank">小男孩商场被抱走</a>
+                                            <span class="new-identity"></span>
+                                        </span>
+                                    </span>
+                        </li>
+                        <li class="news-meta-item">
+                            <em class="news-icon"></em>
+                                    <span class="news-title">
+                                        <span class="title-link">
+                                            <a class="title-content" href="https://www.baidu.com"
+                                               target="_blank">奔驰司机违章撒娇</a>
+                                            <span class="new-identity"></span>
+                                        </span>
+                                    </span>
+                        </li>
+                        <li class="news-meta-item">
+                            <em class="news-icon"></em>
+                                    <span class="news-title">
+                                        <span class="title-link">
+                                            <a class="title-content" href="https://www.baidu.com"
+                                               target="_blank">幼儿园围墙倒塌</a>
+                                            <span class="new-identity"></span>
+                                        </span>
+                                    </span>
+                        </li>
+                        <li class="news-meta-item">
+                            <em class="news-icon"></em>
+                                    <span class="news-title">
+                                        <span class="title-link">
+                                            <a class="title-content" href="https://www.baidu.com"
+                                               target="_blank">55岁奶奶变模特</a>
+                                            <span class="new-identity"></span>
+                                        </span>
+                                    </span>
+                        </li>
+                    </ul>
+                </div>
+                <!--左边部分-->
+                <div class="water-container">
+                    <div class="news-flash-tips">
+                        <div class="left-line"></div>
+                        <div class="tips-content">
+                            <div class="tips-icon"></div>
+                            <span>以下信息根据您的兴趣推荐</span>
+                        </div>
+                        <div class="right-line"></div>
+                    </div>
+
+                    <div class="s-news-list-wrapper">
+                        <div class="s-news-item">
+                            <!--标题-->
+                            <div class="s-text-content">
+                                <h2>
+                                    <span class="status"></span>
+                                    <a href="http://www.baidu.com" title="北京征兵标准适度放宽 男女生身高标准降2厘米" target="_blank">
+                                        北京征兵标准适度放宽 男女生身高标准降2厘米</a>
+                                </h2>
+                            </div>
+                            <!--来源-->
+                            <div class="from">
+                                        <span class="src-net">
+                                            <a href="http://news.qq.com" target="_blank">腾讯新闻</a>
+                                        </span>
+                                <span class="src-time">05-31 02:31</span>
+                                <!--删除按钮-->
+                                <div class="dustbin" data-click="LOG_BTN_DUSTBIN"></div>
+                            </div>
+                        </div>
+
+                        <div class="s-news-item">
+                            <!--标题-->
+                            <div class="s-text-content">
+                                <h2>
+                                    <span class="status"></span>
+                                    <a href="http://www.baidu.com" title=" 美国展示高科技大炮：炮弹时速7200公里 射程200公里"
+                                       target="_blank"> 美国展示高科技大炮：炮弹时速7200公里 射程200公里</a>
+                                </h2>
+                            </div>
+                            <!--图片-->
+                            <div class="s-pic-content">
+                                <ul class="s-news-content-imgs clearfix">
+                                    <li class="item-img-wrap">
+                                        <a href="http://www.cnbeta.com/articles/506211.htm" target="_blank"
+                                           title="美国展示高科技大炮：炮弹时速7200公里 射程200公里">
+                                            <img class="s-news-img" src="img/news1.jpg" height="106" width="176">
+                                        </a>
+                                    </li>
+                                    <li class="item-img-wrap">
+                                        <a href="http://www.cnbeta.com/articles/506211.htm" target="_blank"
+                                           title="美国展示高科技大炮：炮弹时速7200公里 射程200公里">
+                                            <img class="s-news-img" src="img/news2.jpg" height="106" width="176">
+                                        </a>
+                                    </li>
+                                    <li class="item-img-wrap">
+                                        <a href="http://www.cnbeta.com/articles/506211.htm" target="_blank"
+                                           title="美国展示高科技大炮：炮弹时速7200公里 射程200公里">
+                                            <img class="s-news-img" src="img/news3.jpg" height="106" width="176">
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!--来源-->
+                            <div class="from">
+                                        <span class="src-net">
+                                            <a href="http://news.qq.com" target="_blank"> cnbeta </a>
+                                        </span>
+                                <span class="src-time">05-31 02:31</span>
+                                <!--删除按钮-->
+                                <div class="dustbin" data-click="LOG_BTN_DUSTBIN"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--导航-->
+            <div id="s_content_1" class="s-content">
+                <div id="s_xmancard_nav">
+                    <h1>猜你喜欢</h1>
+                    <div class="fanli-nav nav-item">
+                        <a class="nav-block" href="#" target="_blank">
+                            <img src="img/9483.png">
+                            <span class="nav-txt">百度糯米</span>
+                        </a>
+                        <!--返利-->
+                        <div class="rebate">
+                            <a href="#" target="_blank">最高返利3.54%</a>
+                        </div>
+                        <!--返利标签-->
+                        <div class="fanli-tag">
+                            <a href="http://vip.baidu.com/m_112?vip_frm=super_mynav_mall" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="fanli-nav nav-item">
+                        <a class="nav-block" href="#" target="_blank">
+                            <img src="img/95541.png">
+                            <span class="nav-txt">京东商城</span>
+                        </a>
+                        <!--返利-->
+                        <div class="rebate">
+                            <a href="#" target="_blank">最高返利80.00%</a>
+                        </div>
+                        <!--返利标签-->
+                        <div class="fanli-tag">
+                            <a href="http://vip.baidu.com/m_112?vip_frm=super_mynav_mall" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="fanli-nav nav-item">
+                        <a class="nav-block" href="#" target="_blank">
+                            <img src="img/95780.png">
+                            <span class="nav-txt">1号店</span>
+                        </a>
+                        <!--返利-->
+                        <div class="rebate">
+                            <a href="#" target="_blank">最高返利75.60%</a>
+                        </div>
+                        <!--返利标签-->
+                        <div class="fanli-tag">
+                            <a href="http://vip.baidu.com/m_112?vip_frm=super_mynav_mall" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="fanli-nav nav-item">
+                        <a class="nav-block" href="#" target="_blank">
+                            <img src="img/95537.png">
+                            <span class="nav-txt">苏宁易购</span>
+                        </a>
+                        <!--返利-->
+                        <div class="rebate">
+                            <a href="#" target="_blank">最高返利80.00%</a>
+                        </div>
+                        <!--返利标签-->
+                        <div class="fanli-tag">
+                            <a href="http://vip.baidu.com/m_112?vip_frm=super_mynav_mall" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="fanli-nav nav-item">
+                        <a class="nav-block" href="#" target="_blank">
+                            <img src="img/95693.png">
+                            <span class="nav-txt">唯品会</span>
+                        </a>
+                        <!--返利-->
+                        <div class="rebate">
+                            <a href="#" target="_blank">最高返利7.00%</a>
+                        </div>
+                        <!--返利标签-->
+                        <div class="fanli-tag">
+                            <a href="http://vip.baidu.com/m_112?vip_frm=super_mynav_mall" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="fanli-nav nav-item">
+                        <a class="nav-block" href="#" target="_blank">
+                            <img src="img/95517.png">
+                            <span class="nav-txt">当当网</span>
+                        </a>
+                        <!--返利-->
+                        <div class="rebate">
+                            <a href="#" target="_blank">最高返利75.00%</a>
+                        </div>
+                        <!--返利标签-->
+                        <div class="fanli-tag">
+                            <a href="http://vip.baidu.com/m_112?vip_frm=super_mynav_mall" target="_blank"></a>
+                        </div>
+                    </div>
+
+                    <div class="nav-item">
+                        <a href="https://wx.qq.com/" title="微信" class="nav-block" target="_blank">
+                            <img src="img/95753.png">
+                            <span class="nav-txt">微信</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="https://wx.qq.com/" title="黄瓜_百度百科" class="nav-block" target="_blank">
+                            <img src="img/7018.png">
+                            <span class="nav-txt">黄瓜_百...</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="https://wx.qq.com/" title="铁路客户服务中心" class="nav-block" target="_blank">
+                            <img src="img/81407.png">
+                            <span class="nav-txt">铁路客户...</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="https://wx.qq.com/" title="支付宝" class="nav-block" target="_blank">
+                            <img src="img/7591.png">
+                            <span class="nav-txt">支付宝</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="https://wx.qq.com/" title="慕课网" class="nav-block" target="_blank">
+                            <img src="img/200066.png">
+                            <span class="nav-txt">慕课网</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="https://wx.qq.com/" title="极客学院" class="nav-block" target="_blank">
+                            <img src="img/200974.png">
+                            <span class="nav-txt">极客学院</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-item">
+                        <a href="https://wx.qq.com/" title="网页QQ" class="nav-block" target="_blank">
+                            <img src="img/7082.png">
+                            <span class="nav-txt">网页QQ</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="https://wx.qq.com/" title="金山快盘" class="nav-block" target="_blank">
+                            <img src="img/95764.png">
+                            <span class="nav-txt">金山快盘</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="https://wx.qq.com/" title="firebug" class="nav-block" target="_blank">
+                            <img src="img/6000.png">
+                            <span class="nav-txt">firebug</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="https://wx.qq.com/" title="淘宝网" class="nav-block" target="_blank">
+                            <img src="img/95487.png">
+                            <span class="nav-txt">淘宝网</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="https://wx.qq.com/" title="腾讯" class="nav-block" target="_blank">
+                            <img src="img/95511.png">
+                            <span class="nav-txt">腾讯</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="https://wx.qq.com/" title="爱奇艺" class="nav-block" target="_blank">
+                            <img src="img/95502.png">
+                            <span class="nav-txt">爱奇艺</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-item">
+                        <a href="https://wx.qq.com/" title="网易" class="nav-block" target="_blank">
+                            <img src="img/95504.png">
+                            <span class="nav-txt">网易</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="https://wx.qq.com/" title="58同城" class="nav-block" target="_blank">
+                            <img src="img/95510.png">
+                            <span class="nav-txt">58同城</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="https://wx.qq.com/" title="新浪微博" class="nav-block" target="_blank">
+                            <img src="img/95488.png">
+                            <span class="nav-txt">新浪微博</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="https://wx.qq.com/" title="汽车之家" class="nav-block" target="_blank">
+                            <img src="img/95512.png">
+                            <span class="nav-txt">汽车之家</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="https://wx.qq.com/" title="百度VIP" class="nav-block" target="_blank">
+                            <img src="img/7656.png">
+                            <span class="nav-txt">百度VIP</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="https://wx.qq.com/" title="微软商店" class="nav-block" target="_blank">
+                            <img src="img/9321.png">
+                            <span class="nav-txt">微软商店</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--视频-->
+            <div id="s_content_15" class="s-content">
+                <div class="s-video-wrapper s-overflow-video clearfix">
+                    <div class="video-col clearfix">
+                        <div class="video-item video-item-1">
+                            <div class="v-pic v-pic-1 pic-hover">
+                                <!--大logo-->
+                                <a class="pic" href="#" target="_blank">
+                                    <img class="img" width="195" src="img/xiong.jpg">
+                                </a>
+                                <a class="bg img-click" href="#" target="_blank" title="熊出没之熊心归来"></a>
+                                <!--时长-->
+                                <a href="#" target="_blank" class="img-click v-tag">99:35</a>
+                                <!--电影字样-->
+                                <a href="http://www.iqiyi.com/" target="_blank" class="img-click tag-sort"></a>
+                                <!--hover显示删除-->
+                                <div class="dustbin" data-click="LOG_BTN_DUSTBIN"></div>
+                                <!--hover显示收藏-->
+                                <div class="subscribe">
+                                    <div class="unsub"></div>
+                                </div>
+                            </div>
+                            <!--底部文字-->
+                            <div class="v-txt s-opacity-background1 s-opacity-blank3">
+                                <div class="text">
+                                    <a class="s-opacity-blank3" href="http://www.hunantv.com/v/1/291976/index.html"
+                                       target="_blank">熊出没之熊心归来</a>
+                                </div>
+                                <div class="score">
+                                        <span class="score-star">
+                                            <span class="star-active" style="width:32.5px"></span>
+                                        </span>
+                                    5.0
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-col clearfix">
+                        <div class="video-item video-item-1">
+                            <div class="v-pic v-pic-1 pic-hover">
+                                <!--大logo-->
+                                <a class="pic" href="#" target="_blank">
+                                    <img class="img" width="195" src="img/bao.jpg">
+                                </a>
+                                <a class="bg img-click" href="#" target="_blank" title="暴走大事件"></a>
+                                <!--时长-->
+                                <a href="#" target="_blank" class="img-click v-tag">5-27期</a>
+                                <!--电影字样-->
+                                <a href="http://www.iqiyi.com/" target="_blank"
+                                   class="img-click tag-sort tag-sort2"></a>
+                                <!--hover显示删除-->
+                                <div class="dustbin" data-click="LOG_BTN_DUSTBIN"></div>
+                                <!--hover显示收藏-->
+                                <div class="subscribe">
+                                    <div class="unsub"></div>
+                                </div>
+                            </div>
+                            <!--底部文字-->
+                            <div class="v-txt s-opacity-background1 s-opacity-blank3">
+                                <div class="text">
+                                    <a class="s-opacity-blank3" href="http://v.qq.com/detail/3/30406.html"
+                                       target="_blank" title="暴走大事件第四季" data-click="LOG_LINK">暴走大事件第四季</a>
+                                </div>
+                                <div class="score">
+                                        <span class="score-star">
+                                            <span class="star-active" style="width:57.85px"></span>
+                                        </span>
+                                    8.9
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-col clearfix">
+                        <div class="video-item video-item-2">
+                            <div class="v-pic v-pic-2 pic-hover">
+                                <a href="#" target="_blank">
+                                    <img src="img/lin.jpg" width="195" class="img">
+                                </a>
+                                <a class="bg img-click" href="#" target="_blank"></a>
+                                <!--时长-->
+                                <a href="#" target="_blank" class="img-click v-tag">00:17</a>
+                            </div>
+                            <div class="v-txt text s-opacity-background1 s-opacity-blank3">
+                                <a class="s-opacity-blank3">《捉迷藏》霍建华避谈女友林心如 自曝有强迫症</a>
+                            </div>
+                        </div>
+                        <div class="video-item video-item-2">
+                            <div class="v-pic v-pic-2 pic-hover">
+                                <a href="#" target="_blank">
+                                    <img src="img/fm.jpg" width="195" class="img">
+                                </a>
+                                <a class="bg img-click" href="#" target="_blank"></a>
+                                <!--时长-->
+                                <a href="#" target="_blank" class="img-click v-tag">01:17</a>
+                            </div>
+                            <div class="v-txt text s-opacity-background1 s-opacity-blank3">
+                                <a class="s-opacity-blank3">广东：女性吸烟率高于全国水平</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-col clearfix">
+                        <div class="video-item video-item-2">
+                            <div class="v-pic v-pic-2 pic-hover">
+                                <a href="#" target="_blank">
+                                    <img src="img/li.jpg" width="195" class="img">
+                                </a>
+                                <a class="bg img-click" href="#" target="_blank"></a>
+                                <!--时长-->
+                                <a href="#" target="_blank" class="img-click v-tag">00:25</a>
+                            </div>
+                            <div class="v-txt text s-opacity-background1 s-opacity-blank3">
+                                <a class="s-opacity-blank3">李易峰车祸后首次正式亮相 帅气现身F1摩纳哥站</a>
+                            </div>
+                        </div>
+                        <div class="video-item video-item-2">
+                            <div class="v-pic v-pic-2 pic-hover">
+                                <a href="#" target="_blank">
+                                    <img src="img/big.jpg" width="195" class="img">
+                                </a>
+                                <a class="bg img-click" href="#" target="_blank"></a>
+                                <!--时长-->
+                                <a href="#" target="_blank" class="img-click v-tag">00:33</a>
+                            </div>
+                            <div class="v-txt text s-opacity-background1 s-opacity-blank3">
+                                <a class="s-opacity-blank3">Bigbang成员胜利加盟中国综艺 担任导师学中文</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--购物-->
+            <div id="s_content_5" class="s-content">
+                <div class="s-shopping-wrapper">
+                    <div class="shopping-card-wrapper">
+                        <div class="shopping-card-item">
+                            <a href="#" class="img">
+                                <img src="img/a.jpg" width="195">
+                                <div class="mask top">
+                                    <span class="bs-title">美标 智能马桶盖</span>
+                                </div>
+                                <div class="cover"></div>
+                                <div class="cover right"></div>
+                                <div class="mask">
+                                    <span class="bsTitle">历史最低</span>
+                                    <span class="percentdesc">直降200元</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="shopping-card-item">
+                            <a href="#" class="img">
+                                <img src="img/9.jpg" width="195">
+                                <div class="mask top">
+                                    <span class="bs-title">优果优品一等新疆灰枣</span>
+                                </div>
+                                <div class="cover"></div>
+                                <div class="cover right"></div>
+                                <div class="mask">
+                                    <span class="bsTitle">百度用户</span>
+                                    <span class="percentdesc">只要9.9</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="shopping-card-item">
+                            <a href="#" class="img">
+                                <img src="img/53.jpg" width="195" height="265">
+                                <div class="mask top">
+                                    <span class="bs-title">西川双人两日游</span>
+                                </div>
+                                <div class="cover"></div>
+                                <div class="cover right"></div>
+                                <div class="mask">
+                                    <span class="bsTitle">立即抢</span>
+                                    <span class="percentdesc">抢</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="shopping-card-item">
+                            <a class="shopping-bsword s-opacity-blank8" href="http://vip.baidu.com/act/yfzy"
+                               target="_blank">
+                                <p>1元得双人两日四川游</p>
+                                <span>四川竹海、乐山大佛</span>
+                                <div class="buttondesc">立即抢</div>
+                            </a>
+                            <div class="shopping-bsmall">
+                                <a class="fanmall" href="#">
+                                    <p>返利商城</p>
+                                </a>
+                                <ul>
+                                    <li><a href="#">京东商城</a></li>
+                                    <li><a href="#">百度糯米</a></li>
+                                    <li><a href="#">1号店</a></li>
+                                    <li><a href="#">当当网</a></li>
+                                    <li><a href="#">蘑菇街</a></li>
+                                    <li><a href="#">唯品会</a></li>
+                                    <li><a href="#">聚美优品</a></li>
+                                    <li><a href="#">国美在线</a></li>
+                                    <li><a href="#">苏宁</a></li>
+                                    <li><a href="#" class="last">更多</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-tab-shopping">
+                    <div class="tab-name-shopping">
+                        <a class="chaoji">超级返</a>
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="tab-name-shopping">
+                        <a class="cheap">9块9</a>
+                    </div>
+                </div>
+            </div>
+            <!--回到顶部-->
+            <div id="s_top_feed" class="top-feed">
+                <div class="to-top">
+                    <div class="icon-mask">
+                        <div class="text"> 回到顶部</div>
+                    </div>
+                    <span class="icon"></span>
+                </div>
+            </div>
+            <!--左边音乐-->
+            <div class="bar-mask">
+                <div class="bar-text">音乐</div>
+                <div class="bar-palying"></div>
+            </div>
+            <!--向下动画-->
+            <div class="s-more-bar s-more-up">
+                <div class="rect">
+                    <div class="animate-arrow"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--换肤-->
+    <div id="skin-layer">
+        <div class="s-skin-border"></div>
+        <div id="s_skin_layer_cell">
+            <div class="skin-header">
+                <ul class="s-skin-nav">
+                    <li class="skin-nav choose-nav" nav-type="1000">热门</li>
+                    <li class="skin-nav" nav-type="1001">游戏</li>
+                    <li class="skin-nav" nav-type="1002">卡通</li>
+                    <li class="skin-nav" nav-type="1003">女神降临</li>
+                    <li class="skin-nav" nav-type="1004">明星</li>
+                    <li class="skin-nav" nav-type="1005">风景</li>
+                    <li class="skin-nav" nav-type="1006">简约</li>
+                    <li class="skin-nav" nav-type="1007">小清新</li>
+                    <li class="nav-vertical">
+                        <div class="nav-vertical-border"></div>
+                    </li>
+                    <li class="skin-nav" nav-type="1008">自定义</li>
+                    <li class="skin-nav" nav-type="1009">最近使用</li>
+                </ul>
+                <div class="s-skin-setting">
+                    <div class="s-skin-opacity-set" id="s_skin_opacity_set">
+                                <span class="bg-hideOrShowAjax">
+                                    <span class="bg-alphaBarTitle">背景透明度</span>
+                                    <span class="bg-alphaBar" id="s_bg_ajust_bar">
+                                        <span class="bg-alphaBarMoveBtn" id="s_bg_ajust_btn" style="left:59.4px">
+                                            <em class="bg-alphaBarOpacity" id="s_bg_ajust_txt">90%</em>
+                                        </span>
+                                    </span>
+                                </span>
+                    </div>
+                    <div class="s-skin-set skin-has-bg">
+                        <span class="skinset-hasBg skin-bg-icon"></span>
+                        <span class="skinset-title">不使用换肤</span>
+                    </div>
+                    <div class="s-skin-up skin-bg-icon">
+                        <span class="bg"></span>
+                        <span class="title">收起</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skin-body">
+                <div class="s-skin-preview">
+                    <div id="s_skin_preview_view" class="preview-view hide-defined-preview preview-whitelogo">
+                        <div class="preview-view-container">
+                            <img id="s_skin_preview_skin" width="262" class="preview-skin-view" src="img/bg.jpg">
+                        </div>
+                        <div class="preview-pageUI"></div>
+                    </div>
+                    <p class="preview-title">背景皮肤效果预览</p>
+                </div>
+                <div id="s_skin_img_content" class="s-skin-border-content">
+                    <ul class="s-skin-content">
+                        <li class="skin-type-content content-1000 on">
+                            <ul class="skin-img-list">
+                                <li class="skin-img-item page0 big-img-li" data-index="761">
+                                    <img class="skin-img-item-img" src="img/761.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="765">
+                                    <img class="skin-img-item-img" src="img/765.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="767">
+                                    <img class="skin-img-item-img" src="img/767.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="764">
+                                    <img class="skin-img-item-img" src="img/764.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="762">
+                                    <img class="skin-img-item-img" src="img/762.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="768">
+                                    <img class="skin-img-item-img" src="img/768.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="763">
+                                    <img class="skin-img-item-img" src="img/763.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="624">
+                                    <img class="skin-img-item-img" src="img/624.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0 big-img-li" data-index="766">
+                                    <img class="skin-img-item-img" src="img/766.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="627">
+                                    <img class="skin-img-item-img" src="img/627.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="625">
+                                    <img class="skin-img-item-img" src="img/625.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="626">
+                                    <img class="skin-img-item-img" src="img/626.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+
+                                <li class="skin-img-item page1 big-img-li" data-index="633">
+                                    <img class="skin-img-item-img" src="img/633.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="748">
+                                    <img class="skin-img-item-img" src="img/748.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="634">
+                                    <img class="skin-img-item-img" src="img/634.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="745">
+                                    <img class="skin-img-item-img" src="img/745.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="635">
+                                    <img class="skin-img-item-img" src="img/635.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="746">
+                                    <img class="skin-img-item-img" src="img/746.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="747">
+                                    <img class="skin-img-item-img" src="img/747.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="632">
+                                    <img class="skin-img-item-img" src="img/632.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1 big-img-li" data-index="611">
+                                    <img class="skin-img-item-img" src="img/611.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="610">
+                                    <img class="skin-img-item-img" src="img/610.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="608">
+                                    <img class="skin-img-item-img" src="img/608.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="720">
+                                    <img class="skin-img-item-img" src="img/720.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="skin-type-content content-1001">
+                            <ul class="skin-img-list">
+                                <li class="skin-img-item page0 big-img-li" data-index="761">
+                                    <img class="skin-img-item-img" src="img/761.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="765">
+                                    <img class="skin-img-item-img" src="img/765.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="767">
+                                    <img class="skin-img-item-img" src="img/767.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="764">
+                                    <img class="skin-img-item-img" src="img/764.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="762">
+                                    <img class="skin-img-item-img" src="img/762.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="626">
+                                    <img class="skin-img-item-img" src="img/626.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="763">
+                                    <img class="skin-img-item-img" src="img/763.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="624">
+                                    <img class="skin-img-item-img" src="img/624.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0 big-img-li" data-index="766">
+                                    <img class="skin-img-item-img" src="img/766.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="627">
+                                    <img class="skin-img-item-img" src="img/627.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="625">
+                                    <img class="skin-img-item-img" src="img/625.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="768">
+                                    <img class="skin-img-item-img" src="img/768.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1 big-img-li" data-index="633">
+                                    <img class="skin-img-item-img" src="img/633.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="748">
+                                    <img class="skin-img-item-img" src="img/748.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="634">
+                                    <img class="skin-img-item-img" src="img/634.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="745">
+                                    <img class="skin-img-item-img" src="img/745.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="635">
+                                    <img class="skin-img-item-img" src="img/635.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="746">
+                                    <img class="skin-img-item-img" src="img/746.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="747">
+                                    <img class="skin-img-item-img" src="img/747.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="632">
+                                    <img class="skin-img-item-img" src="img/632.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1 big-img-li" data-index="611">
+                                    <img class="skin-img-item-img" src="img/611.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="610">
+                                    <img class="skin-img-item-img" src="img/610.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="608">
+                                    <img class="skin-img-item-img" src="img/608.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="720">
+                                    <img class="skin-img-item-img" src="img/720.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="skin-type-content content-1002">
+                            <ul class="skin-img-list">
+                                <li class="skin-img-item page0 big-img-li" data-index="761">
+                                    <img class="skin-img-item-img" src="img/761.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="765">
+                                    <img class="skin-img-item-img" src="img/765.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="767">
+                                    <img class="skin-img-item-img" src="img/767.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="762">
+                                    <img class="skin-img-item-img" src="img/762.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="764">
+                                    <img class="skin-img-item-img" src="img/764.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="626">
+                                    <img class="skin-img-item-img" src="img/626.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="763">
+                                    <img class="skin-img-item-img" src="img/763.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="624">
+                                    <img class="skin-img-item-img" src="img/624.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0 big-img-li" data-index="766">
+                                    <img class="skin-img-item-img" src="img/766.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="627">
+                                    <img class="skin-img-item-img" src="img/627.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="625">
+                                    <img class="skin-img-item-img" src="img/625.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="768">
+                                    <img class="skin-img-item-img" src="img/768.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1 big-img-li" data-index="633">
+                                    <img class="skin-img-item-img" src="img/633.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="748">
+                                    <img class="skin-img-item-img" src="img/748.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="634">
+                                    <img class="skin-img-item-img" src="img/634.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="745">
+                                    <img class="skin-img-item-img" src="img/745.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="635">
+                                    <img class="skin-img-item-img" src="img/635.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="746">
+                                    <img class="skin-img-item-img" src="img/746.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="747">
+                                    <img class="skin-img-item-img" src="img/747.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="632">
+                                    <img class="skin-img-item-img" src="img/632.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1 big-img-li" data-index="611">
+                                    <img class="skin-img-item-img" src="img/611.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="610">
+                                    <img class="skin-img-item-img" src="img/610.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="608">
+                                    <img class="skin-img-item-img" src="img/608.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="720">
+                                    <img class="skin-img-item-img" src="img/720.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="skin-type-content content-1003">
+                            <ul class="skin-img-list">
+                                <li class="skin-img-item page0 big-img-li" data-index="761">
+                                    <img class="skin-img-item-img" src="img/761.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="765">
+                                    <img class="skin-img-item-img" src="img/765.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="767">
+                                    <img class="skin-img-item-img" src="img/767.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="762">
+                                    <img class="skin-img-item-img" src="img/762.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="764">
+                                    <img class="skin-img-item-img" src="img/764.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="626">
+                                    <img class="skin-img-item-img" src="img/626.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="763">
+                                    <img class="skin-img-item-img" src="img/763.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="624">
+                                    <img class="skin-img-item-img" src="img/624.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0 big-img-li" data-index="766">
+                                    <img class="skin-img-item-img" src="img/766.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="625">
+                                    <img class="skin-img-item-img" src="img/625.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="627">
+                                    <img class="skin-img-item-img" src="img/627.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="768">
+                                    <img class="skin-img-item-img" src="img/768.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1 big-img-li" data-index="633">
+                                    <img class="skin-img-item-img" src="img/633.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="748">
+                                    <img class="skin-img-item-img" src="img/748.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="634">
+                                    <img class="skin-img-item-img" src="img/634.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="745">
+                                    <img class="skin-img-item-img" src="img/745.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="635">
+                                    <img class="skin-img-item-img" src="img/635.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="746">
+                                    <img class="skin-img-item-img" src="img/746.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="747">
+                                    <img class="skin-img-item-img" src="img/747.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="632">
+                                    <img class="skin-img-item-img" src="img/632.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1 big-img-li" data-index="611">
+                                    <img class="skin-img-item-img" src="img/611.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="610">
+                                    <img class="skin-img-item-img" src="img/610.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="608">
+                                    <img class="skin-img-item-img" src="img/608.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="720">
+                                    <img class="skin-img-item-img" src="img/720.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="skin-type-content content-1004">
+                            <ul class="skin-img-list">
+                                <li class="skin-img-item page0 big-img-li" data-index="761">
+                                    <img class="skin-img-item-img" src="img/761.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="765">
+                                    <img class="skin-img-item-img" src="img/765.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="767">
+                                    <img class="skin-img-item-img" src="img/767.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="762">
+                                    <img class="skin-img-item-img" src="img/762.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="626">
+                                    <img class="skin-img-item-img" src="img/626.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="763">
+                                    <img class="skin-img-item-img" src="img/763.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="624">
+                                    <img class="skin-img-item-img" src="img/624.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="764">
+                                    <img class="skin-img-item-img" src="img/764.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0 big-img-li" data-index="766">
+                                    <img class="skin-img-item-img" src="img/766.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="625">
+                                    <img class="skin-img-item-img" src="img/625.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="627">
+                                    <img class="skin-img-item-img" src="img/627.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="768">
+                                    <img class="skin-img-item-img" src="img/768.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1 big-img-li" data-index="633">
+                                    <img class="skin-img-item-img" src="img/633.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="748">
+                                    <img class="skin-img-item-img" src="img/748.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="634">
+                                    <img class="skin-img-item-img" src="img/634.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="745">
+                                    <img class="skin-img-item-img" src="img/745.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="635">
+                                    <img class="skin-img-item-img" src="img/635.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="746">
+                                    <img class="skin-img-item-img" src="img/746.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="747">
+                                    <img class="skin-img-item-img" src="img/747.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="632">
+                                    <img class="skin-img-item-img" src="img/632.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1 big-img-li" data-index="611">
+                                    <img class="skin-img-item-img" src="img/611.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="610">
+                                    <img class="skin-img-item-img" src="img/610.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="608">
+                                    <img class="skin-img-item-img" src="img/608.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="720">
+                                    <img class="skin-img-item-img" src="img/720.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="skin-type-content content-1005">
+                            <ul class="skin-img-list">
+                                <li class="skin-img-item page0 big-img-li" data-index="761">
+                                    <img class="skin-img-item-img" src="img/761.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="765">
+                                    <img class="skin-img-item-img" src="img/765.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="767">
+                                    <img class="skin-img-item-img" src="img/767.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="762">
+                                    <img class="skin-img-item-img" src="img/762.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="626">
+                                    <img class="skin-img-item-img" src="img/626.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="763">
+                                    <img class="skin-img-item-img" src="img/763.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="624">
+                                    <img class="skin-img-item-img" src="img/624.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="625">
+                                    <img class="skin-img-item-img" src="img/625.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0 big-img-li" data-index="766">
+                                    <img class="skin-img-item-img" src="img/766.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="764">
+                                    <img class="skin-img-item-img" src="img/764.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="627">
+                                    <img class="skin-img-item-img" src="img/627.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="768">
+                                    <img class="skin-img-item-img" src="img/768.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1 big-img-li" data-index="633">
+                                    <img class="skin-img-item-img" src="img/633.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="748">
+                                    <img class="skin-img-item-img" src="img/748.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="634">
+                                    <img class="skin-img-item-img" src="img/634.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="745">
+                                    <img class="skin-img-item-img" src="img/745.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="635">
+                                    <img class="skin-img-item-img" src="img/635.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="746">
+                                    <img class="skin-img-item-img" src="img/746.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="747">
+                                    <img class="skin-img-item-img" src="img/747.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="632">
+                                    <img class="skin-img-item-img" src="img/632.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1 big-img-li" data-index="611">
+                                    <img class="skin-img-item-img" src="img/611.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="610">
+                                    <img class="skin-img-item-img" src="img/610.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="608">
+                                    <img class="skin-img-item-img" src="img/608.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="720">
+                                    <img class="skin-img-item-img" src="img/720.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="skin-type-content content-1006">
+                            <ul class="skin-img-list">
+                                <li class="skin-img-item page0 big-img-li" data-index="761">
+                                    <img class="skin-img-item-img" src="img/761.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="765">
+                                    <img class="skin-img-item-img" src="img/765.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="762">
+                                    <img class="skin-img-item-img" src="img/762.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="626">
+                                    <img class="skin-img-item-img" src="img/626.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="763">
+                                    <img class="skin-img-item-img" src="img/763.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="624">
+                                    <img class="skin-img-item-img" src="img/624.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="625">
+                                    <img class="skin-img-item-img" src="img/625.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="767">
+                                    <img class="skin-img-item-img" src="img/767.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0 big-img-li" data-index="766">
+                                    <img class="skin-img-item-img" src="img/766.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="764">
+                                    <img class="skin-img-item-img" src="img/764.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="627">
+                                    <img class="skin-img-item-img" src="img/627.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="768">
+                                    <img class="skin-img-item-img" src="img/768.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1 big-img-li" data-index="633">
+                                    <img class="skin-img-item-img" src="img/633.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="748">
+                                    <img class="skin-img-item-img" src="img/748.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="634">
+                                    <img class="skin-img-item-img" src="img/634.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="745">
+                                    <img class="skin-img-item-img" src="img/745.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="635">
+                                    <img class="skin-img-item-img" src="img/635.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="746">
+                                    <img class="skin-img-item-img" src="img/746.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="747">
+                                    <img class="skin-img-item-img" src="img/747.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="632">
+                                    <img class="skin-img-item-img" src="img/632.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1 big-img-li" data-index="611">
+                                    <img class="skin-img-item-img" src="img/611.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="610">
+                                    <img class="skin-img-item-img" src="img/610.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="608">
+                                    <img class="skin-img-item-img" src="img/608.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="720">
+                                    <img class="skin-img-item-img" src="img/720.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="skin-type-content content-1007">
+                            <ul class="skin-img-list">
+                                <li class="skin-img-item page0 big-img-li" data-index="761">
+                                    <img class="skin-img-item-img" src="img/761.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="624">
+                                    <img class="skin-img-item-img" src="img/624.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="765">
+                                    <img class="skin-img-item-img" src="img/765.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="762">
+                                    <img class="skin-img-item-img" src="img/762.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="626">
+                                    <img class="skin-img-item-img" src="img/626.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="763">
+                                    <img class="skin-img-item-img" src="img/763.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="625">
+                                    <img class="skin-img-item-img" src="img/625.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="767">
+                                    <img class="skin-img-item-img" src="img/767.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0 big-img-li" data-index="766">
+                                    <img class="skin-img-item-img" src="img/766.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="764">
+                                    <img class="skin-img-item-img" src="img/764.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="627">
+                                    <img class="skin-img-item-img" src="img/627.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="768">
+                                    <img class="skin-img-item-img" src="img/768.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1 big-img-li" data-index="633">
+                                    <img class="skin-img-item-img" src="img/633.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="748">
+                                    <img class="skin-img-item-img" src="img/748.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="634">
+                                    <img class="skin-img-item-img" src="img/634.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="745">
+                                    <img class="skin-img-item-img" src="img/745.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="635">
+                                    <img class="skin-img-item-img" src="img/635.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="746">
+                                    <img class="skin-img-item-img" src="img/746.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="747">
+                                    <img class="skin-img-item-img" src="img/747.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="632">
+                                    <img class="skin-img-item-img" src="img/632.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1 big-img-li" data-index="611">
+                                    <img class="skin-img-item-img" src="img/611.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="610">
+                                    <img class="skin-img-item-img" src="img/610.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="608">
+                                    <img class="skin-img-item-img" src="img/608.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="720">
+                                    <img class="skin-img-item-img" src="img/720.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="skin-type-content content-1008">
+                            <ul class="skin-img-list">
+                                <li class="skin-img-item page0 big-img-li" data-index="766">
+                                    <img class="skin-img-item-img" src="img/766.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="765">
+                                    <img class="skin-img-item-img" src="img/765.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="762">
+                                    <img class="skin-img-item-img" src="img/762.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="626">
+                                    <img class="skin-img-item-img" src="img/626.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="763">
+                                    <img class="skin-img-item-img" src="img/763.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="624">
+                                    <img class="skin-img-item-img" src="img/624.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="625">
+                                    <img class="skin-img-item-img" src="img/625.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="767">
+                                    <img class="skin-img-item-img" src="img/767.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0 big-img-li" data-index="761">
+                                    <img class="skin-img-item-img" src="img/761.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="764">
+                                    <img class="skin-img-item-img" src="img/764.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="627">
+                                    <img class="skin-img-item-img" src="img/627.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="768">
+                                    <img class="skin-img-item-img" src="img/768.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1 big-img-li" data-index="633">
+                                    <img class="skin-img-item-img" src="img/633.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="748">
+                                    <img class="skin-img-item-img" src="img/748.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="634">
+                                    <img class="skin-img-item-img" src="img/634.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="745">
+                                    <img class="skin-img-item-img" src="img/745.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="635">
+                                    <img class="skin-img-item-img" src="img/635.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="746">
+                                    <img class="skin-img-item-img" src="img/746.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="747">
+                                    <img class="skin-img-item-img" src="img/747.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="632">
+                                    <img class="skin-img-item-img" src="img/632.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1 big-img-li" data-index="611">
+                                    <img class="skin-img-item-img" src="img/611.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="610">
+                                    <img class="skin-img-item-img" src="img/610.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="608">
+                                    <img class="skin-img-item-img" src="img/608.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="720">
+                                    <img class="skin-img-item-img" src="img/720.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="skin-type-content content-1009">
+                            <ul class="skin-img-list">
+                                <li class="skin-img-item page0 big-img-li" data-index="761">
+                                    <img class="skin-img-item-img" src="img/761.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="765">
+                                    <img class="skin-img-item-img" src="img/765.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="762">
+                                    <img class="skin-img-item-img" src="img/762.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="626">
+                                    <img class="skin-img-item-img" src="img/626.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="624">
+                                    <img class="skin-img-item-img" src="img/624.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="763">
+                                    <img class="skin-img-item-img" src="img/763.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="625">
+                                    <img class="skin-img-item-img" src="img/625.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="767">
+                                    <img class="skin-img-item-img" src="img/767.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0 big-img-li" data-index="766">
+                                    <img class="skin-img-item-img" src="img/766.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="764">
+                                    <img class="skin-img-item-img" src="img/764.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="627">
+                                    <img class="skin-img-item-img" src="img/627.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page0" data-index="768">
+                                    <img class="skin-img-item-img" src="img/768.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1 big-img-li" data-index="633">
+                                    <img class="skin-img-item-img" src="img/633.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="748">
+                                    <img class="skin-img-item-img" src="img/748.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="634">
+                                    <img class="skin-img-item-img" src="img/634.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="745">
+                                    <img class="skin-img-item-img" src="img/745.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="635">
+                                    <img class="skin-img-item-img" src="img/635.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="746">
+                                    <img class="skin-img-item-img" src="img/746.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="747">
+                                    <img class="skin-img-item-img" src="img/747.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="632">
+                                    <img class="skin-img-item-img" src="img/632.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1 big-img-li" data-index="611">
+                                    <img class="skin-img-item-img" src="img/611.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="610">
+                                    <img class="skin-img-item-img" src="img/610.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="608">
+                                    <img class="skin-img-item-img" src="img/608.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                                <li class="skin-img-item page1" data-index="720">
+                                    <img class="skin-img-item-img" src="img/720.jpg">
+                                    <div class="skin-img-item-choose"></div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="s-skin-page">
+                    <ul class="s-skin-page-cell">
+                        <li class="skin-page-dire page-pre hide-page" n="0">
+                            <div class="skin-bg-icon"></div>
+                        </li>
+                        <li class="skin-page-number skin-bg-icon choose-page-btn" n="0"></li>
+                        <li class="skin-page-number skin-bg-icon" n="1"></li>
+                        <li class="skin-page-dire page-next" n="0">
+                            <div class="skin-bg-icon"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部-->
+    <div id="bottom_container">
+        <div class="no-qrcode-layer">
+            <div>
+                <p class="lh">
+                    <a class="sethome" href="//www.baidu.com/cache/sethelp/index.html" target="_blank"> 设为首页 </a>
+                </p>
+                        <span class="copyright-text">
+                            <span>©2016&nbsp;Baidu&nbsp;</span>
+                            <a href="//www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;
+                            <a href="http://jianyi.baidu.com" target="_blank">意见反馈</a>&nbsp;
+                            <span>京ICP证030173号&nbsp;</span>
+                            <img width="13" height="16" src="img/copy_rignt_24.png">
+                        </span>
+            </div>
+            <div class="recordcode">
+                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001" target="_blank">
+                    <i></i>
+                    京公网安备11000002000001号
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

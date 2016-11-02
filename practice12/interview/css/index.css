@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*设置整个页面的背景色*/
+body{
+    position: relative;
+    background-color: #e6e6e6;
+}
+/*内容区域样式设置*/
+.content{
+    width: 80%;
+    padding-left: 0;
+}
+/*导航栏样式设置*/
+.content nav{
+    margin: 20px 0;
+}
+/*导航栏样式设置*/
+.content nav ul{
+    list-style-type: none;
+    overflow-y: scroll;
+    height: 100%;
+    position: fixed;
+    top: 18px;
+    width: 15%;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background-color: #FFFFEE;
+}
+/*导航栏链接样式设置*/
+.content nav ul li a{
+    text-decoration: none;
+    color: #767676;
+}
+/*导航栏文字设置*/
+.content nav ul li a h4{
+    padding-top: 5px;
+}
+/*文字特殊颜色设置*/
+.content nav ul li a .html, .content nav ul li a .css,
+#head-css, #head-html, #head-js{
+    color: #99ccff;
+}
+/*整个文字区域样式设置*/
+article{
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    box-shadow: 1px 1px 1px #ccc;
+}
+/*右边文字区域样式设置*/
+.main-content{
+    width: 72%;
+    float: right;
+    padding: 0 19px 38px 0;
+}
+/*分割线设置*/
+hr{
+    border-top: 1px solid #e6e6e6;
+    box-shadow: 1px 1px 0 #ccc;
+}
+/*html css样式设置*/
+#head-html, #head-css, #head-js{
+    margin-top: 24px;
+}
+/*每个问题区域样式设置*/
+.main-content div{
+    padding: 3px 3px 3px 0;
+}
+/*列表样式设置*/
+.main-content div ul li{
+    line-height: 30px;
+    margin-left: 20px;
+    font-size: 16px;
+    font-family: verdana, geneva, serif;
+}
+/*底部设置*/
+footer{
+    margin: 40px 0;
+}
