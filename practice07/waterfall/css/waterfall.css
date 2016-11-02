@@ -1,0 +1,80 @@
+body, div, ul, li, a, img{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #f3f2f3;
+}
+
+ul, li{
+    list-style: none;
+}
+
+.img-item {
+     float: left;
+     position: relative;
+     box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+     border-radius: 6px;
+     margin: 4px 3px;
+     padding-bottom: 2px;
+ }
+/*图片*/
+.img-box img {
+    width: 363px;
+    height: auto;
+    cursor: zoom-in;
+    border-radius: 6px 6px 0 0;
+}
+
+.bottom-title {
+    height: 36px;
+    background: #907E7E;
+    border-radius: 0 0 6px 6px;
+    line-height: 36px;
+    position: relative;
+
+}
+
+/*图片标题*/
+.bottom-title .title {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 1px 1px rgba(0,0,0,1);
+    font-size: 14px;
+    bottom: 0;
+    margin-left: 5px;
+}
+.bottom-title .title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+/*下载图标*/
+.bottom-title .download {
+    position: absolute;
+    right: 38px;
+    bottom: 7px;
+    display: block;
+    width: 15px;
+    height: 17px;
+    background: url("../img/result-huge-bg.png") no-repeat -61px -108px;
+    cursor: pointer;
+}
+.bottom-title .download:hover{
+    background-position: -61px -129px;
+}
+
+/*搜索图标*/
+.bottom-title .search {
+    position: absolute;
+    right: 10px;
+    bottom: 7px;
+    display: block;
+    width: 18px;
+    height: 17px;
+    background: url("../img/result-huge-bg.png") no-repeat -58px -84px;
+    cursor: pointer;
+}
+.bottom-title .search:hover {
+    opacity: 0.7;
+}
