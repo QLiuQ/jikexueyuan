@@ -1,0 +1,10 @@
+/*form间距设置*/
+form{
+    margin: 20px 0;
+
+}
+/*显示结果样式设置*/
+#result-list span{
+    margin-right: 20px;
+    color: #1a0eff;;
+}

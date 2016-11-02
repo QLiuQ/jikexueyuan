@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link href="/static/css/index.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="/static/js/lib/jquery-1.12.4.js"></script>
+    <title>百度新闻</title>
+</head>
+<body>
+<div class="news" id="wrapper">
+    <div id="index-view">
+        <!--头部-->
+        <header>
+            <div class="ui-new-toolbar">
+                <div class="ui-new-toolbar-l">
+                    <a class="ui-new-toolbar-btn btn-baidu" href="https://m.baidu.com/"></a>
+                    <div class="ui-new-toolbar-btn btn-userhome"></div>
+                </div>
+                <div class="ui-new-toolbar-r">
+                    <div class="ui-new-toolbar-btn btn-search"></div>
+                    <div class="ui-new-toolbar-btn btn-subscribe"></div>
+                </div>
+            </div>
+        </header>
+        <!--内容-->
+        <div id="index-view-content">
+            <!--内容导航-->
+            <div id="index-view-navigator">
+                <div class="divider"></div>
+                <div class="content">
+                    {% block nav %}
+                        <ul class="main-menu">
+                            {% for nav_item in navs %}
+                                <li class="nav">
+                                    <a href="{{ nav_item.get_absolute_url }}" class="nav-menu"
+                                       data-id="{{ nav_item.id }}">{{ nav_item.name }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                        <script>
+                            nav_count = {{ navs_count }};
+                            if (nav_count <= 6) {
+                                $(".nav").css("width", 100.0 / nav_count + "%");
+                            } else {
+                                $(".nav").css("width", 100.0 / 6 + "%");
+                            }
+
+                            current_url = "{{ request.path }}";
+                            nav_menu = $(".nav-menu");
+
+                            nav_menu.each(function () {
+                                if (current_url.includes($(this).attr("href"))) {
+                                    $(this).find(".current").removeClass("current");
+                                    $(this).addClass("current");
+
+                                }
+                            });
+
+                        </script>
+                    {% endblock %}
+                </div>
+            </div>
+
+            <!--内容正文-->
+            <div class="newslist-container">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a {
+    word-wrap: break-word;
+    word-break: break-all;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+/*header*/
+header {
+    min-width: 320px;
+    height: 48px;
+    background-color: #3e98f0;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+    overflow: hidden;
+}
+
+.toolbar {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    width: 34px;
+    font-size: 15px;
+    line-height: 48px;
+    height: 48px;
+}
+
+/*返回按钮*/
+.btn-back {
+    background: url("../img/icon-bg.png") center -213px/40px 500px no-repeat;
+    left: 8px;
+    float: left;
+}
+
+.title {
+    font-size: 16px;
+    display: inline-block;
+    line-height: 48px;
+    width: 75%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    vertical-align: top;
+}
+.btn-baidu {
+    display: inline-block;
+    width: 34px;
+    background: url("../img/bg-new-toolbar.png") center 6px/40px 500px ;
+    right: 16px;
+    float: right;
+}
+
+#page-wrapper {
+    margin-top: 16px;
+}
+
+/*文章信息*/
+.header-info {
+    position: relative;
+    padding: 2px 0 0 7px;
+    text-align: left;
+    color: #8b8b8b;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+/*文章头*/
+.mth-header {
+    font-size: 22px;
+    line-height: 27px;
+    text-align: left;
+    font-weight: 700;
+    color: #000;
+    padding: 0 0 5px 7px;
+    position: relative;
+    top: -2px;
+    margin-right: 11px;
+}
+
+/*文章正文*/
+.mth-editor-content {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/*段落*/
+.mth-editor-content p {
+    position: relative;
+    color: #202020;
+    margin: 8px 0;
+    padding: 0 11px !important;
+    /*text-indent: 32px;*/
+}
+
+.mth-editor-content h2 {
+    font-size: 22px;
+    line-height: 27px;
+    text-align: left;
+    font-weight: 700;
+    color: #000;
+    padding: 0 0 5px 7px;
+    position: relative;
+    top: -2px;
+    margin-right: 11px;
+}

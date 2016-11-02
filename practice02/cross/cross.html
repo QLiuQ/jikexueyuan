@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>十字架模型三</title>
+    <link href="cross.css" type="text/css" rel="stylesheet">
+</head>
+<!--思路：以中间DIV为中心，利用border-left和border-right生成左右两个DIV。-->
+<!--然后上和下分别是一个DIV，这样就构成了十字架基本框架。图片居中利用弹性盒子思路-->
+<body>
+    <div class="cross">
+        <!--顶部DIV-->
+        <div class="cross-top"></div>
+        <!--中间DIV-->
+        <div class="cross-center">
+            <!--图片-->
+            <div class="penguin-container">
+                <img src="Penguin_Logo.png" width="24px">
+            </div>
+        </div>
+        <!--底部DIV-->
+        <div class="cross-bottom"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+.container{
+    width: 50%;
+    margin-top: 50px;
+}
+/*简易计算器样式设置*/
+h1{
+    padding-bottom: 10px;
+    color: #6495ED;
+}
+/*每个输入框间距设置*/
+.form-group{
+    padding: 10px 15px;
+}
+/*结果样式设置*/
+span{
+    color: #6495ED;
+    font-size: 16px;
+}
+/*下拉框边距*/
+select{
+    margin-right: 16px;
+}

@@ -1,0 +1,274 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*font-size: 100%;*/
+    font: inherit;
+    /*font-family: arial;*/
+    vertical-align: baseline;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    text-underline: none;
+    color: #333;
+}
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+#index-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+}
+
+.ui-new-toolbar {
+    position: relative;
+    min-width: 320px;
+    height: 44px;
+    z-index: 2;
+    background-color: #3e98f0;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+}
+
+#index-view .ui-new-toolbar {
+    background: url("../images/bg-news-logo.png") center 6px no-repeat #3e98f0;
+    background-size: 77px auto;
+    -webkit-background-size: 77px auto;
+}
+
+.btn-search, .btn-product, .btn-modelopen, .btn-subscribe, .btn-baidu, .btn-back, .btn-home, .btn-dld, .btn-config, .btn-bigger, .btn-smaller, .btn-userhome, .ui-toolbar-func .btn-slide, .ui-footer-app-download span, .page-view-list-item-inner div:nth-child(2) span:nth-child(3), .page-view-share span, .ui-gotop span {
+    border: 0;
+    background: url("../images/bg-new-toolbar.png") no-repeat;
+    background-size: 40px 500px;
+    -webkit-background-size: 40px 500px;
+}
+
+.ui-new-toolbar-l, .ui-new-toolbar-r {
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*导航按钮*/
+.ui-new-toolbar-btn {
+    width: 34px;
+    height: 100%;
+    font-size: 15px;
+    line-height: 44px;
+}
+
+/*导航栏左边、右边按钮*/
+.ui-new-toolbar .ui-new-toolbar-btn {
+    float: left;
+}
+
+/*导航百度图片*/
+.btn-baidu {
+    background-position: center 4px;
+}
+
+/*导航百度主页*/
+.btn-userhome {
+    background-position: center -463px;
+    margin-left: 10px;
+}
+
+/*导航右边按钮*/
+.ui-new-toolbar-r {
+    top: 0;
+    right: 0;
+}
+
+/*导航搜索按钮*/
+.btn-search {
+    background-position: center -162px;
+    margin-right: 10px;
+}
+
+/*导航订阅*/
+.btn-subscribe {
+    background-position: center -107px;
+}
+
+/*内容导航*/
+#index-view-navigator {
+    position: relative;
+    background-color: #3e98f0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    z-index: 2;
+    color: #fff;
+}
+
+.divider {
+    height: 1px;
+    margin: 0 10px;
+    background-color: #5dabf0;
+}
+
+.content {
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
+.content ul {
+    display: block;
+    list-style-type: none;
+}
+
+.content li {
+    position: relative;
+    text-align: center;
+    float: left;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.content li div {
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    padding: 12px 0;
+}
+
+.content li div.current {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+.content li b {
+    position: absolute;
+    top: 13px;
+    left: 0;
+    height: 12px;
+    width: 1px;
+    display: block;
+    overflow-y: hidden;
+    background-color: #5dabf0;
+
+}
+
+.newslist-container {
+    font-size: 16px;
+}
+
+.index-list-item {
+    position: relative;
+    border-bottom: 1px solid #f6f6f6;
+    overflow: hidden;
+    padding: 8.5px 0 10px;
+    margin: 0 17px;
+}
+
+.index-list-main.showleft {
+    display: -webkit-box;
+    -webkit-box-align: center;
+    padding: 5.5px 0 3px 0;
+
+}
+
+.index-list-item .index-list-image {
+    font-size: 0;
+    vertical-align: middle;
+    width: 33.33%;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+    margin-left: 0;
+    background-color: #F4F7F9;
+    position: relative;
+}
+
+/*图片*/
+.index-list-item .index-list-image img {
+    height: auto;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.index-list-main.showleft .index-list-main-text {
+    width: 66.66%;
+    padding-left: 14px;
+    flex: 2;
+    box-sizing: border-box;
+}
+
+.index-list-item .index-list-main-text {
+    overflow: hidden;
+    -webkit-text-size-adjust: none;
+}
+
+/*标题*/
+.index-list-item .index-list-main-title {
+    font-size: 18px;
+    line-height: 26px;
+    color: #333;
+    max-height: 56px;
+    overflow: hidden;
+}
+
+.index-list-bottom {
+    margin: 4px 0 1px 0;
+}
+
+/*时间*/
+.index-list-main-time {
+    line-height: 17px;
+    height: 17px;
+    text-align: left;
+    font-size: 12px;
+    color: #b8bac0;
+    font-weight: 400;
+}
+
+.index-list-main-time .tip-time {
+    display: inline-block;
+    color: #999;
+    font-size: 13px;
+    margin-right: 5px;
+    font-weight: 400;
+}
+
+.index-list-main-time .tip-fillred {
+    border: 1px solid #efb9b9;
+    color: #ef3f41;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 0 1px;
+    border-radius: 2px;
+    display: inline;
+    max-width: 100px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.index-list-main-time .tip-hot {
+    display: inline;
+}
+
+ /*没有数据样式*/
+.no-data {
+    display: block;
+    margin-top: 100px;
+    text-align: center;
+    text-decoration: underline;
+    color: green;
+}

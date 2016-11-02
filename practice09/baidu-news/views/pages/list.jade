@@ -1,0 +1,34 @@
+extends ../layout
+block content
+    .container
+        a.btn.btn-link(href="/admin/category/list") 分类管理页
+        a.btn.btn-success.navbar-right(href="/admin/news/new") 新增
+        .row
+            table.table.table-hover.table-bordered.text-center
+                thead
+                    tr
+                        th 类别
+                        th 标题
+                        th 作者
+                        th 来源
+                        th 录入时间
+                        th pv
+                        th 查看
+                        th 更新
+                        th 删除
+                tbody
+                    each item in news
+                        if item.category
+                            tr(class="item-id-#{item._id}")
+                                td #{item.category.name}
+                                td #{item.title}
+                                td #{item.author}
+                                td #{item.source}
+                                td #{moment(item.meta.createTime).format('MM/DD/YYYY')}
+                                td #{item.pv}
+                                td: a(target="_blank", href="/news/#{item._id}") 查看
+                                td: a(target="_blank", href="/admin/news/update/#{item._id}") 修改
+                                td
+                                    button.btn.btn-danger.del-news(type="button", data-id="#{item._id}") 删除
+
+    script(src="/javascripts/admin.js")

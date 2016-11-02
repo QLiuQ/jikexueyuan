@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>找数组</title>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/find.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h3>找到数组中出现次数最多的字母，并给出个数和每一个所在的顺序。</h3>
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="arr">数组:</label>
+                <input type="text" class="form-control" id="arr" size="40" maxlength="30" placeholder="输入数组，以空格分开，如a b c d a">
+            </div>
+            <input type="button" class="btn btn-success" onclick="find()" value="计&nbsp;&nbsp;算">
+        </form>
+        <!--结果显示-->
+        <div class="form-group" id="result-list"></div>
+    </div>
+    <!--引入js-->
+    <script src="js/find.js" type="text/javascript" rel="stylesheet"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+/*设置公共属性*/
+*{
+    font-size: 12px;
+    line-height: 150%;
+}
+body{
+    margin-top: 10px;
+    background-image: url("background.gif");
+}
+/*设置顶部图片区域和底部copyright*/
+.wrapper{
+    width: 710px;
+    margin: 0 auto;
+    border-radius: 28px;
+    background-color: #fff;
+}
+
+/*表格设置--start*/
+.wrapper table{
+    margin: auto;
+    background-color: #808080;
+
+}
+.wrapper table td{
+    background-color: #FFF;
+}
+/*表格设置--end*/
+
+/*家教网logo设置*/
+img{
+    position: relative;
+    left: 30px;
+}
+/*登陆注册位置设置*/
+#nav{
+    position: relative;
+    height: 90px;
+}
+#nav .float-right{
+    position: absolute;
+    right: 5%;
+    bottom: 5px;
+}
+/*设置登陆注册链接无下划线*/
+.link{
+    text-decoration: none;
+    color: #FF0000;
+}
+/*表格标题样式设置*/
+.caption{
+    font-size: 18px;
+    font-weight: bold;
+    height: 40px;
+}
+/*蓝色字体*/
+.blue_font{
+    color: #0000FF;
+}
+/*红色字体*/
+.red_font{
+    color: #FF0000;
+}
+/*合并栏基本资料、联系方式等样式设置*/
+.basic{
+    color: #003399;
+    background-color: #EEEEEE;
+    font-size: 14px;
+    font-weight: bold;
+}
+/*设置表格头居中*/
+.head{
+    text-align: center;
+}
+/*设置返回按钮样式*/
+.back:link{
+    color: #0000CC;
+}
+.back:hover{
+    color: #FF0000;
+}
+.back:visited{
+    color: #609;
+}
+/*设置第一列表格居右*/
+.right{
+    text-align: right;
+}
+/*foot设置*/
+.foot{
+    text-align: center;
+}
+/*提交按钮设置*/
+#submit{
+    width: 80px;
+    height: 20px;
+}
+/*copyright设置*/
+#copyright{
+    text-align: center;
+    padding: 4px;
+}
+/*设置bold字体属性*/
+.bold{
+    font-weight: bold;
+}
+/*设置下拉框*/
+select{
+    height: 24px;
+}
+/*文本yu宽度设置*/
+textarea{
+    width: 496px;
+}
+/*输入框宽度设置*/
+input[type=text]{
+    width: 200px;
+}

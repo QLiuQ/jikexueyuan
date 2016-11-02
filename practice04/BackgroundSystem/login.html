@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆界面</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link type="text/css" href="css/login.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div id="login-area" class="row login-area">
+            <form role="form"  class="form-horizontal col-lg-6 col-lg-push-3 well well-lg" action="index.html">
+                <!--邮箱及输入框-->
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-3 control-label">邮箱/用户名</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="inputEmail3" placeholder="邮箱/用户名" required="required">
+                    </div>
+                </div>
+                <!--密码及输入框-->
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-3 control-label">密码</label>
+                    <div class="col-sm-8">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="密码" required="required">
+                    </div>
+                </div>
+                <!--记住我-->
+                <div class="form-group row">
+                    <div class="col-sm-push-3 col-sm-4">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> 记住我
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!--登录、取消按钮-->
+                <div class="form-group row">
+                    <div class="col-sm-push-3 col-sm-4">
+                        <button class="btn btn-primary">登录</button>
+                        <!--<a class="btn btn-primary" href="index.html" role="button">登录</a>-->
+                        <a class="btn" href="login.html" role="button">取消</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

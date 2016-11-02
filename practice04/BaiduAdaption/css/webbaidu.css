@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font: 12px arial;
+}
+/*整个样式设置*/
+.web-index{
+    position: relative;
+    min-width: 810px;
+    height: 100%;
+    min-height: 755px;
+}
+/*隐藏移动端页面*/
+.app-index{
+    display: none;
+}
+/*头部设置*/
+.header{
+    overflow: hidden;
+}
+/*头部导航栏设置*/
+.header .nav{
+    float: right;
+    width: 443px;
+    *width: 462px;
+    _width: 518px;
+    margin: 19px 0 5px 0;
+    padding: 0 63px 0 0;
+}
+/*头部导航栏a标签设置*/
+.header .nav a{
+    display: inline-block;
+    line-height: 24px;
+    margin-left: 20px;
+    font-size: 13px;
+    text-align: center;
+    color: #333;
+    *color: #333;
+}
+/*导航栏加黑字体样式设置*/
+.header .nav a.mnav{
+    font-weight: bold;
+}
+.header .nav a:hover{
+    color: #0000cc;
+}
+/*下拉菜单栏的icon设置*/
+.setting-icon{
+    top: -11px;
+    left: 29px;
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    border: 5px solid transparent;
+    border-bottom-color: #d8d8d8;
+}
+.setting-icon:after{
+    content: '.';
+    top: -4px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    border: 5px solid transparent;
+    border-bottom-color: #ffffff;
+}
+/*设置下拉菜单*/
+.setting-menu{
+    display: inline-block;
+    position: absolute;
+    width: 46px;
+    height: 24px;
+    right: 95px;
+    font-size: 13px;
+}
+.setting-menu:hover .baidu-setting{
+    display: block;
+}
+.baidu-setting{
+    width: 67px;
+    text-align: center;
+    position: absolute;
+    top: 25px;
+    border: 1px solid #ddd;
+    left: -2px;
+    line-height: 24px;
+    display: none;
+    z-index: 99;
+}
+/*下拉菜单栏链接设置*/
+#baidu-setting a{
+    width: 100%;
+    text-decoration: none;
+    margin-left: 0;
+}
+
+#baidu-setting a:hover{
+    color: #fff;
+    background-color: #3385ff;
+}
+/*下拉菜单栏更多产品设置*/
+.baidu-setting:first-child{
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    float: left;
+    color: white;
+    background: #38f;
+    overflow: hidden;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 2px;
+}
+/*更多产品*/
+.header .nav .bri{
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    float: left;
+    color: white;
+    background: #38f;
+    overflow: hidden;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 2px;
+    text-decoration: none;
+}
+.header .nav .bri:hover{
+    color: #fff;
+}
+/*更多产品侧边栏*/
+.more-product{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 75px;
+    border-left: 1px solid #ddd;
+    background-color: #f9f9f9;
+    display: none;
+    z-index: 999;
+}
+/*下拉菜单栏更多产品样式设置*/
+.more-product ul{
+    padding: 9px 5px 0 5px;
+    list-style: none;
+    text-align: center;
+
+}
+.more-product a{
+    color: #333;
+    text-decoration: none;
+}
+.more-product ul li{
+    position: relative;
+    height: 70px;
+    color: #666;
+    border-bottom: 1px solid #dddddd;
+}
+.more-product ul li a:hover{
+    text-decoration: underline;
+}
+/*更多产品hover没有下划线*/
+.more-product ul li a:first-child:hover{
+    text-decoration: none;
+}
+/*更多产品样式设置*/
+.more-product ul li:first-child{
+    position: relative;
+    height: 43px;
+    line-height: 43px;
+    border-bottom: 1px solid #dddddd;
+}
+/*查看更多样式失败*/
+.more-product ul li:last-child{
+    margin-top: 15px;
+    height: 30px;
+    text-decoration: underline;
+}
+.more-product ul li span{
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin: 10px auto 5px;
+    background-image: url("../img/bdbri_icons_2e35e84b.png");
+
+}
+/*下拉菜单图片样式设置*/
+.more-product .more-sub-one{
+    width: 40px;
+    background-position: -72px 0;
+}
+.more-product .more-sub-two{
+    margin: 10px auto 5px;
+    background-position: -112px;
+}
+.more-product .more-sub-three{
+    margin: 10px auto 5px;
+    background-position: -36px 0;
+}
+.more-product .more-sub-four{
+    background-position: -148px 0;
+}
+.more-product .more-sub-five{
+    background-position: -184px 0 ;
+}
+.more-product .more-sub-six{
+    background-position: -220px 0;
+}
+/*中间内容设置*/
+.content{
+    text-align: center;
+    width: 647px;
+    _width: 639px;
+    height: 191px;
+    margin: 57px auto 0 auto;
+    /*ie6样式兼容*/
+    _position: absolute;
+    _left: 50%;
+    _margin-left: -320px;
+}
+/*提交表单设置*/
+.form{
+    position: relative;
+    clear: both;
+}
+/*百度logo设置*/
+.baidu-logo{
+    margin-bottom: 20px;
+    clear: both;
+    border: none;
+}
+/*搜索图片样式设置*/
+.ipt_photo{
+    height: 16px;
+    width: 18px;
+    position: absolute;
+    right: 110px;
+    top: 25%;
+    background: #ffffff url("../img/soutu_icons_6eead741.png") 0 0;
+    *display: none;
+}
+.ipt_photo:hover{
+    cursor: pointer;
+    background: #ffffff url("../img/soutu_icons_6eead741.png") 0 -21px;
+}
+/*搜索框设置*/
+.search-input{
+    width: 450px;
+    height: 34px;
+    _height: 36px;
+    outline: none;
+    float: left;
+    border: 1px solid;
+    padding-left: 7px;
+    background: #fff;
+    display: inline-block;
+    vertical-align: top;
+    width: 539px;
+    border-right-width: 0;
+    border-color: #b8b8b8 transparent #ccc #b8b8b8;
+    overflow: hidden;
+    font: 16px/18px arial;
+    *margin-right: -3px;
+}
+.search-input:hover{
+    border-color: #999 transparent #b3b3b3 #999;
+}
+
+.search-input:focus{
+    border-color: #4791ff transparent #4791ff #4791ff;
+
+}
+/*提交按钮设置*/
+.search-submit{
+    height: 36px;
+    width: 100px;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border: 1px solid #2d78f4;
+    outline: medium;
+    *border: none;
+    _cursor: pointer;
+}
+.search-submit:hover{
+    background: #317ef3;
+    border-bottom: 1px solid #2868c8;
+    box-shadow: 1px 1px 1px #ccc;
+    cursor: pointer;
+    *border: none;
+}
+/*底部设置*/
+.footer{
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    height: 100px;
+    bottom: 23px;
+    text-align: center;
+    overflow: hidden;
+}
+.footer-outer{
+    width: 646px;
+    margin: 0 auto;
+}
+/*二维码样式设置*/
+.qrcode{
+    float: left;
+}
+.qrcode-item1{
+    float: left;
+}
+.qrcode-item2{
+    float: left;
+    margin-left: 33px;
+}
+/*二维码右边字体设置*/
+.qrcode .qrcode-text {
+    float: left;
+    color: #999;
+    line-height: 23px;
+    margin: 8px 0 0 10px;
+}
+.qrcode-img{
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+/*第一个二维码设置*/
+.qrcode-item1 .qrcode-img{
+    background-image: url("../img/qrcode1.png");
+}
+/*第二个二维码设置*/
+.qrcode-item2 .qrcode-img{
+    background-image: url("../img/nuomi_2.png");
+}
+/*底部右边字体设置*/
+.ftConw{
+    float: left;
+    color: #999;
+    margin-left: 33px;
+    line-height: 22px;
+    top: -2px;
+}
+.ftConw p a{
+    color: #999;
+    *color: #999;
+}
+.about-baidu{
+    margin-left: 62px;
+}
+
+/*设置底部两个icon样式*/
+.c-icon-icrlogo, .c-icon-jgwablogo{
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    overflow: hidden;
+    background-image: url("../img/icons_0e814c16.png");
+}
+/*百度icrlogo设置*/
+.c-icon-icrlogo{
+    background-position: -600px -96px;
+    position: relative;
+    top: 3px;
+}
+/*百度jgwblogo设置*/
+.c-icon-jgwablogo{
+    background-position: -623px -96px;
+    position: relative;
+    top: 3px;
+    margin-right: 6px;
+}
+.c-icon-jgwab{
+    text-align: left;
+}

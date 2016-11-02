@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算几等生</title>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/grade.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>计算几等生</h2>
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="score">学员分数:</label>
+                <input type="text" class="form-control" id="score" placeholder="输入0-100的分数">
+            </div>
+
+            <input type="button" class="btn btn-success" onclick="grade()" value="计&nbsp;&nbsp;算">
+        </form>
+        <!--结果显示-->
+        <div class="form-group">
+            <label>该生为：</label>
+            <span id="result"></span>
+        </div>
+    </div>
+
+    <script src="js/grade.js" type="text/javascript"></script>
+</body>
+</html>

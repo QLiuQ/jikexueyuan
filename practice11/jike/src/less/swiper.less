@@ -1,0 +1,90 @@
+@import "base";
+
+.swiper-container {
+  margin: 0 auto;
+  overflow: hidden;
+  z-index: 1;
+  .swiper-wrapper {
+    .z-index(relative, 1);
+    .size(100%, 100%);
+    display: flex;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    .box-sizing();
+    //.transform(translate3d(0, 0, 0));
+    -webkit-transform: translate3d(0px, 0, 0);
+    -moz-transform: translate3d(0px, 0, 0);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+
+    .swiper-slide {
+      -webkit-flex-shrink: 0;
+      -ms-flex: 0 0 auto;
+      flex-shrink: 0;
+      .size(100%, 100%);
+      position: relative;
+    }
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    .z-index();
+    top: 50%;
+    .size(27px, 44px);
+    margin-top: -22px;
+    cursor: pointer;
+    .background-size(27px, 44px);
+    .background-position(center, center);
+    background-repeat: no-repeat;
+  }
+  .swiper-button-prev {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
+    left: 10px;
+    right: auto;
+  }
+  .swiper-button-next {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
+    right: 10px;
+    left: auto;
+  }
+  .swiper-button-prev.swiper-button-disabled,
+  .swiper-button-next.swiper-button-disabled {
+    opacity: 0.35;
+    cursor: auto;
+    pointer-events: none;
+  }
+  .swiper-pagination {
+    .z-index();
+    text-align: center;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    .transform(translate3d(0, 0, 0));
+  }
+  .swiper-pagination-clickable .swiper-pagination-bullet {
+    cursor: pointer;
+  }
+}
+
+.swiper-container-horizontal {
+  .swiper-pagination-bullets {
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    .swiper-pagination-bullet {
+      .size(8px, 8px);
+      display: inline-block;
+      .border-radius(100%);
+      background: @b-color;
+      opacity: 0.2;
+      margin: 0 5px;
+    }
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+      background: @blue-color;
+    }
+  }
+}

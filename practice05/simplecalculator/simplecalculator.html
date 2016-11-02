@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简易计算器</title>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/simplecalculator.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">简易计算器</h1>
+        <!--数字、操作符、计算按钮-->
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="arg1">数值一：</label>
+                <input type="text" class="form-control" id="arg1" placeholder="数值一">
+            </div>
+            <div class="form-group">
+                <label for="arg2">数值二:</label>
+                <input type="text" class="form-control" id="arg2" placeholder="数值二">
+            </div>
+            <select class="form-control" id="operator">
+                <option>加</option>
+                <option>减</option>
+                <option>乘</option>
+                <option>除</option>
+            </select>
+            <input type="button" class="btn btn-success" onclick="simpleCalculator()" value="计&nbsp;&nbsp;算">
+        </form>
+        <!--结果显示-->
+        <div class="form-group">
+            <label for="operator">结果：</label>
+            <span id="result"></span>
+        </div>
+    </div>
+    <script src="js/simplecalculator.js" type="text/javascript"></script>
+</body>
+</html>

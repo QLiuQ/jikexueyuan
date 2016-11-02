@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link href="/static/css/news.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="/static/js/lib/sea.js"></script>
+    <script type="text/javascript" src="/static/js/config/config.js"></script>
+    <script type="text/javascript">
+	    seajs.use("/static/js/app/main.js");
+    </script>
+    <title>{{ news_list.news_title }}</title>
+</head>
+<body>
+    <header>
+        <a class="btn-back toolbar" href="nav/{{ news_list.category_id_id }}"></a>
+        <a class="title">{{ news_category.name }}</a>
+        <a class="btn-baidu toolbar" href="https://m.baidu.com/?from=1000376a"></a>
+    </header>
+    <div id="page-wrapper">
+        <h1 class="mth-header">{{ news_list.news_title }}</h1>
+        <div class="header-info">
+            <span>{{ news_list.news_source }}</span>
+            <span style="margin-left: 12px;">{{ news_list.news_time }}</span>
+        </div>
+        <div class="mth-editor-content">{{ news_list.news_content|safe }}</div>
+
+    </div>
+</body>
+</html>

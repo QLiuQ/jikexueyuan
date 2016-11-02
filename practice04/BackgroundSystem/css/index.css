@@ -1,0 +1,20 @@
+body, div, ul, li, caption, form, input,
+button, thead, th, tr, tbody,tfoot{
+    padding: 0;
+    margin: 0;
+}
+/*表头样式设置*/
+.row div table thead {
+    background-color: #337ab7;
+    color: #fff;
+}
+
+/*表格数据内容样式设置*/
+.row div table tbody tr td {
+    vertical-align: middle;
+}
+
+/*表格数据内容中的删除样式设置*/
+.row div table tbody tr td button:last-child{
+    color: #FF0000;
+}

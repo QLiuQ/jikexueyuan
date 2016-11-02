@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for news in news_list %}
+        <div class="index-list-item">
+
+            <!--如果有图片-->
+            {% if news.news_pic %}
+                <a class="index-list-main showleft" href="{{ news.get_absolute_url }}">
+                    <div class="index-list-image">
+                        <img src="/media/{{ news.news_pic }}">
+                    </div>
+                    <div class="index-list-main-text">
+                        <div class="index-list-main-title">{{ news.news_title }}</div>
+                        <div class="index-list-bottom">
+                            <div class="index-list-main-time">
+                                <b class="tip-time">{{ news.news_time|date:"Y-m-d H:m"   }}</b>
+                                <b class="tip-hot tip-fillred">热点</b>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            {% else %}
+                <a class="index-list-main" href="{{ news.get_absolute_url }}">
+                    <div class="index-list-main-text">
+                        <div class="index-list-main-title">{{ news.news_title }}</div>
+                        <div class="index-list-bottom">
+                            <div class="index-list-main-time">
+                                <b class="tip-time">{{ news.news_time|date:"Y-m-d H:m" }}</b>
+                                <b class="tip-reason tip-fillred">{{ news.news_source }}</b>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            {% endif %}
+        </div>
+    {% endfor %}
+
+
+{% endblock %}

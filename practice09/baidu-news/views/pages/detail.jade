@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+        link(href="/stylesheets/news.css" type="text/css" rel="stylesheet")
+        title= news.title
+    body
+        header
+            a.btn-back.toolbar(href="/")
+            a.title!= news.title
+            a.btn-baidu.toolbar(href="https://m.baidu.com/?from=1000376a")
+        #page-wrapper
+            h1.mth-header!= news.title
+            .header-info
+                span= news.source
+                span(style="margin-left: 12px;")= moment(news.meta.updateTime).format('YYYY-MM-DD')
+            .mth-editor-content
+            | !{news.content}

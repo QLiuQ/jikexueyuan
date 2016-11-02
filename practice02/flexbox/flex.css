@@ -1,0 +1,21 @@
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.col{
+    -webkit-column-count: 4;
+    -webkit-column-rule-style: dotted;
+    -webkit-column-gap: 80px;
+}
+.center{
+    display: -webkit-box;
+    height: 300px;
+    width: 300px;
+    background-color: #7FFF00;
+    /*垂直居中*/
+    -webkit-box-align: center;
+    /*水平居中*/
+    -webkit-box-pack: center;
+}

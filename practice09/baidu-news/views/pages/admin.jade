@@ -1,0 +1,50 @@
+extends ../layout
+
+block content
+    .container
+        .row
+            form.form-horizontal(method="post", action="/admin/news")
+                if news._id
+                    // 隐藏表单域，更新数据
+                    input(type="hidden", name="news[_id]", value=news._id)
+                .form-group
+                    label.col-sm-2.control-label(for="inputCategory") 新闻分类
+                    .col-sm-10
+                        input#inputCategory.form-control(type="text", name="news[categoryName]", value=news.categoryName, placeholder="请输入分类或直接下栏点击分类选择项")
+                .form-group
+                    label.col-sm-2.control-label 分类选择
+                    each cat in categories
+                        label.radio-inline
+                        if news.category
+                            input(type="radio", name="news[category]" value=cat._id, checked=cat._id.toString() == news.category.toString())
+                        else
+                            input(type="radio", name="news[category]", value=cat._id)
+                        | #{cat.name}
+                .form-group
+                    label.col-sm-2.control-label(for="inputTitle") 标题
+                    .col-sm-10
+                        input#inputTitle.form-control(type="text", name="news[title]", value=news.title, required="required")
+                .form-group
+                    label.col-sm-2.control-label(for="inputAuthor") 作者
+                    .col-sm-10
+                        input#inputAuthor.form-control(type="text", name="news[author]", value=news.author, required="required")
+                .form-group
+                    label.col-sm-2.control-label(for="inputSource") 来源
+                    .col-sm-10
+                        input#inputSource.form-control(type="text", name="news[source]", value=news.source, required="required")
+                .form-group
+                    label.col-sm-2.control-label(for="inputPicUrl") 图片链接
+                    .col-sm-10
+                        input#inputPicUrl.form-control(type="text", name="news[picUrl]", value=news.picUrl)
+                .form-group
+                    label.col-sm-2.control-label(for="editor") 内容
+                    .col-sm-10
+                        script#editor(type="text/plain", name="news[content]") !{news.content}
+                        //- textarea#inputContent.form-control(type="text", name="news[content]") #{news.content}
+                .form-group
+                    .col-sm-offset-2.col-sm-10
+                        button.btn.btn-success(type="submit") 录入
+    script(src="/javascripts/editor.js")
+    script(src="/ueditor/ueditor.config.js")
+    script(src="/ueditor/ueditor.all.min.js")
+    script(src="/ueditor/lang/zh-cn/zh-cn.js")

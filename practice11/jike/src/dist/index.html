@@ -1,0 +1,3664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>极客学院IT在线教育平台-中国最大的IT职业在线教育平台</title>
+    <meta name="keywords" content="极客学院,IT职业教育,IT在线教育平台,IT在线教育,IT在线学习,it职业培训,android,ios,flash,java,python,html5,swift,cocos2dx">
+    <link href="../img/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link href="css/main.min.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+    <div id="wrapper">
+        <!--/*头部*/-->
+        <div id="header" class="w-1000">
+            <div class="wrap">
+                <a href="http://www.jikexueyuan.com">
+                    <img src="../img/logo_c8caff4.png" class="logo" alt="极客学院">
+                </a>
+                <div class="head-search" id="head-search">
+                   <form>
+                       <input class="search-text" type="text" name="q" autocomplete="off" id="web-search-header" placeholder="搜索课程、问答或Wiki">
+                       <input type="button" class="search-btn">
+                       <div class="hot-words">
+                           <a href="http://search.jikexueyuan.com/course/?q=Android">Android</a>
+                           <a href="http://search.jikexueyuan.com/course/?q=iOS">iOS</a>
+                           <a href="http://search.jikexueyuan.com/course/?q=HTML5">HTML5</a>
+                       </div>
+                   </form>
+                </div>
+                <div class="login-box">
+                    <span class="my-message">&nbsp;</span>
+                    <em>|</em>
+                    <span>
+                        <a href="http://passport.jikexueyuan.com/connect/qq">QQ登录</a>
+                    </span>
+                    <em>|</em>
+                    <span>
+                        <a href="http://passport.jikexueyuan.com/sso/login">登录</a>
+                    </span>
+                    <em>|</em>
+                    <span>
+                        <a href="http://passport.jikexueyuan.com/sso/reg_phone">注册</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="load-line"></div>
+        <!--/*导航*/-->
+        <div class="nav-wrap">
+            <div class="nav w-1000">
+                <div class="nav-box">
+                    <a class = "first-nav" href="http://www.jikexueyuan.com/">首页</a>
+                    <a class="nav-link" href="http://www.jikexueyuan.com/course/">职业课程</a>
+                    <a class="nav-link" href="http://j.jikexueyuan.com?huodong=jiuye_all_guide">就业学习</a>
+                    <a class="nav-link" href="#">极客社区</a>
+                    <a class="nav-link" href="#">极客+</a>
+                    <ul class="nav-panel w-1000">
+                        <li class="panel-item">
+                            <span class="angle"></span>
+                            <ul class="item-box">
+                                <li><a target="_blank" href="http://www.jikexueyuan.com/course/">课程库</a></li>
+                                <li><a target="_blank" href="http://www.jikexueyuan.com/path/">知识体系图</a></li>
+                                <li><a target="_blank" href="http://ke.jikexueyuan.com/zhiye/">职业路径图</a></li>
+                                <li><a target="_blank" href="http://ke.jikexueyuan.com/xilie/">系列课程</a></li>
+                            </ul>
+                        </li>
+                        <li class="panel-item">
+                            <ul class="item-box">
+                                <li><a target="_blank" href="http://j.jikexueyuan.com/train/web?huodong=jiuye_web_guide">Web前端开发</a></li>
+                                <li><a target="_blank" href="http://j.jikexueyuan.com/train/android?huodong=jiuye_android_guide">Android开发</a></li>
+                                <li><a target="_blank" href="http://j.jikexueyuan.com/train/PHP?huodong=jiuye_PHP_guide">PHP 开发</a></li>
+                                <li><a target="_blank" href="http://j.jikexueyuan.com/train/ios?huodong=jiuye_ios_guide">iOS开发</a></li>
+                                <li><a target="_blank" href="http://j.jikexueyuan.com/train/javaweb?huodong=jiuye_javaweb_guide">JavaWeb开发</a></li>
+                            </ul>
+                        </li>
+                        <li class="panel-item">
+                            <ul class="item-box">
+                                <li><a target="_blank" href="http://wiki.jikexueyuan.com">Wiki</a></li>
+                                <li><a target="_blank" href="http://wenda.jikexueyuan.com/">技术问答</a></li>
+                                <li><a target="_blank" href="http://qun.jikexueyuan.com">社群</a></li>
+                                <li><a target="_blank" href="http://download.jikexueyuan.com">资源分享</a></li>
+                            </ul>
+                        </li>
+                        <li class="panel-item">
+                            <ul class="item-box">
+                                <li><a target="_blank" href="http://mooc.jikexueyuan.com">高校合作</a></li>
+                                <li><a target="_blank" href="http://zhiye.jikexueyuan.com">极客人才联盟</a></li>
+                                <li><a target="_blank" href="http://press.jikexueyuan.com/evangelist/apply.html">布道师招募</a></li>
+                                <li><a target="_blank" href="http://j.jikexueyuan.com/assistant/apply">实战教练招募</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--会员、求课程、app下载-->
+                <div class="user-need">
+                    <a href="http://www.jikexueyuan.com/vip/">
+                        <span><img src="../img/vip-icon_76ae754.png">VIP会员</span>
+                    </a>
+                    <a href="http://press.jikexueyuan.com/topic/" target="_blank">
+                        <span><img src="../img/txwj-icon.png">填问卷领福利</span>
+                    </a>
+
+                    <a href="http://www.jikexueyuan.com/app/" target="_blank">
+                        <span>
+                            <img src="../img/dl-icon_4bc18a7.png">
+                            <img class="new" src="../img/newicon_56b11ef.png" width="14px">APP下载
+                        </span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="pager">
+            <div class="w-1000 mar-t20 cf" id="lesson">
+                <!--左-->
+                <div class="lesson-classify-nav">
+                    <ul>
+                        <li>
+                            <a href="#">移动开发</a>
+                            <div class="lesson-list-show">
+                                <dl>
+                                    <dt><a href="#">应用开发</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">Android</a>
+                                        <a href="#">iOS</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">游戏开发</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">Cocos</a>
+                                        <a href="#">Unity3D</a>
+                                        <a href="#">SpriteKit 2D</a>
+                                        <a href="#">Unreal</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">常用框架</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">Cordova</a>
+                                        <a href="#">React Native</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">前端开发</a>
+                            <div class="lesson-list-show">
+                                <dl>
+                                    <dt><a href="#">前端基础</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">HTML</a>
+                                        <a href="#">CSS</a>
+                                        <a href="#">JavaScript</a>
+                                        <a href="#">HTML5</a>
+                                        <a href="#">CSS3</a>
+                                        <a href="#">技术前瞻</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">前端进阶</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">Typescript</a>
+                                        <a href="#">前端安全</a>
+                                        <a href="#">项目实战 2D</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">前端框架</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">jQuery</a>
+                                        <a href="#">jQuery UI</a>
+                                        <a href="#">jQuery Mobile</a>
+                                        <a href="#">Ext JS</a>
+                                        <a href="#">AngularJS</a>
+                                        <a href="#">ReactJS</a>
+                                        <a href="#">Bootstrap</a>
+                                        <a href="#">React Native</a>
+                                        <a href="#">Backbone</a>
+                                        <a href="#">Three.js</a>
+                                        <a href="#">MooTools</a>
+                                        <a href="#">Compass</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">HTML5游戏</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">Canvas</a>
+                                        <a href="#">SVG</a>
+                                        <a href="#">WebGL</a>
+                                        <a href="#">Cocos2d-js</a>
+                                        <a href="#">CreateJS</a>
+                                        <a href="#">Flash</a>
+                                        <a href="#">Unreal</a>
+                                        <a href="#">Egret</a>
+                                        <a href="#">Phaser</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">后端开发</a>
+                            <div class="lesson-list-show">
+                                <dl>
+                                    <dt><a href="#">Python</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">Python 基础</a>
+                                        <a href="#">web2py</a>
+                                        <a href="#">Django</a>
+                                        <a href="#">Flask</a>
+                                        <a href="#">GUI</a>
+                                        <a href="#">数据挖掘与分析</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">PHP</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">PHP 基础</a>
+                                        <a href="#">YII</a>
+                                        <a href="#">ThinkPHP</a>
+                                        <a href="#">Laravel</a>
+                                        <a href="#">WordPress</a>
+                                        <a href="#">Phalcon</a>
+                                        <a href="#">Apache</a>
+                                        <a href="#">Facebook Hack</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">Node.js</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">Node.js 基础</a>
+                                        <a href="#">express</a>
+                                        <a href="#">Meteor</a>
+                                        <a href="#">Hexo</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">ASP.NET</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">C#</a>
+                                        <a href="#">ASP.NET MVC</a>
+                                        <a href="#">Entity Framework</a>
+                                        <a href="#">WPF</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">J2EE</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">JSP</a>
+                                        <a href="#">Maven</a>
+                                        <a href="#">Spring</a>
+                                        <a href="#">SpringMVC</a>
+                                        <a href="#">Struts2</a>
+                                        <a href="#">MyBatis</a>
+                                        <a href="#">Hibernate</a>
+                                        <a href="#">Lucene</a>
+                                        <a href="#">常用框架</a>
+                                        <a href="#">项目实战</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">Ruby</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">Ruby 基础</a>
+                                        <a href="#">Ruby on Rails</a>
+                                        <a href="#">Grape</a>
+                                        <a href="#">Ruby进阶</a>
+                                        <a href="#">RubyMine</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">Go</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">Go 基础</a>
+                                        <a href="#">Revel</a>
+                                        <a href="#">beego</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">Erlang</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">Erlang 基础</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">基础知识</a>
+                            <div class="lesson-list-show">
+                                <dl>
+                                    <dt><a href="#">基础语言</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">C</a>
+                                        <a href="#">C++</a>
+                                        <a href="#">Objective-C</a>
+                                        <a href="#">Swift</a>
+                                        <a href="#">C#</a>
+                                        <a href="#">Java</a>
+                                        <a href="#">Perl</a>
+                                        <a href="#">Shell</a>
+                                        <a href="#">Qt</a>
+                                        <a href="#">Scala</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">计算机基础</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">计算机组成原理</a>
+                                        <a href="#">网络工程</a>
+                                        <a href="#">Word</a>
+                                        <a href="#">Excel</a>
+                                        <a href="#">PowerPoint</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">开发基础</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">算法基础</a>
+                                        <a href="#">数据结构</a>
+                                        <a href="#">设计模式</a>
+                                        <a href="#">软件工程</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">开发工具</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">Git/Github</a>
+                                        <a href="#">SVN</a>
+                                        <a href="#">VI</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">开放标准</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">OpenCL</a>
+                                        <a href="#">Open XML</a>
+                                        <a href="#">OpenGL/GLES</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">云计算&大数据</a>
+                            <div class="lesson-list-show">
+                                <dl>
+                                    <dt><a href="#">云计算</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">OpenStack</a>
+                                        <a href="#">Docker</a>
+                                        <a href="#">CloudStack</a>
+                                        <a href="#">Windows AzureV</a>
+                                        <a href="#">IaaS</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">大数据</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">Hadoop</a>
+                                        <a href="#">Storm</a>
+                                        <a href="#">Hive</a>
+                                        <a href="#">Flume</a>
+                                        <a href="#">Kafka</a>
+                                        <a href="#">Zookeeper</a>
+                                        <a href="#">Hbase</a>
+                                        <a href="#">Spark</a>
+                                        <a href="#">信息检索</a>
+                                        <a href="#">数据分析</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">虚拟化</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">VMware</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">云平台</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">腾讯云</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">智能硬件&物联网</a>
+                            <div class="lesson-list-show">
+                                <dl>
+                                    <dt><a href="#">硬件架构</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">C51</a>
+                                        <a href="#">ARM</a>
+                                        <a href="#">Keil</a>
+                                        <a href="#">Cortex-M</a>
+                                        <a href="#">Cortex-A</a>
+                                        <a href="#">AVR</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">物联网操作系统</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">RTOS</a>
+                                        <a href="#">Android Wear</a>
+                                        <a href="#">Apple Watchkit</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">开源硬件平台</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">Arduino</a>
+                                        <a href="#">树莓派</a>
+                                        <a href="#">mbed</a>
+                                        <a href="#">GoKit</a>
+                                        <a href="#">LeMaker Guitar</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">通信链接技术</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">无线WiFi</a>
+                                        <a href="#">移动通信</a>
+                                        <a href="#">蓝牙</a>
+                                        <a href="#">NFC</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">信息感知处理技术</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">传感器</a>
+                                        <a href="#">数据挖掘</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">人机交互技术</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">语音识别</a>
+                                        <a href="#">人脸识别</a>
+                                        <a href="#">手势识别</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">数据库</a>
+                            <div class="lesson-list-show">
+                                <dl>
+                                    <dt><a href="#">SQL</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">MySQL</a>
+                                        <a href="#">SQL Server</a>
+                                        <a href="#">Oracle</a>
+                                        <a href="#">SQLite</a>
+                                        <a href="#">PostgreSQL</a>
+                                        <a href="#">DB2</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">NoSQL</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">Cassandra</a>
+                                        <a href="#">Redis</a>
+                                        <a href="#">MongoDB</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">认证考试</a>
+                            <div class="lesson-list-show">
+                                <dl>
+                                    <dt><a href="#">计算机等级考试</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">一级</a>
+                                        <a href="#">二级C</a>
+                                        <a href="#">二级Java</a>
+                                        <a href="#">二级C++</a>
+                                        <a href="#">网络工程师</a>
+                                        <a href="#">数据库工程师</a>
+                                        <a href="#">信息安全工程师</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">企业认证</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">思科认证</a>
+                                        <a href="#">Oracle认证</a>
+                                        <a href="#">Linux认证</a>
+                                        <a href="#">ARM认证</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">企业 IT</a>
+                            <div class="lesson-list-show">
+                                <dl>
+                                    <dt><a href="#">运维管理</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">Shell</a>
+                                        <a href="#">自动化运维</a>
+                                        <a href="#">Nginx</a>
+                                        <a href="#">Apache</a>
+                                        <a href="#">运维监控</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">商业智能</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">FileMaker</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">操作系统</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">Linux</a>
+                                        <a href="#">Windows</a>
+                                        <a href="#">Mac OS</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">企业服务</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">B2C</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">设计&产品&测试</a>
+                            <div class="lesson-list-show">
+                                <dl>
+                                    <dt><a href="#">设计基础</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">Photoshop</a>
+                                        <a href="#">Flash</a>
+                                        <a href="#">Illustrator</a>
+                                        <a href="#">Sketch</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">游戏设计</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">界面设计</a>
+                                        <a href="#">角色设计</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">产品经理</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">需求分析</a>
+                                        <a href="#">Axure</a>
+                                        <a href="#">项目实战</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">视觉设计</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">应用UI设计</a>
+                                        <a href="#">网页UI设计</a>
+                                        <a href="#">设计理论</a>
+                                        <a href="#">图形设计</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">测试工具</a></dt>
+                                    <dd class="cf">
+                                        <a href="#">自动化测试</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--中-->
+                <div class="lesson-center-focus">
+                    <!--图片区域-->
+                    <div class="swiper-container banner-box">
+                        <span id="banner-left" class="arrow-left arrow swiper-button-prev"></span>
+                        <span id="banner-right" class="arrow-right arrow swiper-button-next"></span>
+                        <!--图片轮播-->
+                       <div class="swiper-wrapper banner-wrapper">
+                           <a href="#" class="swiper-slide swiper-slide4" target="_blank"></a>
+                           <a href="#" class="swiper-slide swiper-slide4" target="_blank"></a>
+                           <a href="#" class="swiper-slide swiper-slide4" target="_blank"></a>
+                           <a href="#" class="swiper-slide swiper-slide4" target="_blank"></a>
+                       </div>
+                        <!--轮播线条-->
+                        <div class="swiper-pagination" id="pagination"></div>
+                    </div>
+                    <!--课程-->
+                    <div class="focuswork-wrap swiper-container">
+                        <a id="work-left" class="arrow work-left-prev"></a>
+                        <a id="work-right" class="arrow work-right-next"></a>
+                        <ul class="lesson-list swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="../img/html.png" class="lesson-icon">
+                                    <p class="lesson-title">HTML5/Web前端工程师</p>
+                                    <p class="intro">前腾讯高级前端工程师授课</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="../img/php.png" class="lesson-icon">
+                                    <p class="lesson-title">PHP开发工程师</p>
+                                    <p class="intro">PHP是世界上最好的语言</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="../img/56.jpg" class="lesson-icon">
+                                    <p class="lesson-title">极客学院就业班</p>
+                                    <p class="intro">0基础4个月成为IT工程师</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="../img/html.png" class="lesson-icon">
+                                    <p class="lesson-title">HTML5/Web前端工程师</p>
+                                    <p class="intro">前腾讯高级前端工程师授课</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="../img/php.png" class="lesson-icon">
+                                    <p class="lesson-title">PHP开发工程师</p>
+                                    <p class="intro">PHP是世界上最好的语言</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="../img/56.jpg" class="lesson-icon">
+                                    <p class="lesson-title">极客学院就业班</p>
+                                    <p class="intro">0基础4个月成为IT工程师</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="../img/html.png" class="lesson-icon">
+                                    <p class="lesson-title">HTML5/Web前端工程师</p>
+                                    <p class="intro">前腾讯高级前端工程师授课</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="../img/php.png" class="lesson-icon">
+                                    <p class="lesson-title">PHP开发工程师</p>
+                                    <p class="intro">PHP是世界上最好的语言</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="../img/56.jpg" class="lesson-icon">
+                                    <p class="lesson-title">极客学院就业班</p>
+                                    <p class="intro">0基础4个月成为IT工程师</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--右-->
+                <div class="lesson-right-show">
+                    <div class="news">
+                        <h3>快讯</h3>
+                        <ul class="list">
+                            <li class="list-item">
+                                <a href="#">[限时免费]每周限免系列课程</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#">Python实战系列课程</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#">系列课程：iOS支付功能</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#">PHP职业路径图大量更新！</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="user-info">
+                        <div class="head-box">
+                            <img src="../img/default.gif" width="40px" class="diaLoginBtn">
+                        </div>
+                        <div class="name-wrap">
+                            <div class="hello-word">
+                                <p class="word">HI! 你好</p>
+                                <p class="sentence">欢迎来到极客学院</p>
+                            </div>
+                            <div class="operate">
+                                <a href="http://passport.jikexueyuan.com/sso/login" class="login-btn">登录</a>
+                                <a href="http://passport.jikexueyuan.com/sso/login" class="register-btn">注册</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommend">
+                        <ul class="start-list">
+                            <li class="item1">
+                                <span class="question icon"></span>
+                                <span class="title">问答</span>
+                                <span class="angle-bottom"></span>
+                            </li>
+                            <li class="item1">
+                                <span class="wiki icon"></span>
+                                <span class="title">wiki</span>
+                                <span class="angle-bottom"></span>
+                            </li>
+                            <li class="item1">
+                                <span class="lesson icon"></span>
+                                <span class="title">课程</span>
+                                <span class="angle-bottom"></span>
+                            </li>
+                            <li class="item1">
+                                <span class="group icon"></span>
+                                <span class="title">社群</span>
+                                <span class="angle-bottom"></span>
+                            </li>
+                            <li class="item2">
+                                <a href="http://download.jikexueyuan.com/">
+                                    <span class="download icon"></span>
+                                    <span class="title">下载</span>
+                                </a>
+                            </li>
+                            <li class="item2">
+                                <a href="http://download.jikexueyuan.com/">
+                                    <span class="knowledge icon"></span>
+                                    <span class="title">知识</span>
+                                </a>
+                            </li>
+                            <li class="item2">
+                                <a href="http://download.jikexueyuan.com/">
+                                    <span class="occupation icon"></span>
+                                    <span class="title">职业</span>
+                                </a>
+                            </li>
+                            <li class="item2">
+                                <a href="http://download.jikexueyuan.com/">
+                                    <span class="vip icon"></span>
+                                    <span class="title">VIP</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="move-list">
+                            <ul class="type-list">
+                                <li class="question">问答</li>
+                                <li class="wiki">wiki</li>
+                                <li class="lesson">课程</li>
+                                <li class="group">社群</li>
+                            </ul>
+                            <div class="content">
+                                <!--问答-->
+                                <ul class="question tab-content">
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <img width="16" src="../img/w1.png">
+                                            <span class="title">【问答技巧】怎样提问才能让我的问题更快速被解答？</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <img width="16" src="../img/w1.png">
+                                            <span class="title">Bootstrap 最新版 V4 中文文档</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <img width="16" src="../img/w3.png">
+                                            <span class="title">【老师分享】对LPS的Manacher算法感兴趣的同学请</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <img width="16" src="../img/w4.png">
+                                            <span class="title">build_native.py时报错</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <img width="16" src="../img/w5.png">
+                                            <span class="title">超级菜鸟想成为怎么成长？</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!--wiki-->
+                                <ul class="wiki tab-content">
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <img src="../img/linux.jpg" width="55" height="73">
+                                            <span class=title>Java 程序员眼中的 Linux</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <img src="../img/django.jpg" width="55" height="73">
+                                            <span class=title>Django 搭建博客</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <img src="../img/lua.jpg" width="55" height="73">
+                                            <span class=title>Lua 教程</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!--课程-->
+                                <ul class="lesson tab-content">
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <img src="../img/html.png" width="30">
+                                            <p class="title">HTML5开发</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <img src="../img/android.png" width="30">
+                                            <p class="title">Android</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <img src="../img/Java.png" width="30">
+                                            <p class="title">Java语言</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <img src="../img/JavaWeb.jpg" width="30">
+                                            <p class="title">JavaWeb</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!--社群-->
+                                <ul class="group">
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <img src="../img/g1.png" width="32" height="32">
+                                            <div class="info">
+                                                <p class="title">Android工程师</p>
+                                                <p class="title">已有1074人加入</p>
+                                            </div>
+                                            <a href="#" target="_blank" class="join">＋ 加入</a>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <img src="../img/g2.png" width="32" height="32">
+                                            <div class="info">
+                                                <p class="title">Web大前端工程师</p>
+                                                <p class="title">已有1356人加入</p>
+                                            </div>
+                                            <a href="#" target="_blank" class="join">＋ 加入</a>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--热门课程 推荐课程导航条-->
+            <div class="hot-lesson w-1000 mar-t20" id="recommend-name">
+                <ul>
+                    <li class="on">热门推荐</li>
+                    <li class="">最新课程</li>
+                    <li class="">免费课程</li>
+                    <li class="">项目实战</li>
+                    <li class="">全球首发</li>
+                    <li class="">企业合作</li>
+                </ul>
+            </div>
+            <!--课程区域-->
+            <div class="w-1000 mar-t20" id="hot-lesson-box">
+                <div class="lesson1 on lesson-list">
+                    <ul>
+                        <li>
+                            <div class="lesson-img-box">
+                                <a href="#" target="_blank">
+                                    <img src="../img/3c.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">JavaScript 异步编程</a>
+                                </h3>
+                                <p>本课程介绍异步编程和同步编程的区别，分析异步编程的优势。并且通过异步编程的实例，来引导学员学习异步编程思想，提高开发效率和改善编码风格。</p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 29分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">3521人学习</span>
+                                        <a href="#">
+                                            <img src="../img/57.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <a href="#" target="_blank">
+                                    <img src="../img/58.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">Dubbo 使用入门（下）</a>
+                                </h3>
+                                <p>本课使用 Dubbo 配置与 Web 工程交互，以及使用 Dubbo 配置多协议交互。</p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 29分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">2638人学习</span>
+                                        <a href="#">
+                                            <img src="../img/57.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <a href="#" target="_blank">
+                                    <img src="../img/59.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">Flume 基础架构</a>
+                                </h3>
+                                <p>
+                                    本课程主要讲解 Flume 的基础架构，然后会对 Flume 的三大组件（Source组件、Channel组件、Sink组件）以及 Flume
+                                    过滤器 ( Interceptors )、Flume Channel 选择器 ( Selectors )、Flume 序列化器 ( Serializers ) 进行详细的讲解。最后会讲解
+                                    Flume Sink 容错和负责均衡。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 45分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">2592人学习</span>
+                                        <a href="#">
+                                            <img src="../img/bigdata.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <a href="#" target="_blank">
+                                    <img src="../img/60.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">Launcher3－文件夹自动整理</a>
+                                </h3>
+                                <p>本课程主要讲文件夹自动整理。将手机上除了第一屏之外的应用自动整理到文件夹，并能指定位置、固定位置。和上一节课的适配所有机型的桌面布局类似，方法可以借鉴。</p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 42分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">2855人学习</span>
+                                        <a href="#">
+                                            <img src="../img/and.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/google.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">Google  I/O 2016 技术揭秘与前瞻</a>
+                                </h3>
+                                <p>
+                                    本课程主要针对2016 Google I/O大会Keynote发布的内容进行剖析。讲解Google目前发展的技术趋势及主打方向。并针对开发者在大会中所需要了解的知识方向进行分析。让开发者们了解接下去需要学习哪些技能来应对新发布的产品及技术。以及如何进行学习。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 52分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">6239人学习</span>
+                                        <a href="#">
+                                            <img src="../img/and.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/61.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">整站项目开发实战之网站首页布局搭建</a>
+                                </h3>
+                                <p>
+                                    设计本课程的目的是让 Web 前端工程师，可以轻松将设计师提供的 PSD 效果图，切分成 HTML 网页文件，学完本课程可以掌握 PS 软件的切图技巧和 HTML 布局技巧。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 85分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">9776人学习</span>
+                                        <a href="#">
+                                            <img src="../img/webbase.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <a href="#" target="_blank">
+                                    <img src="../img/62.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">Android Studio 全方位指南之进阶使用技巧</a>
+                                </h3>
+                                <p>
+                                    本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 53分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>初级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">6241人学习</span>
+                                        <a href="#">
+                                            <img src="../img/and.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <a href="#" target="_blank">
+                                    <img src="../img/63.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">微网站制作速成法</a>
+                                </h3>
+                                <p>
+                                    本课程介绍微网站产生的背景，主要用途与制作实例，重点讲解在没有美工的情况下，微网站该如何制作。学完本课程，你将可以独自完成一个微网站的项目。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>3课时 58分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">6204人学习</span>
+                                        <a href="#">
+                                            <img src="../img/wei.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lesson2 lesson-list">
+                    <ul>
+                        <li>
+                            <div class="lesson-img-box">
+                                <a href="#" target="_blank">
+                                    <img src="../img/sql.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">Microsoft SQL Server 数据库的查询优化器的运行方式</a>
+                                </h3>
+                                <p>
+                                    本课程主要详细讲解 SQL Server 底层组件查询优化器的运行机制，了解合理的参数配置项，通过本课程的学习，理解 SQL Server 数据库底层查询优化器的运行方式，掌握我们所写的 T-SQL 语句的优化步骤，了解 SQL Server 底层原理进而掌握调优技巧。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>3课时 58分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">3521人学习</span>
+                                        <a href="#">
+                                            <img src="../img/57.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <a href="#" target="_blank">
+                                    <img src="../img/100.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">树莓派项目实践（一）——可用 web 控制的人体感应小夜灯</a>
+                                </h3>
+                                <p>
+                                    本课程介绍了一个完整的树莓派项目的开发过程——可用 web 控制的人体感应小夜灯。
+                                    这个小夜灯算是一个功能很基础的「智能硬件」，但在现实生活中非常实用。
+                                    大概说来，它具有以下功能特点：
+                                    （1）可以在 web 页面上控制灯的开、关、以及自动模式，在自动模式下，当检测到人体接近的时候灯会自动点亮；
+                                    （2）可在 web 页面上设置自动模式下的人体感应时间段，只有在指定的时间段内，灯才会感应人体接近状态。在其他时间段内，灯不会点亮。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 67分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">2653人学习</span>
+                                        <a href="#">
+                                            <img src="../img/57.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/103.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">Docker 安装</a>
+                                </h3>
+                                <p>
+                                    本课程讲述如何在用户的私有主机、公有主机上安装 Docker，同时介绍如何使用国内的镜像仓库。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>3课时 21分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">2606人学习</span>
+                                        <a href="#">
+                                            <img src="../img/bigdata.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <a href="#" target="_blank">
+                                    <img src="../img/104.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">Cocos2d-x 引擎源码中的纹理</a>
+                                </h3>
+                                <p>
+                                    本课程将讲解Cocos2d-x的纹理，包括生成纹理之前，将信息从客户端保存的原始图片中解包出来，然后将信息传给GPU生成纹理，设置纹理属性，最后通过纹理单元将纹理传递给Shader，把纹理映射到图片上，让你详细了解 Cocos2d-x 引擎是如何进行使用纹理的。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>3课时 105分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>高级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">2319人学习</span>
+                                        <a href="#">
+                                            <img src="../img/and.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <a href="#" target="_blank">
+                                    <img src="../img/58.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">Dubbo 使用入门（下）</a>
+                                </h3>
+                                <p>本课使用 Dubbo 配置与 Web 工程交互，以及使用 Dubbo 配置多协议交互。</p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 29分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">2638人学习</span>
+                                        <a href="#">
+                                            <img src="../img/57.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <a href="#" target="_blank">
+                                    <img src="../img/3c.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">JavaScript 异步编程</a>
+                                </h3>
+                                <p>本课程介绍异步编程和同步编程的区别，分析异步编程的优势。并且通过异步编程的实例，来引导学员学习异步编程思想，提高开发效率和改善编码风格。</p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 29分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">3521人学习</span>
+                                        <a href="#">
+                                            <img src="../img/57.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/google.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">Google  I/O 2016 技术揭秘与前瞻</a>
+                                </h3>
+                                <p>
+                                    本课程主要针对2016 Google I/O大会Keynote发布的内容进行剖析。讲解Google目前发展的技术趋势及主打方向。并针对开发者在大会中所需要了解的知识方向进行分析。让开发者们了解接下去需要学习哪些技能来应对新发布的产品及技术。以及如何进行学习。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 52分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">6239人学习</span>
+                                        <a href="#">
+                                            <img src="../img/and.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <a href="#" target="_blank">
+                                    <img src="../img/101.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">Docker 基础知识</a>
+                                </h3>
+                                <p>
+                                    本课程首先运行并解析第一个容器，然后介绍虚拟化和 Docker 的历史及云计算的基础知识。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>3课时 20分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">3385人学习</span>
+                                        <a href="#">
+                                            <img src="../img/bigdata.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lesson3 lesson-list">
+                    <ul>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/103.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">Docker 安装</a>
+                                </h3>
+                                <p>
+                                    本课程讲述如何在用户的私有主机、公有主机上安装 Docker，同时介绍如何使用国内的镜像仓库。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>3课时 21分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">2606人学习</span>
+                                        <a href="#">
+                                            <img src="../img/bigdata.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/google.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">Google  I/O 2016 技术揭秘与前瞻</a>
+                                </h3>
+                                <p>
+                                    本课程主要针对2016 Google I/O大会Keynote发布的内容进行剖析。讲解Google目前发展的技术趋势及主打方向。并针对开发者在大会中所需要了解的知识方向进行分析。让开发者们了解接下去需要学习哪些技能来应对新发布的产品及技术。以及如何进行学习。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 52分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">6239人学习</span>
+                                        <a href="#">
+                                            <img src="../img/and.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/101.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">Docker 基础知识</a>
+                                </h3>
+                                <p>
+                                    本课程首先运行并解析第一个容器，然后介绍虚拟化和 Docker 的历史及云计算的基础知识。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>3课时 20分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">3385人学习</span>
+                                        <a href="#">
+                                            <img src="../img/bigdata.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/102.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">编程之美“凌云之智“线上分享之 Azure 线上培训及工程师答疑</a>
+                                </h3>
+                                <p>
+                                    2016编程之美挑战赛已进入复赛阶段，为了帮助大家更好的使用 Azure，我们将在5月4日晚上推出2016编程之美挑战赛“凌云之智”系列分享之 Azure 课程。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>1课时 21分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">2855人学习</span>
+                                        <a href="#">
+                                            <img src="../img/and.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/102.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">编程之美“凌云之智“线上分享之复赛题目提点</a>
+                                </h3>
+                                <p>
+                                    2016编程之美挑战赛已进入复赛阶段，本次分享中，学术搜索首席研发总监 Albert 及产品经理Summert 将提点今年复赛题目，并对微软学术搜索引擎原理、数据库结构、API 进行介绍。
+                                    微软学术搜索是“微软学术”服务推出的免费学术搜索引擎，可以帮助用户全面、准确地查找学术论文、国际会议、权威期刊、研究专家及领域等专业学术资源。而为了方便用户使用，微软学术搜索已嵌入必应搜索引擎，在必应搜索首页就能找到。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>1课时 21分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>初级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">2858人学习</span>
+                                        <a href="#">
+                                            <img src="../img/and.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/61.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">整站项目开发实战之网站首页布局搭建</a>
+                                </h3>
+                                <p>
+                                    设计本课程的目的是让 Web 前端工程师，可以轻松将设计师提供的 PSD 效果图，切分成 HTML 网页文件，学完本课程可以掌握 PS 软件的切图技巧和 HTML 布局技巧。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 85分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">9776人学习</span>
+                                        <a href="#">
+                                            <img src="../img/webbase.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/102.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">编程之美优秀选手唐飞虎经验分享</a>
+                                </h3>
+                                <p>
+                                    他是14年编程之美挑战赛的全国总冠军孙祥彦的高中室友，从小学开始一路保送到大学，是哈尔滨工业大学的叱咤风云的“传说中的学长”，是腼腆羞涩却心怀青春热血的创业达人，是特立独行执行力超强的编程高手，是近乎偏执沉迷于编程世界的疯狂极客，他也是15年编程之美挑战赛的全国总冠军。在本期分享中，唐飞虎将于你分享他的个人创业经历，决赛项目经验，赛后生活，职业规划及求职技巧。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>1课时 34分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>初级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">2858人学习</span>
+                                        <a href="#">
+                                            <img src="../img/and.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/105.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">WebService 概述</a>
+                                </h3>
+                                <p>
+                                    本课程通过 WebService 的学习，学会什么是 WebService、WebService 的工作原理、SOAP 结构分析、WSDL 结构分析、WebService 注解以及 WebService 的优缺点。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>5课时 61分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">5375人学习</span>
+                                        <a href="#">
+                                            <img src="../img/wei.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lesson4 lesson-list">
+                    <ul>
+                        <li>
+                            <div class="lesson-img-box">
+                                <a href="#" target="_blank">
+                                    <img src="../img/106.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">Android 项目开发实战：图案解锁</a>
+                                </h3>
+                                <p>
+                                    本课程讲解在 Android 上实现一个自定义的图案解锁用户控件，并利用这个自定义控件为应用添加图案解锁功能。该应用可以允许用户设置自己的解锁图案，然后就可以使用该图案进行解锁。应用使用自定义 View 实现基本点的显示与切换，使用 Canvas 实现界面的绘制。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>5课时 72分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">7785人学习</span>
+                                        <a href="#">
+                                            <img src="../img/57.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <a href="#" target="_blank">
+                                    <img src="../img/107.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">Android 项目开发实战：语音播报计算器</a>
+                                </h3>
+                                <p>
+                                    本课程带领大家一起完成一款带语音播报功能的计算器，并且有历史记录等扩展功能，包括下滑结果显示框出现历史记录，以及滑动删除等。除此之外，它还可以合计历史结果值。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 48分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">2638人学习</span>
+                                        <a href="#">
+                                            <img src="../img/57.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <a href="#" target="_blank">
+                                    <img src="../img/108.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">iOS实战项目开发:团购之导航栏搜索城市功能</a>
+                                </h3>
+                                <p>
+                                    本节课将进一步优化导航栏的 UI 界面，运用 plist 文件读取解析，及字典转模型等方法，实现搜索城市及定位的界面及功能。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 45分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">2592人学习</span>
+                                        <a href="#">
+                                            <img src="../img/bigdata.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <a href="#" target="_blank">
+                                    <img src="../img/109.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">Android项目开发实战：语音播报计算器拓展功能实现</a>
+                                </h3>
+                                <p>
+                                    本课程在语音播报计算器的基础上，实现更人性化的功能。它包括：下滑显示框展示历史记录、历史记录可滑动删除、合计历史记录功能、清除所有历史记录功能。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 42分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">2855人学习</span>
+                                        <a href="#">
+                                            <img src="../img/and.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/110.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">构建轻博客系统之项目准备</a>
+                                </h3>
+                                <p>
+                                    本课程主要带大家做一些前期的准备工作，为接下来的正式开发打好基础。课程内容包括项目分析、beego 的简单使用和数据库的配置。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 52分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">6239人学习</span>
+                                        <a href="#">
+                                            <img src="../img/and.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/111.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">整站项目开发实战之网站首页布局搭建</a>
+                                </h3>
+                                <p>
+                                    本课程通过学习开发一个打飞机的游戏项目开发，学习 Cocos2d-x 3.4 引擎常用知识，还会学习 Cocos2d-x 3.4 的点击等监听事件，贝塞尔曲线，帧动画，和一些存储数据技术，让大家掌握一个小游戏的完整开发流程。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 85分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">9776人学习</span>
+                                        <a href="#">
+                                            <img src="../img/webbase.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <a href="#" target="_blank">
+                                    <img src="../img/112.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">Android 项目开发实战：微博之项目搭建</a>
+                                </h3>
+                                <p>
+                                    本课程带领大家实现微博类应用，首先简单的展示了下应用的功能，进行了微博应用的实现需求分析，其次讲解如何接入新浪微博的 SDK 及其使用方法。并进行项目环境的搭建，为后面的开发做好准备工作。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 53分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>初级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">6241人学习</span>
+                                        <a href="#">
+                                            <img src="../img/and.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <a href="#" target="_blank">
+                                    <img src="../img/113.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">Cocos2d-x 游戏：功夫小子——概要及开发环境配置</a>
+                                </h3>
+                                <p>
+                                    本课程主要根据实际的游戏演示，分析游戏的基本结构和特点，形成对游戏的整体认识。介绍开发游戏使用的 Cocos2d-x 版本并配置好开发环境。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>3课时 58分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">6204人学习</span>
+                                        <a href="#">
+                                            <img src="../img/wei.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lesson5 lesson-list">
+                    <ul>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/114.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">微信 web 开发者工具详解</a>
+                                </h3>
+                                <p>
+                                    本课程讲解微信 web 开发者工具的产生背景、所解决的问题、使用的场景以及通过实例为大家详细阐述微信 web 开发者工具的具体使用方法，让大家掌握、熟练运用该工具，方便今后的微信开发。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 29分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">3521人学习</span>
+                                        <a href="#">
+                                            <img src="../img/57.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/115.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">Google IO 2015 大揭秘</a>
+                                </h3>
+                                <p>
+                                    今天凌晨 Google IO 2015 大会举行，在大会上 Google 推出了包括 Android M、Android Studio 1.3、Android Wear、Brillo 在内的很多新的好玩的东西，我在第一时间录制这个视频和大家分享认知。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 29分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">2638人学习</span>
+                                        <a href="#">
+                                            <img src="../img/57.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <a href="#" target="_blank">
+                                    <img src="../img/116.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">WatchKit 的界面对象</a>
+                                </h3>
+                                <p>
+                                    本课介绍 WatchKit 中的界面对象，也就是 UI 元素部分，包括界面对象的概念以及 WatchKit 中的界面对象，如标签、表、上下文菜单等。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 45分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">2592人学习</span>
+                                        <a href="#">
+                                            <img src="../img/bigdata.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <a href="#" target="_blank">
+                                    <img src="../img/60.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">Launcher3－文件夹自动整理</a>
+                                </h3>
+                                <p>
+                                    本课介绍 WatchKit 中的界面对象，也就是 UI 元素部分，包括界面对象的概念以及 WatchKit 中的界面对象，如标签、表、上下文菜单等
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 42分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">2855人学习</span>
+                                        <a href="#">
+                                            <img src="../img/and.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <a href="#" target="_blank">
+                                    <img src="../img/117.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">WatchKit 的 Glance 和通知界面（上）</a>
+                                </h3>
+                                <p>
+                                    本课介绍 WatchKit 中 Glance 和 Notification 界面，包括两种交互方式的概念和特点。其中上半部分的课程主要讲解了 Glance 的概念和布局原则，简单介绍了通知界面的两种类型。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 52分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">6239人学习</span>
+                                        <a href="#">
+                                            <img src="../img/and.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/118.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">WatchKit 布局和导航</a>
+                                </h3>
+                                <p>
+                                    本课介绍 WatchKit 中布局和导航，包括布局中涉及到的 App Icon 尺寸、屏幕尺寸、WatchKit 的适配；导航的两种样式：分页和分层的概念和创建。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 85分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">9776人学习</span>
+                                        <a href="#">
+                                            <img src="../img/webbase.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/119.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">WatchKit 基础知识简介</a>
+                                </h3>
+                                <p>
+                                    本课介绍最基础 WatchKit 框架包括 WatchKit App 和 WatchKit Extension 功能和生命周期。了解何谓 Watch App，为以后的开发打下基础。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 53分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>初级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">6241人学习</span>
+                                        <a href="#">
+                                            <img src="../img/and.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/120.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">苹果2015新产品发布会介绍</a>
+                                </h3>
+                                <p>
+                                    本课根据苹果2015年3月10日的产品发布会总结而出，内容包括 AppleTV 介绍、iPhone 特性介绍、全新 Mac 系列产品介绍、Apple Watch 介绍。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>3课时 58分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">6204人学习</span>
+                                        <a href="#">
+                                            <img src="../img/wei.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lesson6 lesson-list">
+                    <ul>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/103.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">Docker 安装</a>
+                                </h3>
+                                <p>
+                                    本课程讲述如何在用户的私有主机、公有主机上安装 Docker，同时介绍如何使用国内的镜像仓库。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>3课时 21分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">2606人学习</span>
+                                        <a href="#">
+                                            <img src="../img/bigdata.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/101.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">Docker 基础知识</a>
+                                </h3>
+                                <p>
+                                    本课程首先运行并解析第一个容器，然后介绍虚拟化和 Docker 的历史及云计算的基础知识。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>3课时 20分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">3385人学习</span>
+                                        <a href="#">
+                                            <img src="../img/bigdata.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/102.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">编程之美“凌云之智“线上分享之 Azure 线上培训及工程师答疑</a>
+                                </h3>
+                                <p>
+                                    2016编程之美挑战赛已进入复赛阶段，为了帮助大家更好的使用 Azure，我们将在5月4日晚上推出2016编程之美挑战赛“凌云之智”系列分享之 Azure 课程。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>1课时 21分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">2855人学习</span>
+                                        <a href="#">
+                                            <img src="../img/and.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/102.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">编程之美“凌云之智“线上分享之复赛题目提点</a>
+                                </h3>
+                                <p>
+                                    2016编程之美挑战赛已进入复赛阶段，本次分享中，学术搜索首席研发总监 Albert 及产品经理Summert 将提点今年复赛题目，并对微软学术搜索引擎原理、数据库结构、API 进行介绍。
+                                    微软学术搜索是“微软学术”服务推出的免费学术搜索引擎，可以帮助用户全面、准确地查找学术论文、国际会议、权威期刊、研究专家及领域等专业学术资源。而为了方便用户使用，微软学术搜索已嵌入必应搜索引擎，在必应搜索首页就能找到。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>1课时 21分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>初级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">2858人学习</span>
+                                        <a href="#">
+                                            <img src="../img/and.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/102.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">编程之美优秀选手唐飞虎经验分享</a>
+                                </h3>
+                                <p>
+                                    他是14年编程之美挑战赛的全国总冠军孙祥彦的高中室友，从小学开始一路保送到大学，是哈尔滨工业大学的叱咤风云的“传说中的学长”，是腼腆羞涩却心怀青春热血的创业达人，是特立独行执行力超强的编程高手，是近乎偏执沉迷于编程世界的疯狂极客，他也是15年编程之美挑战赛的全国总冠军。在本期分享中，唐飞虎将于你分享他的个人创业经历，决赛项目经验，赛后生活，职业规划及求职技巧。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>1课时 34分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>初级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">2858人学习</span>
+                                        <a href="#">
+                                            <img src="../img/and.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/102.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">编程之美优秀选手孙祥彦经验分享</a>
+                                </h3>
+                                <p>
+                                    本期嘉宾是2014编程之美挑战赛全国总冠军，来自复旦大学的孙祥彦同学。他将在本期分享课程中独家爆料 Code Hunt 平台使用方法论，教你用基本的方法巧妙地应对一些难题，同时他还将全面地展示他的决赛项目，最后还有对今年参赛同学的宝贵建议。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 52分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">6239人学习</span>
+                                        <a href="#">
+                                            <img src="../img/and.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/121.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">移动应用的破解与防护</a>
+                                </h3>
+                                <p>
+                                    由于 Android 系统的开源性，使其占据了智能手机系统的大半壁江山，但也成为了恶意程序攻击的目标，APP 源码被泄露、被破解、二次盗版等事件层出不穷。本课程通过具体案例为开发者介绍常见的 apk 破解手段及危害，并演示360加固保如何防御各类破解攻击。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>4课时 85分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">9776人学习</span>
+                                        <a href="#">
+                                            <img src="../img/webbase.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lesson-img-box">
+                                <i class="free-icon"></i>
+                                <a href="#" target="_blank">
+                                    <img src="../img/102.jpg" class="lesson-img">
+                                    <div class="lesson-play">
+                                        <i class="play-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="lesson-info">
+                                <h3 class="lesson-info-h3">
+                                    <a href="#" target="_blank">编程之美优秀选手朱睿经验分享</a>
+                                </h3>
+                                <p>
+                                    本期课程的主讲人为北京大学的朱睿同学，他曾在14年编程之美挑战赛中凭借着优秀的算法能力和 demo 展示能力在众多选手中脱颖而出，获得了最佳demo 奖，并且通过编程之美挑战赛获得了到微软实习的机会。本次课程中，朱睿将与大家分享他提升算法能力、做 demo 的小技巧，并结合自己的实习经历给大家一些建议。
+                                </p>
+                                <div class="time-and-icon">
+                                    <div>
+                                        <dl>
+                                            <dd>
+                                                <i class="time-icon"></i>
+                                                <span>5课时 61分钟</span>
+                                            </dd>
+                                            <dd class="zhongji">
+                                                <i class="xinhao-icon2"></i>
+                                                <span>中级</span>
+                                            </dd>
+                                        </dl>
+                                        <span class="learn-num">5375人学习</span>
+                                        <a href="#">
+                                            <img src="../img/wei.png" width="16">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--职业路径-->
+            <div id="learn-way" class="learn-box w-1000 mar-t20">
+                <div class="index-public-title">
+                    <strong>
+                        <a href="http://ke.jikexueyuan.com/zhiye/" target="_blank">职业路径图</a>
+                        <i class="way">?</i>
+                    </strong>
+                    <span class="way-info">
+                        <i></i>
+                        更系统的职业技能学习路径
+                    </span>
+                    <a href="http://ke.jikexueyuan.com/zhiye/" class="more-lesson" target="_blank">更多&gt;&gt;</a>
+                </div>
+                <div class="learn-card">
+                    <a href="http://ke.jikexueyuan.com/zhiye/web/" target="_blank">
+                        <img src="../img/65.png" alt="WEB大前端工程师" width="100%" height="120">
+                        <h2>WEB大前端工程师</h2>
+                        <p>月薪15k-30k</p>
+                        <p>Web开发的未来趋势</p>
+                        <button class="greenbtn2 learn-now">立即学习</button>
+                    </a>
+                    <a href="http://ke.jikexueyuan.com/zhiye/android/" target="_blank">
+                        <img src="../img/66.png" alt="Android工程师" width="100%" height="120">
+                        <h2>Android工程师</h2>
+                        <p>月薪5k-30k</p>
+                        <p>最火爆的职业 人才缺口大</p>
+                        <button class="greenbtn2 learn-now">立即学习</button>
+                    </a>
+                    <a href="http://ke.jikexueyuan.com/zhiye/ios/" target="_blank">
+                        <img src="../img/67.png" alt="iOS开发工程师" width="100%" height="120">
+                        <h2>iOS开发工程师</h2>
+                        <p>月薪6k-30k</p>
+                        <p>企业必争的人才资源</p>
+                        <button class="greenbtn2 learn-now">立即学习</button>
+                    </a>
+                    <a href="http://ke.jikexueyuan.com/zhiye/javaweb/" target="_blank">
+                        <img src="../img/68.png" alt="JavaWeb工程师" width="100%" height="120">
+                        <h2>JavaWeb工程师</h2>
+                        <p>月薪6k-35k</p>
+                        <p>就业面最广的职业方向</p>
+                        <button class="greenbtn2 learn-now">立即学习</button>
+                    </a>
+                    <a href="http://ke.jikexueyuan.com/zhiye/php/" target="_blank">
+                        <img src="../img/69.png" alt="PHP工程师" width="100%" height="120">
+                        <h2>PHP工程师</h2>
+                        <p>月薪5k-35k</p>
+                        <p>最好的开发语言 没有之一</p>
+                        <button class="greenbtn2 learn-now">立即学习</button>
+                    </a>
+                    <a href="http://ke.jikexueyuan.com/zhiye/cocos2d/" target="_blank">
+                        <img src="../img/70.png" alt="Cocos2d工程师" width="100%" height="120">
+                        <h2>Cocos2d工程师</h2>
+                        <p>月薪7k-30k</p>
+                        <p>最流行跨平台手机游戏开发</p>
+                        <button class="greenbtn2 learn-now">立即学习</button>
+                    </a>
+                    <a href="http://ke.jikexueyuan.com/zhiye/unity3d/" target="_blank">
+                        <img src="../img/71.png" alt="Unity3D工程师" width="100%" height="120">
+                        <h2>Unity3D工程师</h2>
+                        <p>月薪7-40k</p>
+                        <p>国际最热门的3D游戏引擎</p>
+                        <button class="greenbtn2 learn-now">立即学习</button>
+                    </a>
+                    <a href="http://ke.jikexueyuan.com/zhiye/aspnet/" target="_blank">
+                        <img src="../img/72.png" alt="ASP.NET工程师" width="100%" height="120">
+                        <h2>ASP.NET工程师</h2>
+                        <p>月薪5k-30k</p>
+                        <p>微软强力推行的开发语言</p>
+                        <button class="greenbtn2 learn-now">立即学习</button>
+                    </a>
+                    <a href="http://ke.jikexueyuan.com/zhiye/bigdata/" target="_blank">
+                        <img src="../img/73.png" alt="大数据工程师" width="100%" height="120">
+                        <h2>大数据工程师</h2>
+                        <p>月薪8K-40K</p>
+                        <p>目前最稀缺的职业方向</p>
+                        <button class="greenbtn2 learn-now">立即学习</button>
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="../img/74.png" alt="运维工程师" width="100%" height="120">
+                        <h2>运维工程师</h2>
+                        <p>月薪6k-30k</p>
+                        <p>最能折腾的职业岗位</p>
+                        <button id="Waiting-btn">敬请期待</button>
+                    </a>
+                </div>
+            </div>
+            <!--知识体系图-->
+            <div id="system" class="learn-way w-1000">
+                <div class="index-public-title">
+                    <strong>
+                        <a href="http://ke.jikexueyuan.com/zhiye/" target="_blank">知识体系图</a>
+                        <i class="way">?</i>
+                    </strong>
+                    <span class="way-info">
+                        <i></i>
+                        更快速找到你需要的课程
+                    </span>
+                    <a href="http://ke.jikexueyuan.com/zhiye/" class="more-lesson" target="_blank">更多&gt;&gt;</a>
+                </div>
+                <div class="map-box">
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="../img/android.png" width="40">
+                            <h2>Android</h2>
+                            <span>90门课程</span>
+                        </div>
+                        <div class="back">
+                            <strong>1006616人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="../img/html.png" width="40">
+                            <h2>HTML5开发</h2>
+                            <span>116门课程</span>
+                        </div>
+                        <div class="back">
+                            <strong>2343014人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="../img/Java.png" width="40">
+                            <h2>Java语言</h2>
+                            <span>45门课程</span>
+                        </div>
+                        <div class="back">
+                            <strong>877016人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="../img/php.png" width="40">
+                            <h2>PHP语言</h2>
+                            <span>23门课程</span>
+                        </div>
+                        <div class="back">
+                            <strong>348268人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="../img/JavaWeb.jpg" width="40">
+                            <h2>JavaWeb</h2>
+                            <span>64门课程</span>
+                        </div>
+                        <div class="back">
+                            <strong>864507人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="../img/ios.png" width="40">
+                            <h2>iOS开发</h2>
+                            <span>51门课程</span>
+                        </div>
+                        <div class="back">
+                            <strong>483559人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="../img/asp.png" width="40">
+                            <h2>Asp.Net</h2>
+                            <span>61门课程</span>
+                        </div>
+                        <div class="back">
+                            <strong>691163人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="../img/c.png" width="40">
+                            <h2>C语言</h2>
+                            <span>17门课程</span>
+                        </div>
+                        <div class="back">
+                            <strong>307988人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="../img/python.png" width="40">
+                            <h2>Python</h2>
+                            <span>38门课程</span>
+                        </div>
+                        <div class="back">
+                            <strong>430825人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="../img/Unity3D.png" width="40">
+                            <h2>Unity3D</h2>
+                            <span>45门课程</span>
+                        </div>
+                        <div class="back">
+                            <strong>338709人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="../img/swift.png" width="40">
+                            <h2>Swift语言</h2>
+                            <span>11门课程</span>
+                        </div>
+                        <div class="back">
+                            <strong>92201人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="../img/C%23.png" width="40">
+                            <h2>C#</h2>
+                            <span>30门课程</span>
+                        </div>
+                        <div class="back">
+                            <strong>190759人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="../img/Bootstrap.png" width="40">
+                            <h2>Bootstrap</h2>
+                            <span>11门课程</span>
+                        </div>
+                        <div class="back">
+                            <strong>230993人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="../img/Cocos2d-x.png" width="40">
+                            <h2>Cocos2d-x游戏开发</h2>
+                            <span>89门课程</span>
+                        </div>
+                        <div class="back">
+                            <strong>417726人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="../img/j1.jpg" width="40">
+                            <h2>计算机一级</h2>
+                            <span>7门课程</span>
+                        </div>
+                        <div class="back">
+                            <strong>52022人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="../img/j2.jpg" width="40">
+                            <h2>计算机二级</h2>
+                            <span>25门课程</span>
+                        </div>
+                        <div class="back">
+                            <strong>208715人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="../img/GUI.png" width="40">
+                            <h2>GUI</h2>
+                            <span>40门课程</span>
+                        </div>
+                        <div class="back">
+                            <strong>192587人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="../img/WatchKit.png" width="40">
+                            <h2>WatchKit开发</h2>
+                            <span>5门课程</span>
+                        </div>
+                        <div class="back">
+                            <strong>18853人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="../img/Docker.png" width="40">
+                            <h2>Docker</h2>
+                            <span>9门课程</span>
+                        </div>
+                        <div class="back">
+                            <strong>45844人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="../img/Egret.png" width="40">
+                            <h2>Egret</h2>
+                            <span>7门课程</span>
+                        </div>
+                        <div class="back">
+                            <strong>24394人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="../img/Arduino.png" width="40">
+                            <h2>Arduino</h2>
+                            <span>14门课程</span>
+                        </div>
+                        <div class="back">
+                            <strong>62197人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="../img/au.png" width="40">
+                            <h2>Android UiAutomator</h2>
+                            <span>20门课程</span>
+                        </div>
+                        <div class="back">
+                            <strong>83452人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="../img/JavaScript.png" width="40">
+                            <h2>JavaScript</h2>
+                            <span>43门课程</span>
+                        </div>
+                        <div class="back">
+                            <strong>509044人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="../img/Node.js.png" width="40">
+                            <h2>Node.js</h2>
+                            <span>39门课程</span>
+                        </div>
+                        <div class="back">
+                            <strong>179033人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--精品系列课程-->
+            <div id="excellent" class="w-1000">
+                <div class="index-public-title">
+                    <strong>
+                        <a href="http://ke.jikexueyuan.com/zhiye/" target="_blank">精品系列课程</a>
+                        <i class="way">?</i>
+                    </strong>
+                    <span class="way-info">
+                        <i></i>
+                        更相关的课程，更有序的学习
+                    </span>
+                    <a href="http://ke.jikexueyuan.com/zhiye/" class="more-lesson" target="_blank">更多&gt;&gt;</a>
+                </div>
+                <div class="excellent-box mar-t20">
+                    <div class="lesson-card">
+                        <h2>Python 实战系列</h2>
+                        <div class="images">
+                            <img src="../img/78.jpg">
+                        </div>
+                        <div class="describe">
+                            <div class="picture">
+                                <a href="#" target="_blank">
+                                    <img src="../img/avatar.jpg">
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a href="#" target="_blank">kingname</a>
+                            </div>
+                            <div class="text">
+                                <a href="#" target="_blank">本系列课程为Python实战系列课程：使用微信控制电脑，使用Python的Web框架Flask搭建网页，并使用网页控制电脑；使用wxPython编写图形化的程序，并进一步将这个程序发展为远程控制程序。</a>
+                            </div>
+                            <a href="#" target="_blank" class="btn btn-def greenbtn msxx">马上学习</a>
+                        </div>
+                        <div class="other">
+                            <span class="lesson-count">7门</span>
+                            <span class="learn-count">40040人学习</span>
+                            <span class="collect">收藏</span>
+                        </div>
+                    </div>
+                    <div class="lesson-card">
+                        <h2>Java 设计模式</h2>
+                        <div class="images">
+                            <img src="../img/80.jpg">
+                        </div>
+                        <div class="describe">
+                            <div class="picture">
+                                <a href="#" target="_blank">
+                                    <img src="../img/avatar1.jpg">
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a href="#" target="_blank">hexter</a>
+                            </div>
+                            <div class="text">
+                                <a href="#" target="_blank">
+                                    按照一个模式一个课程的方式讲解23种设计模式。
+                                    每个模式讲3-4节课，从模拟项目设计引入设计模式设计方案，并有详细示例代码和效果演示。
+                                </a>
+                            </div>
+                            <a href="#" target="_blank" class="btn btn-def greenbtn msxx">马上学习</a>
+                        </div>
+                        <div class="other">
+                            <span class="lesson-count">24门</span>
+                            <span class="learn-count">82708人学习</span>
+                            <span class="collect">收藏</span>
+                        </div>
+                    </div>
+                    <div class="lesson-card">
+                        <h2>Axure从入门到精通系列课程</h2>
+                        <div class="images">
+                            <img src="../img/79.jpg">
+                        </div>
+                        <div class="describe">
+                            <div class="picture">
+                                <a href="#" target="_blank">
+                                    <img src="../img/a2.jpeg">
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a href="#" target="_blank">j_kevin</a>
+                            </div>
+                            <div class="text">
+                                <a href="#" target="_blank">
+                                    Axure作为一款专业的原型设计工具，它可以让设计师们利用需求，设计功能和界面来快速的创建应用软件的线框图、流程图、原型和规格说明文档，并且同时支持多人协作和版本控制管理。Axure RP能制作出低保真原型和高保真原型，低保真原型利用线框图构建出软件的大致结构，利用交互效果来表达用户的实际操作方式，低保真原型能在耗费一定的时间完美清晰的表达出软件的实际功能；高保真原型做出的效果几乎和实际效果一致，但是它需要投入精力，完整表达设计理念和体验。Axure主要学习站点地图的使用、Axure组件的介绍、Axure母版功能、Axure变量的使用以及Axure的交互，在讲解的基础的过程中会贯穿大量的实战。
+                                </a>
+                            </div>
+                            <a href="#" target="_blank" class="btn btn-def greenbtn msxx">马上学习</a>
+                        </div>
+                        <div class="other">
+                            <span class="lesson-count">19门</span>
+                            <span class="learn-count">84141人学习</span>
+                            <span class="collect">收藏</span>
+                        </div>
+                    </div>
+                    <div class="lesson-card">
+                        <h2>Python 初级教程</h2>
+                        <div class="images">
+                            <img src="../img/81.jpg">
+                        </div>
+                        <div class="describe">
+                            <div class="picture">
+                                <a href="#" target="_blank">
+                                    <img src="../img/3n.jpeg">
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a href="#" target="_blank">韦苏恩</a>
+                            </div>
+                            <div class="text">
+                                <a href="#" target="_blank">
+                                    本套课程主要会让新手接触 Python，让各位同学从零基础开始掌握 Python语言。掌握Python基础知识，Python语法，Python运算符与表达式，三种控制流、Python函数、Python数据结构和算法等知识。
+                                </a>
+                            </div>
+                            <a href="#" target="_blank" class="btn btn-def greenbtn msxx">马上学习</a>
+                        </div>
+                        <div class="other">
+                            <span class="lesson-count">16门</span>
+                            <span class="learn-count">157341人学习</span>
+                            <span class="collect">收藏</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--wiki-->
+            <div id="wiki" class="w-1000">
+                <div class="index-public-title">
+                    <strong>
+                        <a href="http://ke.jikexueyuan.com/zhiye/" target="_blank">Wiki</a>
+                        <i class="way">?</i>
+                    </strong>
+                    <span class="way-info">
+                        <i></i>
+                        IT技术图文教程库 程序员的藏经阁
+                    </span>
+                    <a href="http://ke.jikexueyuan.com/zhiye/" class="more-lesson" target="_blank">更多&gt;&gt;</a>
+                </div>
+                <div class="wiki-box">
+                    <div class="one-wiki">
+                        <h2>最新</h2>
+                        <div class="wiki-img">
+                            <dl>
+                                <dd>
+                                    <a href="#">
+                                        <div class="img-box">
+                                            <i class="look"></i>
+                                            <img src="../img/linux.jpg">
+                                        </div>
+                                        <h3>Java 程序员眼中的 Linux</h3>
+                                        <span>120页/30章</span>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="#">
+                                        <div class="img-box">
+                                            <i class="look"></i>
+                                            <img src="../img/django.jpg">
+                                        </div>
+                                        <h3>Django 搭建博客</h3>
+                                        <span>70页/13章</span>
+                                    </a>
+                                </dd>
+                            </dl>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <p>· Lua 教程</p>
+                                        <span>96页/25章</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>· iOS人机交互指南</p>
+                                        <span>294页/48章</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>· Struts 教程</p>
+                                        <span>154页/31章</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="one-wiki">
+                        <h2>推荐</h2>
+                        <div class="wiki-img">
+                            <dl>
+                                <dd>
+                                    <a href="#">
+                                        <div class="img-box">
+                                            <i class="look"></i>
+                                            <img src="../img/rxjava.jpg">
+                                        </div>
+                                        <h3>RxJava 中文版</h3>
+                                        <span>2016/01/27</span>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="#">
+                                        <div class="img-box">
+                                            <i class="look"></i>
+                                            <img src="../img/tensor.jpg">
+                                        </div>
+                                        <h3>TensorFlow 中文版</h3>
+                                        <span>2015/12/14</span>
+                                    </a>
+                                </dd>
+                            </dl>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <p>· Android官方培训课程</p>
+                                        <span>2015/12/08</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>· Laravel 5.1 中文版</p>
+                                        <span>2015/11/11</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>· Pro Git v2 中文版</p>
+                                        <span>2015/10/30</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="one-wiki">
+                        <h2>热门</h2>
+                        <div class="wiki-img">
+                            <dl>
+                                <dd>
+                                    <a href="#">
+                                        <div class="img-box">
+                                            <i class="look"></i>
+                                            <img src="../img/material.jpg">
+                                        </div>
+                                        <h3>Material Design </h3>
+                                        <span>738490 人学习</span>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="#">
+                                        <div class="img-box">
+                                            <i class="look"></i>
+                                            <img src="../img/swift.jpg">
+                                        </div>
+                                        <h3>Swift 2.0 教程</h3>
+                                        <span>516198 人学习</span>
+                                    </a>
+                                </dd>
+                            </dl>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <p>· React Native 中文版</p>
+                                        <span>434961 人学习</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>· React 中文版</p>
+                                        <span>74733 人学习</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>· Spring 教程</p>
+                                        <span>57859 人学习</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--合作企业-->
+            <div id="enterprise" class="w-1000">
+                <div class="index-public-title">
+                    <strong>
+                        <a>战略合作企业</a>
+                    </strong>
+                    <a href="http://ke.jikexueyuan.com/zhiye/" class="more-lesson" target="_blank">更多&gt;&gt;</a>
+                </div>
+                <div class="enterprise-box">
+                    <div class="swiper-container enterprise">
+                        <span id="banner-left3" class="arrow-left arrow swiper-button-prev"></span>
+                        <span id="banner-right3" class="arrow-right arrow swiper-button-next"></span>
+                        <div class="swiper-wrapper">
+                            <a class="swiper-slide">
+                                <img src="../img/jizhi.png">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/micro.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/dao.png">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/qing.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/ling.png">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/file.png">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/microsoft.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/tengxun.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/chukong.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/qu.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/amd.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/keda.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/tuling.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/tingyun.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/juhe.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/bootstrap.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/apache.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/one.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/you.png">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/yun.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--合作院校-->
+            <div id="university" class="w-1000">
+                <div class="index-public-title">
+                    <strong><a>合作院校</a></strong>
+                    <a href="http://mooc.jikexueyuan.com/" class="more-lesson" target="_blank">更多&gt;&gt;</a>
+                </div>
+                <div class="swiper-car-box">
+                    <div class="swiper-container swiper-car">
+                        <span id="banner-left2" class="arrow-left arrow work-left-prev"></span>
+                        <span id="banner-right2" class="arrow-right arrow work-right-next"></span>
+                        <div class="swiper-wrapper">
+                            <a class="swiper-slide">
+                                <img src="../img/bjjt.png">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/zgky.png">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/nmg.png">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/u1.png">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/u2.png">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/dn.png">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/xm.png">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/dbdx.png">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/bjyd.png">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/wh.png">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/tj.png">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/u3.png">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/cq.png">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/xm.png">
+                            </a>
+<!--a-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--媒体报道-->
+            <div id="media-report" class="w-1000">
+                <div class="index-public-title">
+                    <strong><a>媒体报道</a></strong>
+                </div>
+                <div class="media-report-box">
+                    <div class="swiper-container swiper-strategy media-report">
+                        <span id="banner-left4" class="arrow-left arrow work-left-prev"></span>
+                        <span id="banner-right4" class="arrow-right arrow work-right-next"></span>
+                        <div class="swiper-wrapper">
+                            <a class="swiper-slide">
+                                <img src="../img/duozhi.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/china.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/feix.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/touzi.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/投资潮.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/fenghuang.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/sina.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/caij.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/36.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/jiemo.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/sohu.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/tenxun.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/huanqiu.jpg">
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="../img/wangyi.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--底部-->
+        <div id="footer">
+            <div class="jk-wrap">
+                <div class="jk-info w-1000">
+                    <dl>
+                        <dt>
+                            <a target="_blank" href="#">极客学院</a>
+                        </dt>
+                        <dd>
+                            <span>·</span>
+                            <a target="_blank" href="#">职业课程库</a>
+                        </dd>
+                        <dd>
+                            <span>·</span>
+                            <a target="_blank" href="#">知识体系图</a>
+                        </dd>
+                        <dd>
+                            <span>·</span>
+                            <a target="_blank" href="#">职业路径图</a>
+                        </dd>
+                        <dd>
+                            <span>·</span>
+                            <a target="_blank" href="#">企业课程</a>
+                        </dd>
+                        <dd>
+                            <span>·</span>
+                            <a target="_blank" href="#">资源下载</a>
+                        </dd>
+                        <dd>
+                            <span>·</span>
+                            <a target="_blank" href="#">课程标签</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a target="_blank" href="#">网站服务</a>
+                        </dt>
+                        <dd>
+                            <span>·</span>
+                            <a target="_blank" href="#">课程需求</a>
+                        </dd>
+                        <dd>
+                            <span>·</span>
+                            <a target="_blank" href="#">免费体验VIP</a>
+                        </dd>
+                        <dd>
+                            <span>·</span>
+                            <a target="_blank" href="#">黑板报</a>
+                        </dd>
+                        <dd>
+                            <span>·</span>
+                            <a target="_blank" href="#">网站地图</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a target="_blank" href="#">帮助中心</a>
+                        </dt>
+                        <dd>
+                            <span>·</span>
+                            <a target="_blank" href="#">技术问答</a>
+                        </dd>
+                        <dd>
+                            <span>·</span>
+                            <a target="_blank" href="#">VIP权益</a>
+                        </dd>
+                        <dd>
+                            <span>·</span>
+                            <a target="_blank" href="#">常见问题</a>
+                        </dd>
+                        <dd>
+                            <span>·</span>
+                            <a target="_blank" href="#">服务条款</a>
+                        </dd>
+                        <dd>
+                            <span>·</span>
+                            <a target="_blank" href="#">版权声明</a>
+                        </dd>
+                        <dd>
+                            <span>·</span>
+                            <a target="_blank" href="#">免责声明</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a target="_blank" href="#">交流合作</a>
+                        </dt>
+                        <dd>
+                            <span>·</span>
+                            <a target="_blank" href="#">关于我们</a>
+                        </dd>
+                        <dd>
+                            <span>·</span>
+                            <a target="_blank" href="#">联系我们</a>
+                        </dd>
+                        <dd>
+                            <span>·</span>
+                            <a target="_blank" href="#">社会招聘</a>
+                        </dd>
+                        <dd>
+                            <span>·</span>
+                            <a target="_blank" href="#">布道师招募</a>
+                        </dd>
+                        <dd>
+                            <span>·</span>
+                            <a target="_blank" href="#">合作咨询</a>
+                        </dd>
+                        <dd>
+                            <span>·</span>
+                            <a target="_blank" href="#">友情链接</a>
+                        </dd>
+                        <dd>
+                            <span>·</span>
+                            <a target="_blank" href="#">实战教练招募</a>
+                        </dd>
+                    </dl>
+                    <div class="search-share">
+                        <strong class="jike">极客学院，编程是一种信仰！</strong>
+                        <div class="app-download">
+                            <a target="_blank" href="#">
+                                <img src="../img/iphone.png" width="21">
+                                <div>
+                                    <strong>手机客户端</strong>
+                                    <p>离线缓存 随时学习</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="share">
+                            <a href="#" class="sina-icon" target="_blank"></a>
+                            <a href="#" class="tieba-icon" target="_blank"></a>
+                            <a class="qq-icon">
+                                <img src="../img/weixin-pop.png" class="weinxinpop">
+                            </a>
+                        </div>
+                        <div class="kefu-online">
+                            <a class="apply" href="#">
+                                <div class="kefu-icon online"></div>
+                                <h5>联系我们</h5>
+                                <p>工作日9:00-21:00在线</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-1000 copyright">
+                <span>Copyright © 2013-2016 </span>
+                <span>
+                    <a href="http://www.jikexueyuan.com/" target="_blank">北京优亿致远无线技术有限公司</a>
+                </span>
+                <span>
+                    <a href="http://www.jikexueyuan.com/" target="_blank"> jikexueyuan.com</a>
+                </span>
+                <span> All Rights Reversed. 京ICP备11018032号-8 京公网安备11010802020210</span>
+
+            </div>
+        </div>
+        <!--回到顶部-->
+        <div class="go-top" id="go-top">
+            <p class="top"></p>
+            <a href="#" target="_blank">
+                <span class="jk-app">
+                    <p class="appewm"></p>
+                </span>
+            </a>
+            <a href="#" class="search"></a>
+            <a class="service">
+                <i></i>
+            </a>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/lib/sea.js"></script>
+    <script type="text/javascript" src="js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*对整个十字架设置*/
+.cross{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    top: 50%;
+    margin-top: -150px;
+    background-color: #F5F5DC
+}
+/*3个DIV公用设置*/
+.cross-top, .cross-center, .cross-bottom{
+    width: 100px;
+    height: 100px;
+    box-shadow: 8px 8px 5px 3px #688e86;
+}
+/*顶部十字架*/
+.cross-top{
+    margin: auto;
+    background-color: #3369E8;
+}
+/*中间十字架*/
+.cross-center{
+    border-left: 100px solid #D50F25;
+    border-right: 100px solid #009925;
+    background-color: #7FFF00;
+}
+/*底部十字架*/
+.cross-bottom{
+    margin: auto;
+    background-color: #EEB211;
+}
+.penguin-container{
+    width: 100px;
+    height: 100px;
+    /*显示为弹性盒子*/
+    display: -webkit-box;
+    display: -moz-box;
+    /*垂直居中*/
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    /*水平居中*/
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+}

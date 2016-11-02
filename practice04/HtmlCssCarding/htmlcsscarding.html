@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html&css梳理</title>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/htmlcsscarding.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!--正文内容-->
+    <article class="content container">
+        <!--导航栏-->
+        <nav class="side-bar">
+            <ul>
+                <li><a href="#head-html"><h4 class="html">HTML篇</h4></a></li>
+                <li><a href="#browser-kernel"><h4>主流浏览器及其内核</h4></a></li>
+                <li><a href="#Doctype"><h4>doctype的特点</h4></a></li>
+                <li><a href="#layout"><h4>div css的布局优势</h4></a></li>
+                <li><a href="#img"><h4>img的title和alt</h4></a></li>
+                <li><a href="#src-href-different"><h4>src与href的区别</h4></a></li>
+                <li><a href="#web-semantic"><h4>web语义化</h4></a></li>
+                <li><a href="#tag"><h4>行内 块级和空元素</h4></a></li>
+                <li><a href="#storage"><h4>本地存储</h4></a></li>
+                <li><a href="#pic-load"><h4>图片加载</h4></a></li>
+                <li><a href="#SEO"><h4>seo搜索引擎优化</h4></a></li>
+                <li><a href="#iframe"><h4>iframe的缺点</h4></a></li>
+                <li><a href="#html5-add"><h4>html5新增的特性</h4></a></li>
+                <li><a href="#html5-remove"><h4>html5移除的特性</h4></a></li>
+                <li><a href="#head-css"><h4 class="css">CSS篇</h4></a></li>
+                <li><a href="#set-style"><h4>引入css的方法"</h4></a></li>
+                <li><a href="#selector"><h4>selector选择器</h4></a></li>
+                <li><a href="#display-none"><h4>display和visibility的隐藏</h4></a></li>
+                <li><a href="#link-error"><h4>链接hover后样式出错</h4></a></li>
+                <li><a href="#inline-block-difference"><h4>行内和块级元素的区别</h4></a></li>
+                <li><a href="#transparent"><h4>rgba()和opacity</h4></a></li>
+                <li><a href="#overlap"><h4>css文字重叠</h4></a></li>
+                <li><a href="#img-setting"><h4>垂直居中img</h4></a></li>
+                <li><a href="#px-em"><h4>px和em的区别</h4></a></li>
+                <li><a href="#display-visibility"><h4>两种隐藏显示</h4></a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <h1 class="text-center">HTML/CSS面试题</h1>
+            <!------------------HTML篇------------------->
+            <h2 id="head-html">HTML</h2><hr/>
+            <!--第一个问题-->
+            <div>
+                <h3 id="browser-kernel">主流浏览器及其内核</h3>
+                <ul>
+                    <li>IE: trident内核</li>
+                    <li>Firefox: gecko内核</li>
+                    <li>Safari: webkit内核</li>
+                    <li>Opera: 以前是presto内核, Opera现已改用Google Chrome的Blink内核</li>
+                    <li>Chrome: Blink(基于webkit, Google与Opera SoftWare共同开发)</li>
+                </ul>
+            </div>
+            <!--第二个问题-->
+            <div>
+                <h3 id="Doctype">Doctype是什么及其特点</h3>
+                <ul>
+                    <li>&lt;!doctype&gt;必须处于HTML文档的头部，在标签之前</li>
+                    <li>&lt;!doctype&gt;声明不是一个HTML标签，用于告诉浏览器使用哪种HTML或XHTML规范</li>
+                    <li>该标签可以声明三组DTD类型，分别表示阉割版本、过渡版本以及基于框架的版本</li>
+                </ul>
+            </div>
+            <!--第三个问题-->
+            <div>
+                <h3 id="layout">DIV + CSS的布局较TABLE布局的优势</h3>
+                <ul>
+                    <li>利于重构，只需要更改CSS文件</li>
+                    <li>页面加载速度更快、结构化清晰、页面显示简洁</li>
+                    <li>表现与结构分离</li>
+                    <li>易于优化（SEO）搜索引擎支持更友好，排名更容易靠前</li>
+                    <li>Chrome: Blink(基于webkit，Google与Opera SoftWare共同开发)</li>
+                </ul>
+            </div>
+            <!--第四个问题-->
+            <div>
+                <h3 id="img">img的title和alt区别</h3>
+                <ul>
+                    <li>title用于为元素提供附加的提示，鼠标滑动到元素上会显示title文字</li>
+                    <li>alt是img特有的属性，是图片内容的自定义描述，用于图片无法加载时，描述图片内容</li>
+                    <li>搜索引擎会分析alt描述</li>
+                </ul>
+            </div>
+            <!--第五个问题-->
+            <div>
+                <h3 id="src-href-different">src与href的区别</h3>
+                <ul>
+                    <li>
+                        src是source的缩写，指向外部资源的位置，指向的内容将会嵌入下载到文档中当前的标签位置，如js，img，frame等元素<br/>
+                        &lt;script src="*.js"&gt;&lt;/script&gt;<br/>
+                        当浏览器解析到该元素时，会暂停其他资源的下载和处理，知道将该资源加载、编译、执行完毕，图片和框架等元素也如此。这也是js脚本要放在底部而不是头部的原因
+                    </li>
+                    <li>
+                        href是Hypertext Reference的缩写，指向网络资源所在的位置，建立和当前元素（锚点）或当前文档（链接）之间的链接<br/>
+                        &lt;link href="*.css" rel="stylesheet/&gt;<br/>
+                        当浏览器解析到该元素时，就会并行下载资源并且不对停止对当前文档的处理。这也是建议用link方式加载css，而不是使用@import方式
+                    </li>
+                </ul>
+            </div>
+            <!--第六个问题-->
+            <div>
+                <h3 id="web-semantic">web语义化</h3>
+                <ul>
+                   <li>是指通过HTML标记表示页面包含的信息，包含了HTML标签的语义化和CSS命名的语义化</li>
+                   <li>HTML标签的语义化: 使用例如H1-H6等恰当的表达文档结构</li>
+                   <li>CSS命名的语义化: 为HTML标签添加有意义的class，id</li>
+                   <li>
+                       需要语义化的原因:
+                       <ul>
+                           <li>去掉样式后页面依然呈现清晰的结构</li>
+                           <li>盲人使用读屏器更好的阅读</li>
+                           <li>搜索引擎更好的理解页面，有利于收录</li>
+                           <li>团队项目可持续运作和运维</li>
+                       </ul>
+                   </li>
+                </ul>
+            </div>
+            <!--第七个问题-->
+            <div>
+                <h3 id="tag">行内元素、块级元素、空元素有哪些</h3>
+                <ul>
+                    <li>行内元素: display默认属性为inline，主要有 a, b, span, img, input, select, strong</li>
+                    <li>块级元素: display默认属性为block，主要有 div, ul, ol, li, dl, dt, dd, h1-h6, p</li>
+                    <li>空元素: 在开始标签关闭，没有内容，主要有 br, hr, img, input, link, meta</li>
+                </ul>
+            </div>
+            <!--第八个问题-->
+            <div>
+                <h3 id="storage">cookies, sessionStorage, localStorage的区别</h3>
+                <ul>
+                    <li>cookie: 在浏览器和服务器之间来回传递，大小受限，每次请求一个新的页面都会被发送过去，不能跨域调用</li>
+                    <li>sessionStorage: 会话级别的存储，用于本地存储session中的数据，存储的数据只有在同一回合的页面才能访问，会话结束后数据也随之销毁</li>
+                    <li>localStorage: 持久化的本地存储，存储本地数据，存储容量大</li>
+                </ul>
+            </div>
+            <!--第九个问题-->
+            <div>
+                <h3 id="pic-load">一个页面有大量图片，如何提高图片加载速度</h3>
+                <ul>
+                    <li>图片懒加载，在页面上的未可是区域添加滚动条时间，判断图片位置与浏览器顶端的距离与页面的距离，如果前者小于后者，优先加载</li>
+                    <li>如果为幻灯片、相册等。可以使用图片预加载技术，将当前展示图片的前一张和后一张优先下载</li>
+                    <li>如果为css图片，可以使用CSSsprite, SVGsprite, Iconfont, Base64等技术</li>
+                    <li>如果图片过大，可以使用特殊编码的图片，加载时会先加载一张压缩的缩略图</li>
+                    <li>如果图片展示区域小于真实图片大小，则应在服务器端根据业务需要先进行图片压缩，图片压缩后与展示一致</li>
+                </ul>
+            </div>
+            <!--第十个问题-->
+            <div>
+                <h3 id="SEO">以前端角度SEO需要考虑什么</h3>
+                <ul>
+                    <li>了解搜索引擎如何抓取网页和索引网页</li>
+                    <li>meta标签优化，包括: title, description, keywords, author, category, language等</li>
+                    <li>关键词分析，确定网站关键词5个左右，针对关键词进行优化，包括关键词密度density 相关度relevance 突出性prominence</li>
+                    <li>了解主要的搜索引擎及其对页面的抓取和索引、排序的规则，还要了解个搜索门户和搜索引擎之间的关系</li>
+                    <li>主要的互联网目录</li>
+                    <li>按点击付费的搜索引擎</li>
+                    <li>搜索引擎登录</li>
+                    <li>链接交换和链接广泛度（Link Popularity）</li>
+                    <li>合理的标签使用</li>
+                </ul>
+            </div>
+            <!--第十一个问题-->
+            <div>
+                <h3 id="iframe">iframe的缺点</h3>
+                <ul>
+                    <li>iframe会阻塞页面的Onload事件</li>
+                    <li>iframe和页面共享连接池，浏览器对相同域的链接有限制，因此会影响页面并行加载</li>
+                    <li>解决方法: 通过javascript动态给iframe添加src属性值</li>
+                </ul>
+            </div>
+            <!--第十二个问题-->
+            <div>
+                <h3 id="html5-add">html5新增的特性</h3>
+                <ul>
+                   <li>用于会话的canvas元素</li>
+                    <li>用于媒介回放的video和audio元素</li>
+                    <li>对本地离线存储的更好支持的localStorage, sessionStorage</li>
+                    <li>新的特殊内容元素: article, footer, header, nav, section</li>
+                    <li>新的表单控件: calendar, date, time, email, url, search</li>
+                </ul>
+            </div>
+            <!--第十三个问题-->
+            <div>
+                <h3 id="html5-remove">html5移除的特性</h3>
+                <ul>
+                    <li>纯表现的元素: basefont, big, center, font, s, strike, tt, uu</li>
+                    <li>对可用性产生负面影响的元素: frame, frameset, noframes </li>
+                </ul>
+            </div>
+            <!------------------CSS篇------------------->
+            <h2 id="head-css">CSS</h2><br/>
+            <!--第一个问题-->
+            <div>
+                <h3 id="set-style">对DOM设置CSS样式的方法</h3>
+                <ul>
+                    <li>外部样式表，引入一个外部的css文件</li>
+                    <li>内部样式表，将css代码放在&lt;head&gt;标签内部</li>
+                    <li>内联样式，将css样式直接定义在HTML元素内部</li>
+                </ul>
+            </div>
+            <!--第二个问题-->
+            <div>
+                <h3 id="selector">CSS有哪些选择器及优先级</h3>
+                <ul>
+                    <li>id选择器（#idname）</li>
+                    <li>类选择器（.classname）</li>
+                    <li>相邻选择器（h1 + p）</li>
+                    <li>后代选择器（li a）</li>
+                    <li>通配符选择器（*）</li>
+                    <li>属性选择器（a[rel="external"]，属于CSS2，IE6不支持）</li>
+                    <li>伪类选择器（a:hover, li:nth-child）</li>
+                    <li>优先级: !important > id > class > tag, important优先级高于内联样式</li>
+                </ul>
+            </div>
+            <!--第三个问题-->
+            <div>
+                <h3 id="display-none">CSS可以通过哪些属性定义，使得一个DOM元素不显示在浏览器可视范围</h3>
+                <ul>
+                    <li>设置display属性为none，或者visibility属性为hidden</li>
+                    <li>设置宽高为0，设置透明度为0，设置z-index在-1000</li>
+                </ul>
+            </div>
+            <!--第四个问题-->
+            <div>
+                <h3 id="link-error">超链接访问过后hover样式就不出现，原因是什么，怎么解决</h3>
+                <ul>
+                    <li>原因: 被点击访问过的超链接样式不再具有hover和active样式了</li>
+                    <li>解决: 改变CSS属性的排列顺序: L-V-H-A(link, visited, hover, active)</li>
+                </ul>
+            </div>
+            <!--第五个问题-->
+            <div>
+                <h3 id="inline-block-difference">行内元素和块级元素的具体区别</h3>
+                <ul>
+                    <li>行内元素: 和相邻的内联元素在同一行，宽度、高度、内边距和外边距的上和下都不可改变，左右可以改变</li>
+                    <li>块级元素: 独占一行，宽度、高度、内边距、外边距都可以改变</li>
+                    <li>浏览器默认的inline-block元素: 有内在尺寸可设置宽高，不换行如input, img, button, textarea, label</li>
+                </ul>
+            </div>
+            <!--第六个问题-->
+            <div>
+                <h3 id="transparent">rgba()和opacity的透明效果有什么不同</h3>
+                <ul>
+                    <li>rgba: 只作用于元素的颜色或背景色，子元素不会继承该效果</li>
+                    <li>opacity: 作用于元素，以及元素内的所有内容的透明度</li>
+                </ul>
+            </div>
+            <!--第七个问题-->
+            <div>
+                <h3 id="overlap">CSS中让文字在垂直和水平方向上的重叠的两个属性是什么</h3>
+                <ul>
+                    <li>垂直方向: line-height</li>
+                    <li>水平方向: letter-spacing，可用于消除inline-block元素间的换行符空格间隙问题</li>
+                </ul>
+            </div>
+            <!--第八个问题-->
+            <div>
+                <h3 id="img-setting">如何垂直居中一个img（简便方法）</h3>
+                <ul>
+                    <li>display: table-cell;</li>
+                    <li>text-align: center;</li>
+                    <li>vertical-align: middle;</li>
+                </ul>
+            </div>
+            <!--第九个问题-->
+            <div>
+                <h3 id="px-em">px和em的区别</h3>
+                <ul>
+                    <li>px: 固定长度单位，指定多少即为多少，易于计算</li>
+                    <li>em: 不固定长度单位，继承父级元素的字体大小</li>
+                    <li>浏览器默认的字体高度为16px，所以未经调整的浏览器都符合1em=16px</li>
+                </ul>
+            </div>
+            <!--第十个问题-->
+            <div>
+                <h3 id="display-visibility">display:none与visibility:hidden的区别</h3>
+                <ul>
+                    <li>display: 隐藏对应的元素但不挤占该元素原来的空间，其子元素全部被隐藏，不能显现</li>
+                    <li>visibility: 隐藏对应的元素并挤占该元素原来的空间，其子元素被隐藏后可设置visibility:visible来显示</li>
+                </ul>
+            </div>
+        </div>
+    </article>
+    <!--尾部-->
+    <footer class="text-center">
+        <div>Copyright &copy;2016 刘青青</div>
+    </footer>
+</body>
+</html>

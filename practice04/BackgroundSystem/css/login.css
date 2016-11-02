@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*整个登录区域样式设置*/
+.form-horizontal{
+    background-color: #F5F5F5;
+    margin-top: 200px;
+}

@@ -1,0 +1,68 @@
+@base-color: #35b558;
+@border-color: #E4E4E4;
+@p-color: #808080;
+@b-color: #000;
+@black-color: #333;
+@white-color: #fff;
+@blue-color: #007aff;
+
+/* 宽高设置 */
+.size(@width, @height) {
+  width: @width;
+  height: @height;
+}
+
+/* z-index 设置 */
+.z-index(@position: absolute, @z-index: 10) {
+  position: @position;
+  z-index: @z-index;
+}
+
+/* 左浮动设置 */
+.float(@float: left) {
+  float: @float;
+}
+/* border-radius */
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+.box-sizing (@box-sizing: content-box){
+  -webkit-box-sizing: @box-sizing;
+  -moz-box-sizing: @box-sizing;
+  box-sizing: @box-sizing;
+}
+
+.background-size(@size-x: 100%, @size-y: 100%) {
+  -moz-background-size: @size-x @size-y;
+  -o-background-size: @size-x @size-y;
+  -webkit-background-size: @size-x @size-y;
+  background-size: @size-x @size-y;
+}
+
+.background-position (@position-x: -2px, @position-y){
+  background-position-x: @position-x;
+  background-position-y: @position-y;
+}
+
+.transition(@prop, @time) {
+  -webkit-transition: @prop @time;
+  -moz-transition: @prop @time;
+  -o-transition: @prop @time;
+  transition: @prop @time;
+}
+
+.transform(@transform) {
+  -webkit-transform: @transform;
+  -moz-transform: @transform;
+  -ms-transform: @transform;
+  -o-transform: @transform;
+  transform: @transform;
+}
+.animation (@animate, @prop){
+  -webkit-animation: @animate @prop;
+  -o-animation: @animate @prop;
+  -moz-animation: @animate @prop;
+  animation: @animate @prop;
+}
