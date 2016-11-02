@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: KaiTi, Verdana, "Microsoft Yahei", sans-serif;
+}
+ul,
+li {
+  list-style: none;
+}
+/*颜色设置*/
+/*宽高设置*/
+/*浮动设置*/
+/*两端对齐设置*/
+.vertical-justify {
+  -webkit-writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
+  text-align: justify;
+  -ms-text-justify: inter-word;
+  text-justify: inter-word;
+  -ms-text-align-last: justify;
+  text-align-last: justify;
+}
+/* 朝上的三角形 */
+/*直角三角形*/
+/* 矩形 */
+.wrapper {
+  width: 1100px;
+  height: 400px;
+  -webkit-border-radius: 43px;
+  -moz-border-radius: 43px;
+  border-radius: 43px;
+  margin: 150px auto;
+  background: #d3d3d3;
+  padding: 30px 10px 0 0;
+}
+.bus-stop {
+  margin: 0 auto;
+  min-width: 1050px;
+  width: 1050px;
+}
+.bus-stop .bus-info {
+  width: 100%;
+  height: 115px;
+  position: relative;
+}
+.bus-stop .bus-info .bus-NO {
+  width: 250px;
+  height: 100px;
+  float: left;
+  text-align: center;
+}
+.bus-stop .bus-info .bus-NO .bus-name {
+  width: 100%;
+  height: 75px;
+  background: #a53535;
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Microsoft Yahei", serif;
+  text-align: right;
+  line-height: 75px;
+  padding-right: 15px;
+}
+.bus-stop .bus-info .bus-NO .open-time {
+  width: 100%;
+  height: 30px;
+  line-height: 37px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  color: #000;
+}
+.bus-stop .bus-info .bus-to {
+  float: right;
+  width: 400px;
+  height: 100%;
+  position: relative;
+  margin-right: 100px;
+}
+.bus-stop .bus-info .bus-to div p {
+  font-family: "Microsoft Yahei", serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #2b852b;
+  text-align: center;
+}
+.bus-stop .bus-info .bus-to div p:first-child {
+  font-size: 38px;
+  font-weight: 600;
+  color: #2b852b;
+}
+.bus-stop .bus-info .bus-to .start {
+  float: left;
+}
+.bus-stop .bus-info .bus-to .end {
+  float: right;
+}
+.bus-stop .bus-info .bus-to .end::after {
+  clear: both;
+}
+.bus-stop .bus-info .bus-to .rectangle {
+  position: absolute;
+  top: 27px;
+  left: 180px;
+  width: 50px;
+  height: 4px;
+  background: #2b852b;
+}
+.bus-stop .bus-info .bus-to .arrived {
+  width: 200px;
+  height: 50px;
+  font-size: 35px;
+  font-weight: 400;
+  color: #a53535;
+  position: absolute;
+  bottom: -13px;
+  left: 116px;
+}
+.bus-stop .bus-stations {
+  background: #2b852b;
+  width: 1050px;
+  height: 215px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 0 7px;
+}
+.bus-stop .bus-stations ul {
+  width: 100%;
+  height: 100%;
+  color: #333;
+}
+.bus-stop .bus-stations ul li {
+  width: 20px;
+  height: 100%;
+  float: left;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  margin: 5px;
+  cursor: default;
+}
+.bus-stop .bus-stations ul li div:first-child {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.bus-stop .bus-stations ul li div:nth-child(2) {
+  height: 150px;
+  -webkit-writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
+  text-align: justify;
+  -ms-text-justify: inter-word;
+  text-justify: inter-word;
+  -ms-text-align-last: justify;
+  text-align-last: justify;
+}
+.bus-stop .bus-stations ul li .figure {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  margin: 0 auto;
+}
+.bus-stop .bus-stations ul li .figure .triangle-up {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom-color: #fff;
+  top: -6px;
+}
+.bus-stop .bus-stations ul li .figure .rectangle {
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  width: 10px;
+  height: 6px;
+  background: #fff;
+}
+.bus-stop .bus-footer {
+  text-align: center;
+  font-size: 20px;
+}
+.bus-stop .bus-footer div {
+  position: relative;
+  width: 800px;
+  height: 5px;
+  margin: 5px auto;
+}
+.bus-stop .bus-footer div .line {
+  position: absolute;
+  width: 700px;
+  height: 4px;
+  background: #a53535;
+}
+.bus-stop .bus-footer div .arrow {
+  position: absolute;
+  top: -12px;
+  right: 4px;
+  width: 0;
+  height: 0;
+  border-width: 8px 48px;
+  border-style: solid;
+  border-color: #a53535 #a53535 transparent transparent;
+  -webkit-transform: rotateZ(180deg);
+  -moz-transform: rotateZ(180deg);
+  -ms-transform: rotateZ(180deg);
+  -o-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}

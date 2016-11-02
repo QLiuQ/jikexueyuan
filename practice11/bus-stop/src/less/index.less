@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: KaiTi, Verdana, "Microsoft Yahei", sans-serif;
+}
+ul, li {
+  list-style: none;
+}
+/*颜色设置*/
+@background-color: #2b852b;
+@white-color: #fff;
+@red-color: #a53535;
+
+// 引入base
+@import "base";
+
+.wrapper {
+  .size(1100px, 400px);
+  .border-radius(43px);
+  margin: 150px auto;
+  background: #d3d3d3;
+  padding: 30px 10px 0 0;
+}
+
+.bus-stop {
+  margin: 0 auto;
+  min-width: 1050px;
+  width: 1050px;
+  .bus-info {
+    .size(100%, 115px);
+    position: relative;
+    .bus-NO {
+      .size(250px, 100px);
+      .float();
+      text-align: center;
+      .bus-name {
+        .size(100%, 75px);
+        background: @red-color;
+        .font-size(40px, @white-color, 600);
+        font-family: "Microsoft Yahei", serif;
+        text-align: right;
+        line-height: 75px;
+        padding-right: 15px;
+      }
+      .open-time {
+        .size(100%, 30px);
+        line-height: 37px;
+        .font-size(20px);
+        color: #000;
+      }
+    }
+
+    .bus-to {
+      .float(right);
+      .size(400px, 100%);
+      position: relative;
+      margin-right: 100px;
+      div {
+        p{
+          font-family: "Microsoft Yahei", serif;
+          .font-size(24px, @background-color, 600);
+          text-align: center;
+          &:first-child {
+            .font-size(38px, @background-color, 600);
+          }
+        }
+
+      }
+      .start {
+        .float();
+      }
+      .end {
+        .float(right);
+        &::after{
+          clear: both;
+        }
+      }
+      .rectangle {
+        position: absolute;
+        top: 27px;
+        left: 180px;
+        .rectangle(50px, 4px, @background-color);
+      }
+      .arrived{
+        .size(200px, 50px);
+        .font-size(35px, @red-color);
+        position: absolute;
+        bottom: -13px;
+        left: 116px;
+      }
+    }
+
+  }
+  .bus-stations {
+    background: @background-color;
+    .size(1050px, 215px);
+    .border-radius(8px);
+    margin: 0 auto;
+    padding: 0 7px;
+    ul {
+      .size();
+      color: #333;
+      li {
+        .size(20px);
+        .float();
+        .font-size();
+        margin: 5px;
+        cursor: default;
+        div {
+          &:first-child {
+            text-align: center;
+            margin-bottom: 10px;
+          }
+          &:nth-child(2) {
+            height: 150px;
+            .vertical-justify;
+          }
+        }
+        .figure{
+          position: relative;
+          .size(100%, 20px);
+          margin: 0 auto;
+          .triangle-up {
+            position: absolute;
+            .triangle-up(10px);
+            top: -6px;
+          }
+          .rectangle{
+            position: absolute;
+            bottom: 0;
+            left: 5px;
+            .rectangle(10px, 6px);
+          }
+        }
+      }
+    }
+  }
+  .bus-footer {
+    text-align: center;
+    font-size: 20px;
+    div {
+      position: relative;
+      .size(800px, 5px);
+      margin: 5px auto;
+      .line {
+        position: absolute;
+        .rectangle(700px, 4px, @red-color);
+      }
+      .arrow {
+        position: absolute;
+        top: -12px;
+        right: 4px;
+        .triangle-right-angled(8px, 48px, @red-color);
+        .transform(rotateZ(180deg));
+      }
+    }
+  }
+}

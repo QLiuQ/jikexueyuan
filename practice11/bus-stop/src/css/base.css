@@ -1,0 +1,15 @@
+/*宽高设置*/
+/*浮动设置*/
+/*两端对齐设置*/
+.vertical-justify {
+  -webkit-writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
+  text-align: justify;
+  -ms-text-justify: inter-word;
+  text-justify: inter-word;
+  -ms-text-align-last: justify;
+  text-align-last: justify;
+}
+/* 朝上的三角形 */
+/*直角三角形*/
+/* 矩形 */
