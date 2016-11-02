@@ -21,7 +21,9 @@
   },
   "description": "+ Express\r + Mongodb\r + Bootstrap\r + Jquery",
   "main": "app.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "moment": "^2.15.2"
+  },
   "author": "liuqingqing",
   "license": "ISC"
 }
