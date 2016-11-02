@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font: 12px arial;
+}
+/*整个样式设置*/
+.wrapper{
+    position: relative;
+    min-width: 810px;
+    height: 100%;
+    min-height: 755px;
+}
+/*搜索框设置*/
+.search-input {
+    background: #fff;
+    border: 1px solid;
+    border-right-width: 0;
+    border-color: #b8b8b8 transparent #ccc #b8b8b8;
+}
+
+/*提交按钮设置*/
+.search-submit {
+    letter-spacing: 1px;
+    background: #3385ff;
+    border: 1px solid #2d78f4;
+    color: white;
+}
+.search-submit:hover{
+    background: #317ef3;
+    border-bottom: 1px solid #2868c8;
+    box-shadow: 1px 1px 1px #ccc;
+    cursor: pointer;
+    *border: none;
+}
+/*底部设置*/
+.footer{
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    height: 100px;
+    bottom: 23px;
+    text-align: center;
+    overflow: hidden;
+}
+.footer-outer{
+    width: 646px;
+    margin: 0 auto;
+}
+/*二维码样式设置*/
+.qrcode{
+    float: left;
+}
+.qrcode-item1{
+    float: left;
+}
+.qrcode-item2{
+    float: left;
+    margin-left: 33px;
+}
+/*二维码右边字体设置*/
+.qrcode .qrcode-text {
+    float: left;
+    color: #999;
+    line-height: 23px;
+    margin: 8px 0 0 10px;
+}
+.qrcode-img{
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+/*第一个二维码设置*/
+.qrcode-item1 .qrcode-img{
+    background-image: url("../img/qrcode1.png");
+}
+/*第二个二维码设置*/
+.qrcode-item2 .qrcode-img{
+    background-image: url("../img/nuomi_2.png");
+}
+/*底部右边字体设置*/
+.ftConw{
+    float: left;
+    color: #999;
+    margin-left: 33px;
+    line-height: 22px;
+    top: -2px;
+}
+.ftConw p a{
+    color: #999;
+    *color: #999;
+}
+.about-baidu{
+    margin-left: 62px;
+}
+
+/*设置底部两个icon样式*/
+.c-icon-icrlogo, .c-icon-jgwablogo{
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    overflow: hidden;
+    background-image: url("../img/icons_0e814c16.png");
+}
+/*百度icrlogo设置*/
+.c-icon-icrlogo{
+    background-position: -600px -96px;
+    position: relative;
+    top: 3px;
+}
+/*百度jgwblogo设置*/
+.c-icon-jgwablogo{
+    background-position: -623px -96px;
+    position: relative;
+    top: 3px;
+    margin-right: 6px;
+}
+.c-icon-jgwab{
+    text-align: left;
+}
